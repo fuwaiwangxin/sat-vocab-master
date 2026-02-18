@@ -1,0 +1,3452 @@
+{
+  "abide": {
+    "song": "Let It Be",
+    "artist": "The Beatles",
+    "connection": "'Let it be' captures the spirit of abiding — enduring patiently and accepting what comes.",
+    "emoji": "🎸"
+  },
+  "acclaim": {
+    "song": "We Are the Champions",
+    "artist": "Queen",
+    "connection": "The song celebrates receiving acclaim and recognition for victories.",
+    "emoji": "🏆"
+  },
+  "address": {
+    "song": "Fix You",
+    "artist": "Coldplay",
+    "connection": "The song addresses someone's pain and tries to remedy their struggles.",
+    "emoji": "🎹"
+  },
+  "adverse": {
+    "song": "Stronger",
+    "artist": "Kelly Clarkson",
+    "connection": "The song is about overcoming adverse circumstances and becoming resilient.",
+    "emoji": "💪"
+  },
+  "affectionate": {
+    "song": "All of Me",
+    "artist": "John Legend",
+    "connection": "A deeply affectionate ballad expressing unconditional love for a partner.",
+    "emoji": "❤️"
+  },
+  "antiquity": {
+    "song": "Viva la Vida",
+    "artist": "Coldplay",
+    "connection": "The song references kings and ancient empires, evoking antiquity and historical grandeur.",
+    "emoji": "🏛️"
+  },
+  "bout": {
+    "song": "Eye of the Tiger",
+    "artist": "Survivor",
+    "connection": "Written for a boxing film, the song embodies the intensity of a fighting bout.",
+    "emoji": "🥊"
+  },
+  "conform": {
+    "song": "Another Brick in the Wall",
+    "artist": "Pink Floyd",
+    "connection": "The song protests forced conformity in education and society.",
+    "emoji": "🧱"
+  },
+  "consecutive": {
+    "song": "Don't Stop Me Now",
+    "artist": "Queen",
+    "connection": "The song's relentless energy mirrors consecutive unstoppable momentum.",
+    "emoji": "🔥"
+  },
+  "counteract": {
+    "song": "Bad Guy",
+    "artist": "Billie Eilish",
+    "connection": "The narrator counteracts expectations by embracing the villain role.",
+    "emoji": "😈"
+  },
+  "exclusively": {
+    "song": "Only Girl (In the World)",
+    "artist": "Rihanna",
+    "connection": "The desire to be loved exclusively, as if no one else exists.",
+    "emoji": "👑"
+  },
+  "expire": {
+    "song": "Time",
+    "artist": "Pink Floyd",
+    "connection": "The song meditates on how time expires and life slips away unnoticed.",
+    "emoji": "⏰"
+  },
+  "exult": {
+    "song": "Happy",
+    "artist": "Pharrell Williams",
+    "connection": "Pure exultation and joy radiate from every beat of this celebratory anthem.",
+    "emoji": "🎉"
+  },
+  "fatigued": {
+    "song": "Wake Me Up When September Ends",
+    "artist": "Green Day",
+    "connection": "The weariness and emotional fatigue of loss permeate this melancholic track.",
+    "emoji": "😴"
+  },
+  "flourish": {
+    "song": "Here Comes the Sun",
+    "artist": "The Beatles",
+    "connection": "The song celebrates nature and life flourishing after a long, cold winter.",
+    "emoji": "🌻"
+  },
+  "generalization": {
+    "song": "Everybody Hurts",
+    "artist": "R.E.M.",
+    "connection": "The title itself is a generalization — a broad statement applied to all people.",
+    "emoji": "🌍"
+  },
+  "helium": {
+    "song": "Helium",
+    "artist": "Sia",
+    "connection": "Sia's song is literally named Helium, about rising above pain like the light gas.",
+    "emoji": "🎈"
+  },
+  "identify": {
+    "song": "Who Are You",
+    "artist": "The Who",
+    "connection": "The song questions identity and tries to identify the true self within.",
+    "emoji": "🔍"
+  },
+  "imprudence": {
+    "song": "Wrecking Ball",
+    "artist": "Miley Cyrus",
+    "connection": "The reckless, imprudent act of emotional destruction is the song's core theme.",
+    "emoji": "🔨"
+  },
+  "incur": {
+    "song": "Karma",
+    "artist": "Taylor Swift",
+    "connection": "The song warns that bad behavior will incur karmic consequences.",
+    "emoji": "⚡"
+  },
+  "inspiration": {
+    "song": "Firework",
+    "artist": "Katy Perry",
+    "connection": "The song aims to be an inspiration, encouraging listeners to shine brightly.",
+    "emoji": "🎆"
+  },
+  "long": {
+    "song": "I Will Always Love You",
+    "artist": "Whitney Houston",
+    "connection": "A song about longing deeply for someone after saying goodbye.",
+    "emoji": "💔"
+  },
+  "merge": {
+    "song": "Come Together",
+    "artist": "The Beatles",
+    "connection": "The song invites disparate people to merge and unite as one.",
+    "emoji": "🤝"
+  },
+  "nugget": {
+    "song": "Gold Digger",
+    "artist": "Kanye West",
+    "connection": "The pursuit of gold nuggets and wealth drives the song's narrative.",
+    "emoji": "💰"
+  },
+  "persist": {
+    "song": "Don't Stop Believin'",
+    "artist": "Journey",
+    "connection": "The anthem urges listeners to persist in holding onto faith and dreams.",
+    "emoji": "🎤"
+  },
+  "pilgrimage": {
+    "song": "Walking on Sunshine",
+    "artist": "Katrina and the Waves",
+    "connection": "The joyful journey evokes a pilgrimage toward happiness and light.",
+    "emoji": "☀️"
+  },
+  "preoccupied": {
+    "song": "Can't Get You Out of My Head",
+    "artist": "Kylie Minogue",
+    "connection": "Being completely preoccupied with thoughts of someone is the song's entire premise.",
+    "emoji": "🧠"
+  },
+  "prevailing": {
+    "song": "We Will Rock You",
+    "artist": "Queen",
+    "connection": "The stomping anthem conveys the power of the prevailing, dominant force.",
+    "emoji": "👊"
+  },
+  "projected": {
+    "song": "Imagine",
+    "artist": "John Lennon",
+    "connection": "Lennon projected a vision of an ideal, peaceful world for all humanity.",
+    "emoji": "🕊️"
+  },
+  "prospector": {
+    "song": "Gold",
+    "artist": "Spandau Ballet",
+    "connection": "The search for something golden and precious mirrors a prospector's quest.",
+    "emoji": "⛏️"
+  },
+  "qualify": {
+    "song": "Lose Yourself",
+    "artist": "Eminem",
+    "connection": "The song is about seizing the one moment that qualifies you for greatness.",
+    "emoji": "🎯"
+  },
+  "subscription": {
+    "song": "Sign of the Times",
+    "artist": "Harry Styles",
+    "connection": "A sign of the times reflects a subscription to the current era's troubles.",
+    "emoji": "📰"
+  },
+  "unflinching": {
+    "song": "Stronger",
+    "artist": "Kanye West",
+    "connection": "The unflinching confidence and refusal to back down defines this track.",
+    "emoji": "💎"
+  },
+  "contract": {
+    "song": "The Man",
+    "artist": "Taylor Swift",
+    "connection": "The song critiques how contracts and deals in the industry favor men.",
+    "emoji": "📝"
+  },
+  "evident": {
+    "song": "Obvious",
+    "artist": "Westlife",
+    "connection": "The song declares that love is evident and obvious to everyone around.",
+    "emoji": "👀"
+  },
+  "erode": {
+    "song": "Erosion",
+    "artist": "Bad Religion",
+    "connection": "The song examines how society's values erode and decay over time.",
+    "emoji": "🏜️"
+  },
+  "formidable": {
+    "song": "Titanium",
+    "artist": "David Guetta ft. Sia",
+    "connection": "Being bulletproof and titanium-strong makes someone truly formidable.",
+    "emoji": "🛡️"
+  },
+  "futile": {
+    "song": "In the End",
+    "artist": "Linkin Park",
+    "connection": "The realization that effort was futile — it didn't even matter in the end.",
+    "emoji": "😞"
+  },
+  "imminent": {
+    "song": "Final Countdown",
+    "artist": "Europe",
+    "connection": "The countdown signals that something imminent is about to happen.",
+    "emoji": "⏳"
+  },
+  "inaugurate": {
+    "song": "Born This Way",
+    "artist": "Lady Gaga",
+    "connection": "The song inaugurated a new era of self-acceptance anthems in pop music.",
+    "emoji": "🌟"
+  },
+  "legitimate": {
+    "song": "Real Love",
+    "artist": "The Beatles",
+    "connection": "The song seeks legitimate, real love rather than something false or fleeting.",
+    "emoji": "💝"
+  },
+  "meager": {
+    "song": "Hard Knock Life",
+    "artist": "Jay-Z",
+    "connection": "The song describes growing up with meager resources in difficult circumstances.",
+    "emoji": "🏚️"
+  },
+  "nostalgia": {
+    "song": "Yesterday",
+    "artist": "The Beatles",
+    "connection": "A wistful look back at better times, the very definition of nostalgia.",
+    "emoji": "📸"
+  },
+  "obsolete": {
+    "song": "Video Killed the Radio Star",
+    "artist": "The Buggles",
+    "connection": "The song is literally about radio becoming obsolete due to new technology.",
+    "emoji": "📻"
+  },
+  "paramount": {
+    "song": "Everything",
+    "artist": "Michael Buble",
+    "connection": "The song declares that one person is of paramount importance above all else.",
+    "emoji": "⭐"
+  },
+  "precarious": {
+    "song": "On the Edge",
+    "artist": "Lady Gaga",
+    "connection": "The Edge of Glory captures the thrill of a precarious, pivotal moment.",
+    "emoji": "🎢"
+  },
+  "prolific": {
+    "song": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "connection": "Queen's masterpiece showcases the prolific creativity of Freddie Mercury.",
+    "emoji": "🎭"
+  },
+  "redundant": {
+    "song": "Same Old Love",
+    "artist": "Selena Gomez",
+    "connection": "The song complains about redundant, repetitive patterns in a failing relationship.",
+    "emoji": "🔄"
+  },
+  "resilient": {
+    "song": "Rise Up",
+    "artist": "Andra Day",
+    "connection": "The song is an anthem about being resilient and rising above hardship.",
+    "emoji": "🦅"
+  },
+  "scrutinize": {
+    "song": "Every Breath You Take",
+    "artist": "The Police",
+    "connection": "The obsessive watching and scrutinizing of someone's every move defines this song.",
+    "emoji": "🔎"
+  },
+  "sporadic": {
+    "song": "Hot N Cold",
+    "artist": "Katy Perry",
+    "connection": "The inconsistent, sporadic behavior of a partner is the song's central complaint.",
+    "emoji": "🌡️"
+  },
+  "tangible": {
+    "song": "Touch",
+    "artist": "Daft Punk",
+    "connection": "The desire for tangible, physical connection drives this electronic ballad.",
+    "emoji": "✋"
+  },
+  "ubiquitous": {
+    "song": "Despacito",
+    "artist": "Luis Fonsi ft. Daddy Yankee",
+    "connection": "This song became so ubiquitous it was heard everywhere across the globe.",
+    "emoji": "🌐"
+  },
+  "volatile": {
+    "song": "Fire",
+    "artist": "Jimi Hendrix",
+    "connection": "Fire is inherently volatile, unpredictable, and dangerously powerful.",
+    "emoji": "🔥"
+  },
+  "abate": {
+    "song": "Let It Go",
+    "artist": "Idina Menzel",
+    "connection": "Elsa lets her fears abate as she releases her powers and worries.",
+    "emoji": "❄️"
+  },
+  "aberrant": {
+    "song": "Creep",
+    "artist": "Radiohead",
+    "connection": "The narrator feels aberrant and out of place, deviating from the norm.",
+    "emoji": "👽"
+  },
+  "accolade": {
+    "song": "Gold Digger",
+    "artist": "Kanye West",
+    "connection": "Gold symbolizes the accolades and rewards people chase in life.",
+    "emoji": "🥇"
+  },
+  "acrimony": {
+    "song": "You Oughta Know",
+    "artist": "Alanis Morissette",
+    "connection": "The bitter acrimony of a breakup fuels every angry lyric in this song.",
+    "emoji": "😤"
+  },
+  "adept": {
+    "song": "Smooth Criminal",
+    "artist": "Michael Jackson",
+    "connection": "Michael Jackson was adept at both singing and dancing, as this song proves.",
+    "emoji": "🕺"
+  },
+  "aesthetic": {
+    "song": "Style",
+    "artist": "Taylor Swift",
+    "connection": "The song celebrates timeless aesthetic appeal and classic good looks.",
+    "emoji": "🎨"
+  },
+  "affluent": {
+    "song": "Money, Money, Money",
+    "artist": "ABBA",
+    "connection": "The song dreams of an affluent lifestyle free from financial worry.",
+    "emoji": "💵"
+  },
+  "alleviate": {
+    "song": "Lean on Me",
+    "artist": "Bill Withers",
+    "connection": "Offering a shoulder to lean on alleviates someone's burden and pain.",
+    "emoji": "🤗"
+  },
+  "ambiguous": {
+    "song": "Blinding Lights",
+    "artist": "The Weeknd",
+    "connection": "The blinding lights create an ambiguous haze where nothing is clearly seen.",
+    "emoji": "🌫️"
+  },
+  "ambivalent": {
+    "song": "Should I Stay or Should I Go",
+    "artist": "The Clash",
+    "connection": "The ultimate anthem of ambivalence — torn between two conflicting choices.",
+    "emoji": "🤷"
+  },
+  "amicable": {
+    "song": "You've Got a Friend",
+    "artist": "Carole King",
+    "connection": "The warm, amicable promise of friendship whenever someone needs support.",
+    "emoji": "👫"
+  },
+  "analogous": {
+    "song": "Same Love",
+    "artist": "Macklemore",
+    "connection": "The song argues that all love is analogous and equally valid.",
+    "emoji": "🏳️‍🌈"
+  },
+  "anomaly": {
+    "song": "Space Oddity",
+    "artist": "David Bowie",
+    "connection": "Major Tom floating alone in space is an anomaly, an unusual deviation from the norm.",
+    "emoji": "🚀"
+  },
+  "antipathy": {
+    "song": "I Knew You Were Trouble",
+    "artist": "Taylor Swift",
+    "connection": "The song reveals deep antipathy toward someone who caused harm.",
+    "emoji": "⚠️"
+  },
+  "apathy": {
+    "song": "Numb",
+    "artist": "Linkin Park",
+    "connection": "The song describes becoming numb and apathetic from emotional exhaustion.",
+    "emoji": "😶"
+  },
+  "arbitrary": {
+    "song": "Life Is a Highway",
+    "artist": "Tom Cochrane",
+    "connection": "Life's twists and turns feel arbitrary, with no clear reason for direction.",
+    "emoji": "🛣️"
+  },
+  "archaic": {
+    "song": "Paint It Black",
+    "artist": "The Rolling Stones",
+    "connection": "The dark, primal urges in the song feel archaic and ancient in nature.",
+    "emoji": "🖤"
+  },
+  "arduous": {
+    "song": "Stairway to Heaven",
+    "artist": "Led Zeppelin",
+    "connection": "The long, arduous climb to spiritual enlightenment is the song's metaphor.",
+    "emoji": "🪜"
+  },
+  "articulate": {
+    "song": "Eloquent",
+    "artist": "Weezer",
+    "connection": "The desire to be articulate and express feelings clearly drives many love songs.",
+    "emoji": "🗣️"
+  },
+  "ascetic": {
+    "song": "Simple Man",
+    "artist": "Lynyrd Skynyrd",
+    "connection": "The song advises living an ascetic, simple life focused on what truly matters.",
+    "emoji": "🙏"
+  },
+  "astute": {
+    "song": "Smart",
+    "artist": "Stray Kids",
+    "connection": "Being astute means having sharp, keen judgment and perceptive intelligence.",
+    "emoji": "🧐"
+  },
+  "audacious": {
+    "song": "Confident",
+    "artist": "Demi Lovato",
+    "connection": "The audacious boldness of unapologetic confidence radiates through this anthem.",
+    "emoji": "💃"
+  },
+  "austere": {
+    "song": "Sound of Silence",
+    "artist": "Simon & Garfunkel",
+    "connection": "The stark, austere imagery of darkness and silence defines the song's mood.",
+    "emoji": "🤫"
+  },
+  "autonomous": {
+    "song": "Independent Women",
+    "artist": "Destiny's Child",
+    "connection": "The song celebrates being autonomous and financially self-sufficient.",
+    "emoji": "💅"
+  },
+  "aversion": {
+    "song": "I Will Survive",
+    "artist": "Gloria Gaynor",
+    "connection": "The singer's aversion to her ex drives her declaration of independence.",
+    "emoji": "🚫"
+  },
+  "banal": {
+    "song": "Everyday Is Exactly the Same",
+    "artist": "Nine Inch Nails",
+    "connection": "The monotonous, banal repetition of daily life is the song's core complaint.",
+    "emoji": "😑"
+  },
+  "benevolent": {
+    "song": "Heal the World",
+    "artist": "Michael Jackson",
+    "connection": "The song calls for benevolent action to make the world a better place.",
+    "emoji": "🌎"
+  },
+  "bolster": {
+    "song": "Lean on Me",
+    "artist": "Bill Withers",
+    "connection": "Offering support to bolster someone when they are weak and struggling.",
+    "emoji": "💪"
+  },
+  "brevity": {
+    "song": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "connection": "Ironically, this six-minute epic is the opposite of brevity in rock music.",
+    "emoji": "⏱️"
+  },
+  "candid": {
+    "song": "Truth Hurts",
+    "artist": "Lizzo",
+    "connection": "Lizzo is refreshingly candid and honest about her feelings throughout the song.",
+    "emoji": "💯"
+  },
+  "capricious": {
+    "song": "Hot N Cold",
+    "artist": "Katy Perry",
+    "connection": "The partner's capricious mood swings — hot then cold — define the frustration.",
+    "emoji": "🎭"
+  },
+  "catalyst": {
+    "song": "Uprising",
+    "artist": "Muse",
+    "connection": "The song calls for a catalyst to spark revolution and societal change.",
+    "emoji": "⚗️"
+  },
+  "caustic": {
+    "song": "Bitter Sweet Symphony",
+    "artist": "The Verve",
+    "connection": "The caustic bitterness of life's struggles tempered by moments of beauty.",
+    "emoji": "🧪"
+  },
+  "circumspect": {
+    "song": "Look Before You Leap",
+    "artist": "Fiddler on the Roof",
+    "connection": "Being circumspect means carefully looking before you leap into decisions.",
+    "emoji": "🔭"
+  },
+  "clandestine": {
+    "song": "Secret",
+    "artist": "The Weeknd",
+    "connection": "The song explores clandestine, hidden relationships kept from the world.",
+    "emoji": "🕵️"
+  },
+  "coalesce": {
+    "song": "We Are the World",
+    "artist": "USA for Africa",
+    "connection": "Musicians from around the world coalesced to create one unified anthem.",
+    "emoji": "🌍"
+  },
+  "cogent": {
+    "song": "Alright",
+    "artist": "Kendrick Lamar",
+    "connection": "Kendrick makes a cogent, compelling argument that everything will be alright.",
+    "emoji": "💡"
+  },
+  "complacent": {
+    "song": "Boulevard of Broken Dreams",
+    "artist": "Green Day",
+    "connection": "Walking alone on a broken boulevard suggests a world grown complacent.",
+    "emoji": "😌"
+  },
+  "conciliatory": {
+    "song": "Sorry",
+    "artist": "Justin Bieber",
+    "connection": "The repeated apology is a conciliatory attempt to make peace after wrongdoing.",
+    "emoji": "🕊️"
+  },
+  "condescend": {
+    "song": "Royals",
+    "artist": "Lorde",
+    "connection": "The song critiques those who condescend by flaunting luxury and status.",
+    "emoji": "👃"
+  },
+  "confound": {
+    "song": "Paranoid Android",
+    "artist": "Radiohead",
+    "connection": "The song's shifting structures and strange lyrics confound and puzzle listeners.",
+    "emoji": "😵"
+  },
+  "congenial": {
+    "song": "What a Wonderful World",
+    "artist": "Louis Armstrong",
+    "connection": "Armstrong's warm, congenial voice paints a picture of a friendly world.",
+    "emoji": "🌈"
+  },
+  "conjecture": {
+    "song": "What If",
+    "artist": "Coldplay",
+    "connection": "The song is built on conjecture — speculating about what might have been.",
+    "emoji": "🤔"
+  },
+  "conspicuous": {
+    "song": "Crazy in Love",
+    "artist": "Beyonce",
+    "connection": "Beyonce's love is conspicuous — impossible to hide and obvious to all.",
+    "emoji": "🔆"
+  },
+  "contentious": {
+    "song": "Fight Song",
+    "artist": "Rachel Platten",
+    "connection": "A fight song inherently involves contentious struggle and determination.",
+    "emoji": "⚔️"
+  },
+  "copious": {
+    "song": "Purple Rain",
+    "artist": "Prince",
+    "connection": "The copious purple rain falls abundantly, drenching everything in emotion.",
+    "emoji": "🌧️"
+  },
+  "cordial": {
+    "song": "Hello",
+    "artist": "Adele",
+    "connection": "The song opens with a cordial greeting before diving into deeper emotion.",
+    "emoji": "👋"
+  },
+  "credulous": {
+    "song": "Toxic",
+    "artist": "Britney Spears",
+    "connection": "Being too credulous and trusting led to falling for someone toxic.",
+    "emoji": "🍼"
+  },
+  "cryptic": {
+    "song": "Karma Police",
+    "artist": "Radiohead",
+    "connection": "The song's cryptic lyrics leave listeners puzzling over hidden meanings.",
+    "emoji": "🔐"
+  },
+  "curtail": {
+    "song": "Time Is Running Out",
+    "artist": "Muse",
+    "connection": "Running out of time means opportunities are being curtailed and cut short.",
+    "emoji": "✂️"
+  },
+  "cynical": {
+    "song": "Everybody Wants to Rule the World",
+    "artist": "Tears for Fears",
+    "connection": "A cynical observation about humanity's universal hunger for power.",
+    "emoji": "🙄"
+  },
+  "dearth": {
+    "song": "Dry Your Eyes",
+    "artist": "The Streets",
+    "connection": "The emotional dearth and emptiness after a breakup pervades this song.",
+    "emoji": "🏜️"
+  },
+  "decorum": {
+    "song": "Respect",
+    "artist": "Aretha Franklin",
+    "connection": "Aretha demands the decorum and proper respect she deserves.",
+    "emoji": "🎩"
+  },
+  "deference": {
+    "song": "Halo",
+    "artist": "Beyonce",
+    "connection": "The song shows deference and reverence toward a love that feels divine.",
+    "emoji": "😇"
+  },
+  "defunct": {
+    "song": "Bye Bye Bye",
+    "artist": "*NSYNC",
+    "connection": "The song declares the relationship defunct — completely over and done.",
+    "emoji": "👋"
+  },
+  "deleterious": {
+    "song": "Toxic",
+    "artist": "Britney Spears",
+    "connection": "A toxic relationship is inherently deleterious and harmful to wellbeing.",
+    "emoji": "☠️"
+  },
+  "delineate": {
+    "song": "The Wall",
+    "artist": "Pink Floyd",
+    "connection": "The album delineates the boundaries and barriers built between people.",
+    "emoji": "📏"
+  },
+  "denounce": {
+    "song": "Killing in the Name",
+    "artist": "Rage Against the Machine",
+    "connection": "The song fiercely denounces institutional racism and corrupt authority.",
+    "emoji": "📢"
+  },
+  "depict": {
+    "song": "Stan",
+    "artist": "Eminem",
+    "connection": "Eminem vividly depicts the descent of an obsessive fan into madness.",
+    "emoji": "🖼️"
+  },
+  "deplore": {
+    "song": "Where Is the Love?",
+    "artist": "Black Eyed Peas",
+    "connection": "The song deplores violence, hatred, and the absence of compassion in society.",
+    "emoji": "😢"
+  },
+  "deride": {
+    "song": "Loser",
+    "artist": "Beck",
+    "connection": "The self-deprecating narrator anticipates being derided and called a loser.",
+    "emoji": "🤣"
+  },
+  "derivative": {
+    "song": "Come As You Are",
+    "artist": "Nirvana",
+    "connection": "Grunge was accused of being derivative of punk, though Nirvana transcended this.",
+    "emoji": "📋"
+  },
+  "despondent": {
+    "song": "Mad World",
+    "artist": "Gary Jules",
+    "connection": "The bleak, despondent view of a world that seems sad and hopeless.",
+    "emoji": "😔"
+  },
+  "deter": {
+    "song": "Can't Hold Us",
+    "artist": "Macklemore",
+    "connection": "Nothing can deter or hold back the unstoppable energy of this anthem.",
+    "emoji": "🚧"
+  },
+  "detrimental": {
+    "song": "Love the Way You Lie",
+    "artist": "Eminem ft. Rihanna",
+    "connection": "The song portrays a detrimental relationship that causes mutual destruction.",
+    "emoji": "💢"
+  },
+  "devout": {
+    "song": "Like a Prayer",
+    "artist": "Madonna",
+    "connection": "The song blends devout religious imagery with passionate emotional expression.",
+    "emoji": "⛪"
+  },
+  "didactic": {
+    "song": "Man in the Mirror",
+    "artist": "Michael Jackson",
+    "connection": "The song is didactic, teaching listeners to start change with themselves.",
+    "emoji": "📖"
+  },
+  "diffident": {
+    "song": "Shy Guy",
+    "artist": "Diana King",
+    "connection": "The shy guy is diffident — lacking confidence around the person he likes.",
+    "emoji": "😳"
+  },
+  "digress": {
+    "song": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "connection": "The song constantly digresses through wildly different musical sections and moods.",
+    "emoji": "🎪"
+  },
+  "diligent": {
+    "song": "Work",
+    "artist": "Rihanna",
+    "connection": "The repeated call to work reflects the diligent effort needed for success.",
+    "emoji": "💼"
+  },
+  "diminish": {
+    "song": "Fading",
+    "artist": "Rihanna",
+    "connection": "The love that once burned bright slowly diminishes and fades away.",
+    "emoji": "🕯️"
+  },
+  "discern": {
+    "song": "Clarity",
+    "artist": "Zedd ft. Foxes",
+    "connection": "Seeking clarity means trying to discern truth through confusion.",
+    "emoji": "🔍"
+  },
+  "discord": {
+    "song": "Shout",
+    "artist": "Tears for Fears",
+    "connection": "The song channels inner discord and emotional conflict into cathartic shouting.",
+    "emoji": "📣"
+  },
+  "disdain": {
+    "song": "You Belong With Me",
+    "artist": "Taylor Swift",
+    "connection": "Taylor expresses disdain for the popular girl who doesn't appreciate her crush.",
+    "emoji": "😒"
+  },
+  "disparage": {
+    "song": "Mean",
+    "artist": "Taylor Swift",
+    "connection": "The song addresses a critic who disparaged and belittled Taylor's talent.",
+    "emoji": "🎯"
+  },
+  "disparate": {
+    "song": "Ebony and Ivory",
+    "artist": "Paul McCartney & Stevie Wonder",
+    "connection": "Two disparate piano keys — black and white — learning to live in harmony.",
+    "emoji": "🎹"
+  },
+  "disseminate": {
+    "song": "Spread Your Wings",
+    "artist": "Queen",
+    "connection": "Spreading wings is like disseminating ideas — sending them far and wide.",
+    "emoji": "📡"
+  },
+  "divergent": {
+    "song": "Two Paths",
+    "artist": "Fleetwood Mac",
+    "connection": "Divergent paths represent choices that lead people in different directions.",
+    "emoji": "🔀"
+  },
+  "docile": {
+    "song": "Lamb",
+    "artist": "Sia",
+    "connection": "A lamb is the classic symbol of docile, gentle, and submissive nature.",
+    "emoji": "🐑"
+  },
+  "dogmatic": {
+    "song": "Sunday Bloody Sunday",
+    "artist": "U2",
+    "connection": "The song challenges dogmatic political and religious rigidity in Ireland.",
+    "emoji": "📜"
+  },
+  "dubious": {
+    "song": "Suspicious Minds",
+    "artist": "Elvis Presley",
+    "connection": "Suspicious minds are filled with dubious, doubtful thoughts about trust.",
+    "emoji": "🕶️"
+  },
+  "duplicity": {
+    "song": "Two Faced",
+    "artist": "Sum 41",
+    "connection": "Being two-faced is the embodiment of duplicity and deception.",
+    "emoji": "🎭"
+  },
+  "ebullient": {
+    "song": "Walking on Sunshine",
+    "artist": "Katrina and the Waves",
+    "connection": "The irrepressibly ebullient joy of being in love radiates from every note.",
+    "emoji": "☀️"
+  },
+  "eclectic": {
+    "song": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "connection": "The song's eclectic mix of opera, rock, and ballad defines genre-blending.",
+    "emoji": "🎼"
+  },
+  "elated": {
+    "song": "On Top of the World",
+    "artist": "Imagine Dragons",
+    "connection": "The song captures the elated feeling of being on top of the world.",
+    "emoji": "🎊"
+  },
+  "eloquent": {
+    "song": "Bridge Over Troubled Water",
+    "artist": "Simon & Garfunkel",
+    "connection": "The beautifully eloquent lyrics offer comfort with poetic grace and clarity.",
+    "emoji": "🌊"
+  },
+  "elusive": {
+    "song": "Chasing Pavements",
+    "artist": "Adele",
+    "connection": "Adele chases something elusive — a love that may never be caught.",
+    "emoji": "🦋"
+  },
+  "emancipate": {
+    "song": "Redemption Song",
+    "artist": "Bob Marley",
+    "connection": "Bob Marley calls for mental emancipation and freedom from oppression.",
+    "emoji": "⛓️"
+  },
+  "embellish": {
+    "song": "All That Glitters",
+    "artist": "Earl Sweatshirt",
+    "connection": "Glitter embellishes surfaces, making things appear more attractive than they are.",
+    "emoji": "✨"
+  },
+  "emulate": {
+    "song": "I Wanna Be Like You",
+    "artist": "Louis Prima",
+    "connection": "The desire to emulate and copy someone you admire drives this classic song.",
+    "emoji": "🐒"
+  },
+  "enigmatic": {
+    "song": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "connection": "The song remains enigmatic — its true meaning still puzzles listeners decades later.",
+    "emoji": "❓"
+  },
+  "ephemeral": {
+    "song": "Dust in the Wind",
+    "artist": "Kansas",
+    "connection": "Everything is dust in the wind — a perfect metaphor for the ephemeral.",
+    "emoji": "💨"
+  },
+  "equivocal": {
+    "song": "Should I Stay or Should I Go",
+    "artist": "The Clash",
+    "connection": "The equivocal uncertainty of not knowing which choice to make defines this song.",
+    "emoji": "⚖️"
+  },
+  "eradicate": {
+    "song": "Killing in the Name",
+    "artist": "Rage Against the Machine",
+    "connection": "The song wants to eradicate systemic racism and corrupt power structures.",
+    "emoji": "🗑️"
+  },
+  "erratic": {
+    "song": "Bipolar",
+    "artist": "Katy Perry",
+    "connection": "Hot N Cold behavior is erratic — unpredictably shifting without warning.",
+    "emoji": "⚡"
+  },
+  "erudite": {
+    "song": "Subterranean Homesick Blues",
+    "artist": "Bob Dylan",
+    "connection": "Dylan's densely layered, erudite wordplay showcases deep literary knowledge.",
+    "emoji": "📚"
+  },
+  "esoteric": {
+    "song": "Pyramid Song",
+    "artist": "Radiohead",
+    "connection": "The song's esoteric references to afterlife and ancient Egypt puzzle casual listeners.",
+    "emoji": "🔮"
+  },
+  "euphemism": {
+    "song": "Ring Around the Rosie",
+    "artist": "Traditional",
+    "connection": "The nursery rhyme is famously theorized to be a euphemism for the plague.",
+    "emoji": "🌹"
+  },
+  "exacerbate": {
+    "song": "Love the Way You Lie",
+    "artist": "Eminem ft. Rihanna",
+    "connection": "The cycle of fighting and making up only exacerbates the relationship's toxicity.",
+    "emoji": "🌋"
+  },
+  "exasperate": {
+    "song": "You're So Vain",
+    "artist": "Carly Simon",
+    "connection": "The subject's vanity thoroughly exasperates and frustrates the singer.",
+    "emoji": "😫"
+  },
+  "exemplary": {
+    "song": "Perfect",
+    "artist": "Ed Sheeran",
+    "connection": "Finding someone perfect and exemplary in every way is the song's theme.",
+    "emoji": "💫"
+  },
+  "exhaustive": {
+    "song": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "connection": "The song's exhaustive six-minute journey covers nearly every musical genre.",
+    "emoji": "🏋️"
+  },
+  "exonerate": {
+    "song": "I'm Innocent",
+    "artist": "Eminem",
+    "connection": "The desire to be exonerated and proven innocent of wrongdoing drives many rap narratives.",
+    "emoji": "⚖️"
+  },
+  "expedient": {
+    "song": "Take a Shortcut",
+    "artist": "Rascal Flatts",
+    "connection": "Taking the expedient route means finding the quickest, most practical path.",
+    "emoji": "🏃"
+  },
+  "explicit": {
+    "song": "WAP",
+    "artist": "Cardi B",
+    "connection": "The song is famous for its explicit, unmistakably direct and graphic content.",
+    "emoji": "🔞"
+  },
+  "extravagant": {
+    "song": "Material Girl",
+    "artist": "Madonna",
+    "connection": "The extravagant desire for luxury and material wealth defines this pop anthem.",
+    "emoji": "💎"
+  },
+  "facetious": {
+    "song": "Always Look on the Bright Side of Life",
+    "artist": "Monty Python",
+    "connection": "The facetious humor of being cheerful during terrible circumstances defines this song.",
+    "emoji": "😜"
+  },
+  "fastidious": {
+    "song": "Uptown Funk",
+    "artist": "Bruno Mars",
+    "connection": "Bruno's fastidious attention to style and grooming shines through every lyric.",
+    "emoji": "🪞"
+  },
+  "fervent": {
+    "song": "Burning Love",
+    "artist": "Elvis Presley",
+    "connection": "The fervent, passionate intensity of burning love consumes the singer.",
+    "emoji": "🔥"
+  },
+  "fickle": {
+    "song": "Bad Blood",
+    "artist": "Taylor Swift",
+    "connection": "Fickle friendships that turn to bad blood when loyalty shifts are the theme.",
+    "emoji": "💉"
+  },
+  "flagrant": {
+    "song": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "connection": "The song's flagrant disregard for musical conventions launched the grunge revolution.",
+    "emoji": "🚩"
+  },
+  "flippant": {
+    "song": "Whatever",
+    "artist": "Oasis",
+    "connection": "The flippant, dismissive attitude of not caring is the song's entire mood.",
+    "emoji": "🤙"
+  },
+  "frivolous": {
+    "song": "Girls Just Want to Have Fun",
+    "artist": "Cyndi Lauper",
+    "connection": "The song celebrates frivolous, carefree fun without serious responsibility.",
+    "emoji": "🎀"
+  },
+  "frugal": {
+    "song": "Thrift Shop",
+    "artist": "Macklemore",
+    "connection": "Shopping at thrift stores is the ultimate expression of frugal living.",
+    "emoji": "🛍️"
+  },
+  "garrulous": {
+    "song": "Talk",
+    "artist": "Coldplay",
+    "connection": "The song is about the desire to talk and communicate, like a garrulous person.",
+    "emoji": "🗣️"
+  },
+  "gratuitous": {
+    "song": "Overkill",
+    "artist": "Men at Work",
+    "connection": "Overkill means going beyond what's necessary — the definition of gratuitous.",
+    "emoji": "🎪"
+  },
+  "gregarious": {
+    "song": "I Gotta Feeling",
+    "artist": "Black Eyed Peas",
+    "connection": "The gregarious party anthem brings sociable people together for a good night.",
+    "emoji": "🎊"
+  },
+  "gullible": {
+    "song": "Fool in the Rain",
+    "artist": "Led Zeppelin",
+    "connection": "The gullible fool waits in the rain, easily deceived about the meeting place.",
+    "emoji": "🌧️"
+  },
+  "hackneyed": {
+    "song": "It's Not Unusual",
+    "artist": "Tom Jones",
+    "connection": "Love song cliches can become hackneyed, though Tom Jones makes them fresh.",
+    "emoji": "♻️"
+  },
+  "haughty": {
+    "song": "Royals",
+    "artist": "Lorde",
+    "connection": "The song critiques the haughty, arrogant displays of wealth in pop culture.",
+    "emoji": "👑"
+  },
+  "hedonist": {
+    "song": "24K Magic",
+    "artist": "Bruno Mars",
+    "connection": "The pursuit of pleasure, parties, and luxury defines the hedonist lifestyle.",
+    "emoji": "🥂"
+  },
+  "heresy": {
+    "song": "Sympathy for the Devil",
+    "artist": "The Rolling Stones",
+    "connection": "Speaking from the devil's perspective was considered musical heresy.",
+    "emoji": "😈"
+  },
+  "hypocrite": {
+    "song": "Fake Love",
+    "artist": "Drake",
+    "connection": "Fake love exposes the hypocrite who pretends to care but doesn't.",
+    "emoji": "🎭"
+  },
+  "iconoclast": {
+    "song": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "connection": "Nirvana were iconoclasts who shattered the conventions of mainstream rock.",
+    "emoji": "💥"
+  },
+  "idiosyncratic": {
+    "song": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "connection": "The song's highly idiosyncratic structure makes it unlike anything else in music.",
+    "emoji": "🦄"
+  },
+  "impasse": {
+    "song": "We're Not Gonna Take It",
+    "artist": "Twisted Sister",
+    "connection": "An impasse occurs when neither side will yield, leading to rebellious standoffs.",
+    "emoji": "🚧"
+  },
+  "impede": {
+    "song": "Break Free",
+    "artist": "Ariana Grande",
+    "connection": "Ariana refuses to let anything impede or hinder her freedom.",
+    "emoji": "🔓"
+  },
+  "impetuous": {
+    "song": "Blank Space",
+    "artist": "Taylor Swift",
+    "connection": "The impetuous rush into a doomed romance is the song's knowing self-parody.",
+    "emoji": "✏️"
+  },
+  "implement": {
+    "song": "Changes",
+    "artist": "David Bowie",
+    "connection": "Bowie calls on people to implement changes and turn to face the strange.",
+    "emoji": "🔧"
+  },
+  "implicit": {
+    "song": "Unspoken",
+    "artist": "Jars of Clay",
+    "connection": "What remains implicit is unspoken — understood but never directly stated.",
+    "emoji": "🤐"
+  },
+  "impoverish": {
+    "song": "No Church in the Wild",
+    "artist": "Jay-Z & Kanye West",
+    "connection": "The song reflects on spiritually and materially impoverished conditions.",
+    "emoji": "💸"
+  },
+  "incisive": {
+    "song": "Stan",
+    "artist": "Eminem",
+    "connection": "Eminem's incisive storytelling cuts sharply into the psychology of obsessive fandom.",
+    "emoji": "🔪"
+  },
+  "incongruous": {
+    "song": "Pumped Up Kicks",
+    "artist": "Foster the People",
+    "connection": "The upbeat melody paired with dark lyrics creates an incongruous contrast.",
+    "emoji": "😵"
+  },
+  "indifferent": {
+    "song": "Numb",
+    "artist": "Linkin Park",
+    "connection": "Becoming emotionally numb renders someone indifferent to everything around them.",
+    "emoji": "😐"
+  },
+  "indigenous": {
+    "song": "One Love",
+    "artist": "Bob Marley",
+    "connection": "Marley celebrated the indigenous culture and spirit of Jamaica through reggae.",
+    "emoji": "🌿"
+  },
+  "indolent": {
+    "song": "Lazy Song",
+    "artist": "Bruno Mars",
+    "connection": "The entire song is about being indolent and not wanting to do anything.",
+    "emoji": "🛋️"
+  },
+  "ineffable": {
+    "song": "What a Wonderful World",
+    "artist": "Louis Armstrong",
+    "connection": "The beauty Armstrong describes feels almost ineffable — too profound for words.",
+    "emoji": "🌅"
+  },
+  "inevitable": {
+    "song": "Stayin' Alive",
+    "artist": "Bee Gees",
+    "connection": "Despite trying to stay alive, the song acknowledges inevitable life challenges.",
+    "emoji": "⏰"
+  },
+  "ingenious": {
+    "song": "Billie Jean",
+    "artist": "Michael Jackson",
+    "connection": "The ingenious bassline and production revolutionized pop music forever.",
+    "emoji": "💡"
+  },
+  "ingenuous": {
+    "song": "Innocent",
+    "artist": "Taylor Swift",
+    "connection": "The song reflects on the ingenuous innocence of youth before life's complications.",
+    "emoji": "🌸"
+  },
+  "innate": {
+    "song": "Born This Way",
+    "artist": "Lady Gaga",
+    "connection": "Being born this way means your identity is innate — natural from birth.",
+    "emoji": "👶"
+  },
+  "innocuous": {
+    "song": "Here Comes the Sun",
+    "artist": "The Beatles",
+    "connection": "The gentle, innocuous warmth of sunshine poses no harm to anyone.",
+    "emoji": "☀️"
+  },
+  "innovate": {
+    "song": "Everything in Its Right Place",
+    "artist": "Radiohead",
+    "connection": "Radiohead continued to innovate and push musical boundaries with Kid A.",
+    "emoji": "🔬"
+  },
+  "inscrutable": {
+    "song": "Poker Face",
+    "artist": "Lady Gaga",
+    "connection": "A poker face is inscrutable — impossible to read or interpret.",
+    "emoji": "🃏"
+  },
+  "insipid": {
+    "song": "Creep",
+    "artist": "Radiohead",
+    "connection": "The narrator feels insipid and flavorless compared to the special person he admires.",
+    "emoji": "😕"
+  },
+  "instigate": {
+    "song": "Sabotage",
+    "artist": "Beastie Boys",
+    "connection": "The song's explosive energy instigates chaos and rebellious action.",
+    "emoji": "💣"
+  },
+  "intrepid": {
+    "song": "Eye of the Tiger",
+    "artist": "Survivor",
+    "connection": "The intrepid fighter rises to the challenge with fearless determination.",
+    "emoji": "🐅"
+  },
+  "inundate": {
+    "song": "Umbrella",
+    "artist": "Rihanna",
+    "connection": "When rain inundates the world, Rihanna offers shelter under her umbrella.",
+    "emoji": "☔"
+  },
+  "invincible": {
+    "song": "Invincible",
+    "artist": "Michael Jackson",
+    "connection": "Michael Jackson's song is literally about feeling unstoppable and invincible.",
+    "emoji": "🛡️"
+  },
+  "irascible": {
+    "song": "Break Stuff",
+    "artist": "Limp Bizkit",
+    "connection": "The irascible rage of wanting to break things on a bad day fuels this song.",
+    "emoji": "😡"
+  },
+  "irreverent": {
+    "song": "Anarchy in the U.K.",
+    "artist": "Sex Pistols",
+    "connection": "The Sex Pistols were irreverent, showing deliberate disrespect for authority.",
+    "emoji": "🤘"
+  },
+  "jubilant": {
+    "song": "Celebration",
+    "artist": "Kool & The Gang",
+    "connection": "The jubilant atmosphere of celebration and pure joy defines this party anthem.",
+    "emoji": "🎉"
+  },
+  "judicious": {
+    "song": "The Gambler",
+    "artist": "Kenny Rogers",
+    "connection": "Knowing when to hold and fold requires judicious, wise decision-making.",
+    "emoji": "🃏"
+  },
+  "languid": {
+    "song": "Summertime",
+    "artist": "DJ Jazzy Jeff & The Fresh Prince",
+    "connection": "The languid, slow pace of a relaxed summer day defines the song's vibe.",
+    "emoji": "🏖️"
+  },
+  "laudable": {
+    "song": "Imagine",
+    "artist": "John Lennon",
+    "connection": "Lennon's vision of world peace is a laudable and praiseworthy aspiration.",
+    "emoji": "🏅"
+  },
+  "lavish": {
+    "song": "Versace on the Floor",
+    "artist": "Bruno Mars",
+    "connection": "Versace clothing represents the lavish, luxurious lifestyle described in the song.",
+    "emoji": "👗"
+  },
+  "lethargic": {
+    "song": "Lazy Song",
+    "artist": "Bruno Mars",
+    "connection": "Feeling lethargic and having zero energy is exactly what this song is about.",
+    "emoji": "😪"
+  },
+  "loquacious": {
+    "song": "Talk Too Much",
+    "artist": "COIN",
+    "connection": "Someone loquacious talks too much, which is precisely the song's complaint.",
+    "emoji": "💬"
+  },
+  "lucid": {
+    "song": "Clarity",
+    "artist": "Zedd ft. Foxes",
+    "connection": "Finding clarity means achieving a lucid, clear understanding of the truth.",
+    "emoji": "💎"
+  },
+  "magnanimous": {
+    "song": "Forgive",
+    "artist": "Paramore",
+    "connection": "Choosing to forgive requires a magnanimous, generous spirit.",
+    "emoji": "🤲"
+  },
+  "malicious": {
+    "song": "Bad",
+    "artist": "Michael Jackson",
+    "connection": "Someone who is bad and malicious intentionally causes harm to others.",
+    "emoji": "🦹"
+  },
+  "malleable": {
+    "song": "Under Pressure",
+    "artist": "Queen & David Bowie",
+    "connection": "Pressure makes materials malleable, able to be shaped and bent into new forms.",
+    "emoji": "🔨"
+  },
+  "meticulous": {
+    "song": "Attention to Detail",
+    "artist": "Green Day",
+    "connection": "Being meticulous means paying careful attention to every small detail.",
+    "emoji": "🔬"
+  },
+  "mitigate": {
+    "song": "Fix You",
+    "artist": "Coldplay",
+    "connection": "The song tries to mitigate pain by offering comfort and support.",
+    "emoji": "🩹"
+  },
+  "morose": {
+    "song": "Hello",
+    "artist": "Adele",
+    "connection": "Adele's melancholic, morose tone reflects deep sadness over lost love.",
+    "emoji": "😢"
+  },
+  "mundane": {
+    "song": "9 to 5",
+    "artist": "Dolly Parton",
+    "connection": "The mundane, ordinary routine of daily work life is the song's subject.",
+    "emoji": "🏢"
+  },
+  "nefarious": {
+    "song": "Thriller",
+    "artist": "Michael Jackson",
+    "connection": "The nefarious creatures of the night emerge in this iconic horror-themed song.",
+    "emoji": "🧟"
+  },
+  "negligent": {
+    "song": "Careless Whisper",
+    "artist": "George Michael",
+    "connection": "A careless, negligent whisper reveals a guilty secret that destroys trust.",
+    "emoji": "🤫"
+  },
+  "nonchalant": {
+    "song": "Cool",
+    "artist": "Dua Lipa",
+    "connection": "Acting cool and nonchalant about a breakup while hiding true feelings.",
+    "emoji": "😎"
+  },
+  "novice": {
+    "song": "First Time",
+    "artist": "Lifehouse",
+    "connection": "Experiencing something for the first time means you are still a novice.",
+    "emoji": "🌱"
+  },
+  "nuance": {
+    "song": "The Sound of Silence",
+    "artist": "Simon & Garfunkel",
+    "connection": "The subtle nuances between sound and silence are explored with poetic depth.",
+    "emoji": "🎵"
+  },
+  "obdurate": {
+    "song": "My Way",
+    "artist": "Frank Sinatra",
+    "connection": "Sinatra's obdurate refusal to change his ways defines this iconic anthem.",
+    "emoji": "🗿"
+  },
+  "oblivious": {
+    "song": "Lost in the World",
+    "artist": "Kanye West",
+    "connection": "Being lost in the world means being oblivious and unaware of surroundings.",
+    "emoji": "😶‍🌫️"
+  },
+  "obstinate": {
+    "song": "I Won't Back Down",
+    "artist": "Tom Petty",
+    "connection": "Petty's obstinate refusal to back down defines his stubborn determination.",
+    "emoji": "🐂"
+  },
+  "ominous": {
+    "song": "Everybody Wants to Rule the World",
+    "artist": "Tears for Fears",
+    "connection": "The ominous undertone beneath the pop melody warns of dangerous power hunger.",
+    "emoji": "⛈️"
+  },
+  "opaque": {
+    "song": "Behind Blue Eyes",
+    "artist": "The Who",
+    "connection": "What lies behind someone's eyes remains opaque and impossible to see through.",
+    "emoji": "🕶️"
+  },
+  "opulent": {
+    "song": "Gold",
+    "artist": "Spandau Ballet",
+    "connection": "Gold represents the opulent wealth and richness that defines luxury.",
+    "emoji": "💰"
+  },
+  "ornate": {
+    "song": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "connection": "The ornate musical arrangement layers opera, rock, and ballad into elaborate decoration.",
+    "emoji": "🏰"
+  },
+  "orthodox": {
+    "song": "Rebel Rebel",
+    "artist": "David Bowie",
+    "connection": "Bowie's rebel defied orthodox, conventional expectations of gender and style.",
+    "emoji": "📐"
+  },
+  "ostentatious": {
+    "song": "Gold Digger",
+    "artist": "Kanye West",
+    "connection": "Ostentatious displays of wealth attract those who seek money above all.",
+    "emoji": "💅"
+  },
+  "pacify": {
+    "song": "Weightless",
+    "artist": "Marconi Union",
+    "connection": "Scientifically designed to pacify and calm listeners, reducing anxiety significantly.",
+    "emoji": "🧘"
+  },
+  "paradox": {
+    "song": "Bittersweet Symphony",
+    "artist": "The Verve",
+    "connection": "Life being both bitter and sweet simultaneously is a profound paradox.",
+    "emoji": "🔄"
+  },
+  "parsimonious": {
+    "song": "Thrift Shop",
+    "artist": "Macklemore",
+    "connection": "Only spending twenty dollars at a thrift shop is extremely parsimonious.",
+    "emoji": "🪙"
+  },
+  "partisan": {
+    "song": "Which Side Are You On?",
+    "artist": "Pete Seeger",
+    "connection": "The song demands partisan loyalty — you must choose one side or the other.",
+    "emoji": "🏴"
+  },
+  "penchant": {
+    "song": "Addicted to Love",
+    "artist": "Robert Palmer",
+    "connection": "Having a penchant for love means a strong habitual liking — an addiction.",
+    "emoji": "💘"
+  },
+  "perfunctory": {
+    "song": "Comfortably Numb",
+    "artist": "Pink Floyd",
+    "connection": "Going through life's motions in a perfunctory, mechanical way while feeling nothing.",
+    "emoji": "🤖"
+  },
+  "peripheral": {
+    "song": "Outside",
+    "artist": "George Michael",
+    "connection": "Being on the outside means existing on the peripheral edges of belonging.",
+    "emoji": "🔲"
+  },
+  "permeate": {
+    "song": "Everywhere",
+    "artist": "Fleetwood Mac",
+    "connection": "The memory of someone permeates everywhere — it fills every space completely.",
+    "emoji": "🌊"
+  },
+  "perpetuate": {
+    "song": "Forever Young",
+    "artist": "Alphaville",
+    "connection": "The desire to perpetuate youth and keep it going forever drives this anthem.",
+    "emoji": "♾️"
+  },
+  "pertinent": {
+    "song": "What's Going On",
+    "artist": "Marvin Gaye",
+    "connection": "Gaye asks pertinent, relevant questions about social injustice and war.",
+    "emoji": "📌"
+  },
+  "pervasive": {
+    "song": "Everywhere",
+    "artist": "Fleetwood Mac",
+    "connection": "A presence that is everywhere is completely pervasive, spreading throughout.",
+    "emoji": "🌐"
+  },
+  "philanthropic": {
+    "song": "We Are the World",
+    "artist": "USA for Africa",
+    "connection": "The philanthropic effort united artists to raise money for famine relief.",
+    "emoji": "🤝"
+  },
+  "placid": {
+    "song": "Three Little Birds",
+    "artist": "Bob Marley",
+    "connection": "The calm, placid reassurance that every little thing is gonna be alright.",
+    "emoji": "🐦"
+  },
+  "plausible": {
+    "song": "Believer",
+    "artist": "Imagine Dragons",
+    "connection": "To believe, an idea must first seem plausible and reasonable to accept.",
+    "emoji": "✅"
+  },
+  "poignant": {
+    "song": "Tears in Heaven",
+    "artist": "Eric Clapton",
+    "connection": "Clapton's poignant tribute to his late son is deeply moving and touching.",
+    "emoji": "😿"
+  },
+  "pompous": {
+    "song": "We Will Rock You",
+    "artist": "Queen",
+    "connection": "The stomping bombast could be seen as gloriously pompous and self-important.",
+    "emoji": "🦚"
+  },
+  "pragmatic": {
+    "song": "Money",
+    "artist": "Pink Floyd",
+    "connection": "The pragmatic, practical reality that money drives decisions in society.",
+    "emoji": "💰"
+  },
+  "preclude": {
+    "song": "Don't Let Me Down",
+    "artist": "The Beatles",
+    "connection": "The plea not to be let down aims to preclude disappointment and heartbreak.",
+    "emoji": "🚫"
+  },
+  "precocious": {
+    "song": "ABC",
+    "artist": "The Jackson 5",
+    "connection": "Young Michael Jackson was a precocious talent, performing brilliantly as a child.",
+    "emoji": "💒"
+  },
+  "predecessor": {
+    "song": "Father and Son",
+    "artist": "Cat Stevens",
+    "connection": "A father is his son's predecessor, passing down wisdom across generations.",
+    "emoji": "👨‍👦"
+  },
+  "presumptuous": {
+    "song": "You're So Vain",
+    "artist": "Carly Simon",
+    "connection": "The subject is presumptuous enough to think the song is about him.",
+    "emoji": "🪞"
+  },
+  "pretentious": {
+    "song": "Royals",
+    "artist": "Lorde",
+    "connection": "Lorde calls out the pretentious fantasy lifestyle glorified in pop music.",
+    "emoji": "🎪"
+  },
+  "profuse": {
+    "song": "Purple Rain",
+    "artist": "Prince",
+    "connection": "The profuse downpour of purple rain symbolizes overwhelming emotional outpouring.",
+    "emoji": "💜"
+  },
+  "prohibitive": {
+    "song": "You Can't Always Get What You Want",
+    "artist": "The Rolling Stones",
+    "connection": "Life's prohibitive limitations prevent you from always getting what you want.",
+    "emoji": "🚫"
+  },
+  "propensity": {
+    "song": "Bad Habits",
+    "artist": "Ed Sheeran",
+    "connection": "The song is about a propensity — a natural tendency — toward bad habits.",
+    "emoji": "🔄"
+  },
+  "prosaic": {
+    "song": "Suburbia",
+    "artist": "Pet Shop Boys",
+    "connection": "The prosaic, dull routine of suburban life is examined with a critical eye.",
+    "emoji": "🏘️"
+  },
+  "provincial": {
+    "song": "Small Town",
+    "artist": "John Mellencamp",
+    "connection": "Growing up in a small town reflects a provincial, narrow worldview.",
+    "emoji": "🏡"
+  },
+  "provocative": {
+    "song": "Like a Virgin",
+    "artist": "Madonna",
+    "connection": "Madonna's provocative performances deliberately challenged social norms.",
+    "emoji": "💋"
+  },
+  "prudent": {
+    "song": "The Gambler",
+    "artist": "Kenny Rogers",
+    "connection": "Knowing when to walk away from the table is a prudent, wise decision.",
+    "emoji": "🧠"
+  },
+  "querulous": {
+    "song": "Whiny Song",
+    "artist": "Weird Al Yankovic",
+    "connection": "Being querulous means constantly whining and complaining about everything.",
+    "emoji": "😩"
+  },
+  "rancor": {
+    "song": "You Oughta Know",
+    "artist": "Alanis Morissette",
+    "connection": "The bitter rancor and resentment toward an ex is the song's driving force.",
+    "emoji": "😤"
+  },
+  "ratify": {
+    "song": "Signed, Sealed, Delivered",
+    "artist": "Stevie Wonder",
+    "connection": "Something signed and sealed has been officially ratified and confirmed.",
+    "emoji": "📜"
+  },
+  "reclusive": {
+    "song": "Eleanor Rigby",
+    "artist": "The Beatles",
+    "connection": "Eleanor Rigby lives a reclusive, isolated existence, withdrawn from the world.",
+    "emoji": "🏠"
+  },
+  "reconcile": {
+    "song": "We Can Work It Out",
+    "artist": "The Beatles",
+    "connection": "The song is a direct attempt to reconcile differences and restore harmony.",
+    "emoji": "🤝"
+  },
+  "refute": {
+    "song": "No",
+    "artist": "Meghan Trainor",
+    "connection": "Saying no is a way to refute and deny unwanted advances firmly.",
+    "emoji": "❌"
+  },
+  "relegate": {
+    "song": "Yesterday",
+    "artist": "The Beatles",
+    "connection": "Happy memories get relegated to the past, pushed away from the present.",
+    "emoji": "📦"
+  },
+  "relinquish": {
+    "song": "Let It Go",
+    "artist": "Idina Menzel",
+    "connection": "Elsa relinquishes her need to hide and gives up suppressing her powers.",
+    "emoji": "🏔️"
+  },
+  "remorse": {
+    "song": "Sorry",
+    "artist": "Justin Bieber",
+    "connection": "The repeated apologies express deep remorse and regret for past actions.",
+    "emoji": "😔"
+  },
+  "replete": {
+    "song": "Good Life",
+    "artist": "OneRepublic",
+    "connection": "A good life is replete with joy, friendship, and meaningful experiences.",
+    "emoji": "🥂"
+  },
+  "reprehensible": {
+    "song": "Jail",
+    "artist": "Kanye West",
+    "connection": "Actions that land you in jail are generally reprehensible and deserving of blame.",
+    "emoji": "🔒"
+  },
+  "repudiate": {
+    "song": "I Will Survive",
+    "artist": "Gloria Gaynor",
+    "connection": "The singer repudiates her ex by refusing to accept him back in her life.",
+    "emoji": "✋"
+  },
+  "rescind": {
+    "song": "Take It Back",
+    "artist": "Ed Sheeran",
+    "connection": "Taking something back means wanting to rescind and revoke what was said.",
+    "emoji": "⏪"
+  },
+  "resignation": {
+    "song": "Let It Be",
+    "artist": "The Beatles",
+    "connection": "The song captures quiet resignation — accepting things as they are without fighting.",
+    "emoji": "🕊️"
+  },
+  "reticent": {
+    "song": "Sound of Silence",
+    "artist": "Simon & Garfunkel",
+    "connection": "Silence represents the reticent reluctance to speak or share feelings.",
+    "emoji": "🤫"
+  },
+  "reverent": {
+    "song": "Hallelujah",
+    "artist": "Leonard Cohen",
+    "connection": "The repeated hallelujah carries a reverent, deeply respectful spiritual tone.",
+    "emoji": "🙏"
+  },
+  "rhetoric": {
+    "song": "Blowin' in the Wind",
+    "artist": "Bob Dylan",
+    "connection": "Dylan's rhetorical questions use persuasive language to provoke deep thought.",
+    "emoji": "🌬️"
+  },
+  "rigorous": {
+    "song": "Lose Yourself",
+    "artist": "Eminem",
+    "connection": "The rigorous discipline and demanding preparation needed to seize opportunity.",
+    "emoji": "🏋️"
+  },
+  "robust": {
+    "song": "Thunderstruck",
+    "artist": "AC/DC",
+    "connection": "The robust, powerful energy of AC/DC hits like a force of nature.",
+    "emoji": "⚡"
+  },
+  "rudimentary": {
+    "song": "ABC",
+    "artist": "The Jackson 5",
+    "connection": "ABCs and 123s are the rudimentary, basic building blocks of learning.",
+    "emoji": "🔤"
+  },
+  "sagacious": {
+    "song": "Father and Son",
+    "artist": "Cat Stevens",
+    "connection": "The father offers sagacious wisdom born from decades of life experience.",
+    "emoji": "🦉"
+  },
+  "sanction": {
+    "song": "Alright",
+    "artist": "Kendrick Lamar",
+    "connection": "The community sanctions togetherness and unity through shared struggle.",
+    "emoji": "✅"
+  },
+  "satirical": {
+    "song": "American Idiot",
+    "artist": "Green Day",
+    "connection": "The song is a satirical critique mocking American media-driven ignorance.",
+    "emoji": "🃏"
+  },
+  "savvy": {
+    "song": "Street Smart",
+    "artist": "Nas",
+    "connection": "Being street savvy means having practical knowledge of how the world works.",
+    "emoji": "🧠"
+  },
+  "scrupulous": {
+    "song": "Every Little Thing She Does Is Magic",
+    "artist": "The Police",
+    "connection": "Noticing every little thing requires scrupulous, careful attention to detail.",
+    "emoji": "🔍"
+  },
+  "scrutiny": {
+    "song": "Every Breath You Take",
+    "artist": "The Police",
+    "connection": "Watching every breath and move subjects someone to intense scrutiny.",
+    "emoji": "👁️"
+  },
+  "sedentary": {
+    "song": "Lazy Song",
+    "artist": "Bruno Mars",
+    "connection": "Refusing to leave the bed embodies a completely sedentary lifestyle.",
+    "emoji": "🛏️"
+  },
+  "serene": {
+    "song": "Watermark",
+    "artist": "Enya",
+    "connection": "Enya's ethereal music creates a perfectly serene and peaceful atmosphere.",
+    "emoji": "🧘"
+  },
+  "skeptical": {
+    "song": "Don't Believe the Hype",
+    "artist": "Public Enemy",
+    "connection": "The song urges listeners to be skeptical and question media narratives.",
+    "emoji": "🤨"
+  },
+  "solemn": {
+    "song": "The Funeral",
+    "artist": "Band of Horses",
+    "connection": "A funeral is the most solemn of occasions, marked by serious gravity.",
+    "emoji": "🕯️"
+  },
+  "solicitous": {
+    "song": "I'll Be There",
+    "artist": "The Jackson 5",
+    "connection": "The solicitous promise to always be there shows eager concern and care.",
+    "emoji": "🫶"
+  },
+  "somber": {
+    "song": "Black",
+    "artist": "Pearl Jam",
+    "connection": "The dark, somber tone reflects the heavy grief of losing a loved one.",
+    "emoji": "🖤"
+  },
+  "speculative": {
+    "song": "What If",
+    "artist": "Coldplay",
+    "connection": "The song is entirely speculative, wondering about hypothetical possibilities.",
+    "emoji": "💭"
+  },
+  "spontaneous": {
+    "song": "Dancing in the Street",
+    "artist": "Martha and the Vandellas",
+    "connection": "Breaking into spontaneous dancing in the street is an unplanned celebration.",
+    "emoji": "💃"
+  },
+  "spurious": {
+    "song": "Lies",
+    "artist": "Fleetwood Mac",
+    "connection": "Lies are spurious — false claims disguised to appear genuine and truthful.",
+    "emoji": "🤥"
+  },
+  "steadfast": {
+    "song": "Stand by Me",
+    "artist": "Ben E. King",
+    "connection": "Standing steadfast by someone's side no matter what happens defines loyalty.",
+    "emoji": "🧍"
+  },
+  "stoic": {
+    "song": "Hurt",
+    "artist": "Johnny Cash",
+    "connection": "Cash's weathered delivery conveys stoic endurance through a lifetime of pain.",
+    "emoji": "🗿"
+  },
+  "stringent": {
+    "song": "Under Pressure",
+    "artist": "Queen & David Bowie",
+    "connection": "Being under pressure means dealing with stringent, demanding conditions.",
+    "emoji": "🔒"
+  },
+  "sublime": {
+    "song": "Imagine",
+    "artist": "John Lennon",
+    "connection": "The sublime beauty of imagining a world at peace transcends ordinary experience.",
+    "emoji": "✨"
+  },
+  "substantiate": {
+    "song": "Evidence",
+    "artist": "Faith No More",
+    "connection": "Evidence is needed to substantiate and prove claims with concrete support.",
+    "emoji": "📊"
+  },
+  "succinct": {
+    "song": "Help!",
+    "artist": "The Beatles",
+    "connection": "The single-word title is refreshingly succinct — brief and to the point.",
+    "emoji": "📝"
+  },
+  "superficial": {
+    "song": "Shallow",
+    "artist": "Lady Gaga & Bradley Cooper",
+    "connection": "The song questions whether connections are superficial or genuinely deep.",
+    "emoji": "🏊"
+  },
+  "superfluous": {
+    "song": "Too Much",
+    "artist": "Spice Girls",
+    "connection": "Having too much of something makes the excess superfluous and unnecessary.",
+    "emoji": "🗑️"
+  },
+  "suppress": {
+    "song": "Shout",
+    "artist": "Tears for Fears",
+    "connection": "The song is about releasing emotions instead of suppressing them inside.",
+    "emoji": "🤐"
+  },
+  "surreptitious": {
+    "song": "Secret Agent Man",
+    "artist": "Johnny Rivers",
+    "connection": "A secret agent operates in surreptitious, stealthy, hidden ways.",
+    "emoji": "🕵️"
+  },
+  "susceptible": {
+    "song": "Toxic",
+    "artist": "Britney Spears",
+    "connection": "Being susceptible to someone's allure makes you vulnerable to their toxicity.",
+    "emoji": "💀"
+  },
+  "taciturn": {
+    "song": "Sound of Silence",
+    "artist": "Simon & Garfunkel",
+    "connection": "The taciturn silence of people who have things to say but never speak.",
+    "emoji": "🤐"
+  },
+  "tedious": {
+    "song": "9 to 5",
+    "artist": "Dolly Parton",
+    "connection": "The tedious grind of working nine to five in a repetitive daily routine.",
+    "emoji": "⏰"
+  },
+  "temperance": {
+    "song": "Sober",
+    "artist": "P!nk",
+    "connection": "The struggle for temperance and moderation when wanting to give in to excess.",
+    "emoji": "⚖️"
+  },
+  "tenacious": {
+    "song": "Survivor",
+    "artist": "Destiny's Child",
+    "connection": "The tenacious refusal to give up after hardship makes one a true survivor.",
+    "emoji": "💪"
+  },
+  "tentative": {
+    "song": "Maybe",
+    "artist": "Janis Joplin",
+    "connection": "The word maybe is inherently tentative — uncertain and hesitant.",
+    "emoji": "❔"
+  },
+  "terse": {
+    "song": "Help!",
+    "artist": "The Beatles",
+    "connection": "The one-word cry for help is terse — using few words with blunt impact.",
+    "emoji": "⚡"
+  },
+  "thrifty": {
+    "song": "Thrift Shop",
+    "artist": "Macklemore",
+    "connection": "Shopping at thrift stores is the ultimate expression of being thrifty.",
+    "emoji": "💲"
+  },
+  "timid": {
+    "song": "Shy",
+    "artist": "Jai Paul",
+    "connection": "Being shy and timid means lacking the courage to boldly express yourself.",
+    "emoji": "🐭"
+  },
+  "torpid": {
+    "song": "Lazy Song",
+    "artist": "Bruno Mars",
+    "connection": "The torpid sluggishness of not wanting to do anything at all.",
+    "emoji": "🦥"
+  },
+  "transient": {
+    "song": "Dust in the Wind",
+    "artist": "Kansas",
+    "connection": "Everything is transient — like dust in the wind, nothing lasts forever.",
+    "emoji": "🍃"
+  },
+  "transparent": {
+    "song": "Glass",
+    "artist": "Thompson Twins",
+    "connection": "Glass is transparent — you can see through it with complete clarity.",
+    "emoji": "🪟"
+  },
+  "trepidation": {
+    "song": "Fear of the Dark",
+    "artist": "Iron Maiden",
+    "connection": "The trepidation of walking alone in darkness grips you with anxious dread.",
+    "emoji": "😨"
+  },
+  "trivial": {
+    "song": "No Scrubs",
+    "artist": "TLC",
+    "connection": "A scrub is trivial — someone with nothing significant or important to offer.",
+    "emoji": "🔍"
+  },
+  "turbulent": {
+    "song": "Turbulence",
+    "artist": "Steve Aoki",
+    "connection": "The song captures the chaotic, turbulent energy of uncontrollable forces.",
+    "emoji": "🌪️"
+  },
+  "unassuming": {
+    "song": "Humble and Kind",
+    "artist": "Tim McGraw",
+    "connection": "The song encourages being unassuming — modest and not pretentious.",
+    "emoji": "🌾"
+  },
+  "undermine": {
+    "song": "Sabotage",
+    "artist": "Beastie Boys",
+    "connection": "To sabotage is to undermine and weaken something from within.",
+    "emoji": "💣"
+  },
+  "uniform": {
+    "song": "Yellow Submarine",
+    "artist": "The Beatles",
+    "connection": "Life in the submarine is uniform — everyone shares the same experience.",
+    "emoji": "🟡"
+  },
+  "unprecedented": {
+    "song": "We Didn't Start the Fire",
+    "artist": "Billy Joel",
+    "connection": "The rapid-fire catalog of unprecedented historical events spans decades.",
+    "emoji": "🔥"
+  },
+  "unscrupulous": {
+    "song": "Smooth Criminal",
+    "artist": "Michael Jackson",
+    "connection": "A smooth criminal is unscrupulous — acting without moral principles.",
+    "emoji": "🎩"
+  },
+  "urbane": {
+    "song": "Fly Me to the Moon",
+    "artist": "Frank Sinatra",
+    "connection": "Sinatra's sophisticated, urbane style epitomizes polished charm and refinement.",
+    "emoji": "🌙"
+  },
+  "utopian": {
+    "song": "Imagine",
+    "artist": "John Lennon",
+    "connection": "Lennon's vision of no countries or possessions describes a utopian dream world.",
+    "emoji": "🌈"
+  },
+  "vacillate": {
+    "song": "Should I Stay or Should I Go",
+    "artist": "The Clash",
+    "connection": "Vacillating between staying and going — unable to commit to either choice.",
+    "emoji": "🔀"
+  },
+  "venerate": {
+    "song": "Hallelujah",
+    "artist": "Leonard Cohen",
+    "connection": "The song venerates the sacred with deep worship and profound respect.",
+    "emoji": "🙏"
+  },
+  "verbose": {
+    "song": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "connection": "The verbose, word-heavy operatic section uses an abundance of dramatic lyrics.",
+    "emoji": "📜"
+  },
+  "viable": {
+    "song": "Alive",
+    "artist": "Pearl Jam",
+    "connection": "Being alive means you are viable — capable of surviving and succeeding.",
+    "emoji": "🌱"
+  },
+  "vigilant": {
+    "song": "Every Breath You Take",
+    "artist": "The Police",
+    "connection": "Watching every breath requires constant, vigilant attention and alertness.",
+    "emoji": "👁️"
+  },
+  "vindicate": {
+    "song": "Vindicated",
+    "artist": "Dashboard Confessional",
+    "connection": "The song is literally about being vindicated — proven right after doubt.",
+    "emoji": "⚖️"
+  },
+  "virtuoso": {
+    "song": "Eruption",
+    "artist": "Van Halen",
+    "connection": "Eddie Van Halen's virtuoso guitar solo redefined technical mastery in rock.",
+    "emoji": "🎸"
+  },
+  "visceral": {
+    "song": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "connection": "The song's raw power creates a visceral, gut-level physical reaction in listeners.",
+    "emoji": "🔊"
+  },
+  "vivacious": {
+    "song": "Uptown Funk",
+    "artist": "Bruno Mars",
+    "connection": "The vivacious, lively energy of the song makes it impossible not to dance.",
+    "emoji": "💃"
+  },
+  "voracious": {
+    "song": "Hungry Like the Wolf",
+    "artist": "Duran Duran",
+    "connection": "Being hungry like a wolf describes a voracious, insatiable appetite.",
+    "emoji": "🐺"
+  },
+  "wary": {
+    "song": "Paranoid",
+    "artist": "Black Sabbath",
+    "connection": "Paranoia is an extreme form of being wary and cautiously suspicious.",
+    "emoji": "👀"
+  },
+  "whimsical": {
+    "song": "Lucy in the Sky with Diamonds",
+    "artist": "The Beatles",
+    "connection": "The fantastical, whimsical imagery of tangerine trees and marmalade skies.",
+    "emoji": "🌈"
+  },
+  "zealous": {
+    "song": "Believer",
+    "artist": "Imagine Dragons",
+    "connection": "The zealous passion and fervent belief that pain creates purpose.",
+    "emoji": "🔥"
+  },
+  "zeal": {
+    "song": "Eye of the Tiger",
+    "artist": "Survivor",
+    "connection": "The burning zeal and enthusiastic passion of a fighter pursuing victory.",
+    "emoji": "🐅"
+  },
+  "abase": {
+    "song": "Crawling",
+    "artist": "Linkin Park",
+    "connection": "Crawling on the ground represents being abased and humiliated to the lowest point.",
+    "emoji": "😣"
+  },
+  "abdicate": {
+    "song": "Viva la Vida",
+    "artist": "Coldplay",
+    "connection": "The king who once ruled the world effectively abdicated his throne and power.",
+    "emoji": "👑"
+  },
+  "abet": {
+    "song": "Partners in Crime",
+    "artist": "Set It Off",
+    "connection": "Partners in crime abet each other — encouraging and assisting wrongdoing.",
+    "emoji": "🤝"
+  },
+  "abhor": {
+    "song": "I Hate Everything About You",
+    "artist": "Three Days Grace",
+    "connection": "To abhor something is to hate it with intense, profound disgust.",
+    "emoji": "😡"
+  },
+  "abjure": {
+    "song": "I Will Survive",
+    "artist": "Gloria Gaynor",
+    "connection": "The singer abjures her dependence on her ex, solemnly renouncing that life.",
+    "emoji": "🚪"
+  },
+  "abscond": {
+    "song": "Run",
+    "artist": "Snow Patrol",
+    "connection": "The song's urgency to run mirrors absconding — fleeing quickly and secretly.",
+    "emoji": "🏃"
+  },
+  "absolve": {
+    "song": "Forgiveness",
+    "artist": "Paramore",
+    "connection": "To absolve someone means to forgive them and free them from guilt.",
+    "emoji": "🕊️"
+  },
+  "abstain": {
+    "song": "Sober",
+    "artist": "Demi Lovato",
+    "connection": "Abstaining from substances and staying sober is the song's painful struggle.",
+    "emoji": "🚫"
+  },
+  "abstract": {
+    "song": "Everything in Its Right Place",
+    "artist": "Radiohead",
+    "connection": "The song's abstract, non-literal lyrics defy concrete interpretation.",
+    "emoji": "🎨"
+  },
+  "abstruse": {
+    "song": "Pyramid Song",
+    "artist": "Radiohead",
+    "connection": "The abstruse symbolism and complex themes make this song hard to understand.",
+    "emoji": "🧩"
+  },
+  "accessible": {
+    "song": "Hey Jude",
+    "artist": "The Beatles",
+    "connection": "The singalong chorus makes this song universally accessible to any audience.",
+    "emoji": "🚪"
+  },
+  "acquiesce": {
+    "song": "Let It Be",
+    "artist": "The Beatles",
+    "connection": "Letting things be means acquiescing — accepting without protest or resistance.",
+    "emoji": "🙌"
+  },
+  "acumen": {
+    "song": "Empire State of Mind",
+    "artist": "Jay-Z",
+    "connection": "Jay-Z's business acumen and sharp judgment built his empire from nothing.",
+    "emoji": "🏙️"
+  },
+  "admonish": {
+    "song": "Papa Was a Rollin' Stone",
+    "artist": "The Temptations",
+    "connection": "The song implicitly admonishes absent fathers who neglect their families.",
+    "emoji": "☝️"
+  },
+  "advocate": {
+    "song": "Fight the Power",
+    "artist": "Public Enemy",
+    "connection": "Public Enemy advocates passionately for civil rights and social justice.",
+    "emoji": "📢"
+  },
+  "affable": {
+    "song": "You've Got a Friend in Me",
+    "artist": "Randy Newman",
+    "connection": "The warm, affable friendliness of always being there defines this beloved song.",
+    "emoji": "🤠"
+  },
+  "aggregate": {
+    "song": "We Are the World",
+    "artist": "USA for Africa",
+    "connection": "An aggregate of the world's greatest artists joined voices for one cause.",
+    "emoji": "🌍"
+  },
+  "agile": {
+    "song": "Moves Like Jagger",
+    "artist": "Maroon 5",
+    "connection": "Moving like Jagger implies being agile — quick, nimble, and graceful.",
+    "emoji": "🕺"
+  },
+  "alacrity": {
+    "song": "I Feel Good",
+    "artist": "James Brown",
+    "connection": "James Brown's explosive energy shows alacrity — eager, enthusiastic readiness.",
+    "emoji": "⚡"
+  },
+  "allegory": {
+    "song": "Hotel California",
+    "artist": "Eagles",
+    "connection": "The song is an allegory — the hotel symbolizes excess and the dark side of fame.",
+    "emoji": "🏨"
+  },
+  "altruistic": {
+    "song": "Lean on Me",
+    "artist": "Bill Withers",
+    "connection": "The altruistic offer of selfless help to anyone in need defines this classic.",
+    "emoji": "💛"
+  },
+  "amalgamate": {
+    "song": "Under Pressure",
+    "artist": "Queen & David Bowie",
+    "connection": "Two iconic artists amalgamated their talents into one legendary collaboration.",
+    "emoji": "🔗"
+  },
+  "ameliorate": {
+    "song": "Fix You",
+    "artist": "Coldplay",
+    "connection": "The entire song is about trying to ameliorate someone's pain and improve their life.",
+    "emoji": "🩹"
+  },
+  "amiable": {
+    "song": "What a Wonderful World",
+    "artist": "Louis Armstrong",
+    "connection": "Armstrong's amiable, friendly warmth radiates through his optimistic worldview.",
+    "emoji": "😊"
+  },
+  "anarchist": {
+    "song": "Anarchy in the U.K.",
+    "artist": "Sex Pistols",
+    "connection": "The song is the definitive anarchist anthem rejecting all governmental authority.",
+    "emoji": "🏴"
+  },
+  "anecdote": {
+    "song": "Piano Man",
+    "artist": "Billy Joel",
+    "connection": "The song strings together anecdotes — brief stories about bar patrons' lives.",
+    "emoji": "📖"
+  },
+  "animosity": {
+    "song": "Bad Blood",
+    "artist": "Taylor Swift",
+    "connection": "Bad blood represents deep animosity and hostile ill-will between former friends.",
+    "emoji": "🩸"
+  },
+  "antidote": {
+    "song": "Love Is the Answer",
+    "artist": "England Dan & John Ford Coley",
+    "connection": "Love is presented as the antidote — the remedy that counteracts life's poison.",
+    "emoji": "💊"
+  },
+  "apocryphal": {
+    "song": "The Devil Went Down to Georgia",
+    "artist": "Charlie Daniels Band",
+    "connection": "The story of a fiddle contest with the devil is apocryphal — likely fictional.",
+    "emoji": "😈"
+  },
+  "appease": {
+    "song": "Give Peace a Chance",
+    "artist": "John Lennon",
+    "connection": "The song tries to appease conflict by pleading for peaceful resolution.",
+    "emoji": "☮️"
+  },
+  "apt": {
+    "song": "Perfect",
+    "artist": "Ed Sheeran",
+    "connection": "Finding the perfect, apt word to describe someone you love is the song's aim.",
+    "emoji": "🎯"
+  },
+  "arcane": {
+    "song": "Black Magic Woman",
+    "artist": "Fleetwood Mac",
+    "connection": "Black magic is arcane — mysterious knowledge understood by very few.",
+    "emoji": "🔮"
+  },
+  "ardent": {
+    "song": "Burning Love",
+    "artist": "Elvis Presley",
+    "connection": "Elvis's ardent, intensely passionate devotion burns like a flame.",
+    "emoji": "🔥"
+  },
+  "arid": {
+    "song": "Dry County",
+    "artist": "Bon Jovi",
+    "connection": "A dry county is arid — completely lacking moisture or sustenance.",
+    "emoji": "🏜️"
+  },
+  "ascribe": {
+    "song": "God Only Knows",
+    "artist": "The Beach Boys",
+    "connection": "People ascribe the beauty of life to love and divine mystery.",
+    "emoji": "📌"
+  },
+  "assiduous": {
+    "song": "Work Hard, Play Hard",
+    "artist": "Wiz Khalifa",
+    "connection": "Working hard requires being assiduous — showing great care and persistent effort.",
+    "emoji": "💼"
+  },
+  "augment": {
+    "song": "Louder",
+    "artist": "DJ Fresh",
+    "connection": "Turning the volume up augments the sound, increasing its power and intensity.",
+    "emoji": "🔊"
+  },
+  "auspicious": {
+    "song": "Good Day Sunshine",
+    "artist": "The Beatles",
+    "connection": "Sunshine marks an auspicious beginning — a favorable sign of good things ahead.",
+    "emoji": "☀️"
+  },
+  "avarice": {
+    "song": "Money",
+    "artist": "Pink Floyd",
+    "connection": "The song critiques avarice — the insatiable greed for money and material gain.",
+    "emoji": "💰"
+  },
+  "avid": {
+    "song": "Addicted to Love",
+    "artist": "Robert Palmer",
+    "connection": "Being addicted to love means being an avid, intensely enthusiastic pursuer.",
+    "emoji": "❤️‍🔥"
+  },
+  "beguile": {
+    "song": "Witchcraft",
+    "artist": "Frank Sinatra",
+    "connection": "Sinatra sings about being beguiled — charmed and enchanted as if by witchcraft.",
+    "emoji": "🪄"
+  },
+  "belligerent": {
+    "song": "War",
+    "artist": "Edwin Starr",
+    "connection": "War is the ultimate expression of belligerent, hostile aggression.",
+    "emoji": "⚔️"
+  },
+  "benefactor": {
+    "song": "Lean on Me",
+    "artist": "Bill Withers",
+    "connection": "The singer acts as a benefactor, generously offering help to those in need.",
+    "emoji": "🎁"
+  },
+  "benign": {
+    "song": "Don't Worry Be Happy",
+    "artist": "Bobby McFerrin",
+    "connection": "The song's benign, harmless positivity aims to dissolve all worries.",
+    "emoji": "😊"
+  },
+  "berate": {
+    "song": "Mean",
+    "artist": "Taylor Swift",
+    "connection": "Taylor addresses a critic who berates and scolds her harshly in public.",
+    "emoji": "😠"
+  },
+  "bereft": {
+    "song": "Nothing Compares 2 U",
+    "artist": "Sinead O'Connor",
+    "connection": "The singer is bereft — deprived of love and left utterly empty inside.",
+    "emoji": "💔"
+  },
+  "blatant": {
+    "song": "Liar",
+    "artist": "Three Dog Night",
+    "connection": "Blatant, obvious lying that is completely without shame or subtlety.",
+    "emoji": "🚨"
+  },
+  "blithe": {
+    "song": "Walking on Sunshine",
+    "artist": "Katrina and the Waves",
+    "connection": "The blithe, carefree happiness of being joyfully unconcerned about problems.",
+    "emoji": "☀️"
+  },
+  "bombastic": {
+    "song": "We Will Rock You",
+    "artist": "Queen",
+    "connection": "Queen's bombastic, over-the-top stadium anthem is gloriously high-sounding.",
+    "emoji": "💥"
+  },
+  "boorish": {
+    "song": "Rude",
+    "artist": "MAGIC!",
+    "connection": "The father's boorish refusal to grant his daughter's hand in marriage is rude.",
+    "emoji": "🙅"
+  },
+  "brazen": {
+    "song": "Bad Guy",
+    "artist": "Billie Eilish",
+    "connection": "Billie's brazen, bold declaration of being the bad guy is fearlessly shameless.",
+    "emoji": "😈"
+  },
+  "bucolic": {
+    "song": "Country Roads",
+    "artist": "John Denver",
+    "connection": "The bucolic beauty of West Virginia's countryside defines this pastoral anthem.",
+    "emoji": "🌄"
+  },
+  "burgeon": {
+    "song": "Bloom",
+    "artist": "Troye Sivan",
+    "connection": "To bloom is to burgeon — growing and flourishing rapidly with new life.",
+    "emoji": "🌷"
+  },
+  "cacophony": {
+    "song": "Revolution 9",
+    "artist": "The Beatles",
+    "connection": "The chaotic sound collage creates a cacophony of clashing, harsh noises.",
+    "emoji": "📢"
+  },
+  "callous": {
+    "song": "Heartless",
+    "artist": "Kanye West",
+    "connection": "Being heartless means being callous — insensitive and cruelly indifferent.",
+    "emoji": "🥶"
+  },
+  "capitulate": {
+    "song": "I Surrender",
+    "artist": "Celine Dion",
+    "connection": "Surrendering means capitulating — giving in and ceasing to resist.",
+    "emoji": "🏳️"
+  },
+  "charlatan": {
+    "song": "The Pretender",
+    "artist": "Foo Fighters",
+    "connection": "A pretender is a charlatan — someone falsely claiming skills or knowledge.",
+    "emoji": "🎭"
+  },
+  "chicanery": {
+    "song": "Smooth Criminal",
+    "artist": "Michael Jackson",
+    "connection": "A smooth criminal operates through chicanery — clever trickery and deception.",
+    "emoji": "🃏"
+  },
+  "chronic": {
+    "song": "Bad Habits",
+    "artist": "Ed Sheeran",
+    "connection": "Chronic bad habits are persistent, constantly recurring problems over time.",
+    "emoji": "🔄"
+  },
+  "circumvent": {
+    "song": "Loophole",
+    "artist": "George Strait",
+    "connection": "Finding a loophole means circumventing the rules by going around them.",
+    "emoji": "🔄"
+  },
+  "clamorous": {
+    "song": "Shout",
+    "artist": "Tears for Fears",
+    "connection": "Shouting is clamorous — making a loud, vehement demand to be heard.",
+    "emoji": "📣"
+  },
+  "clemency": {
+    "song": "Mercy",
+    "artist": "Shawn Mendes",
+    "connection": "Begging for mercy is a plea for clemency — compassionate leniency.",
+    "emoji": "🙏"
+  },
+  "coerce": {
+    "song": "Under My Thumb",
+    "artist": "The Rolling Stones",
+    "connection": "Having someone under your thumb implies coercing and controlling them.",
+    "emoji": "👎"
+  },
+  "collaborate": {
+    "song": "Ebony and Ivory",
+    "artist": "Paul McCartney & Stevie Wonder",
+    "connection": "Two musical legends collaborate across racial lines to create harmony.",
+    "emoji": "🎹"
+  },
+  "commend": {
+    "song": "Hero",
+    "artist": "Mariah Carey",
+    "connection": "The song commends the hero within everyone, praising their inner strength.",
+    "emoji": "🏅"
+  },
+  "compelling": {
+    "song": "Lose Yourself",
+    "artist": "Eminem",
+    "connection": "Eminem makes a compelling case for seizing your one shot at success.",
+    "emoji": "🎯"
+  },
+  "complement": {
+    "song": "You Complete Me",
+    "artist": "Keyshia Cole",
+    "connection": "Something that complements you fills in what's missing to make you complete.",
+    "emoji": "🧩"
+  },
+  "compliant": {
+    "song": "Obey",
+    "artist": "Bring Me the Horizon",
+    "connection": "Being compliant means yielding and obeying whatever rules are imposed.",
+    "emoji": "✅"
+  },
+  "comprise": {
+    "song": "We Are the Champions",
+    "artist": "Queen",
+    "connection": "The 'we' comprises every person who has fought and overcome adversity.",
+    "emoji": "👥"
+  },
+  "concede": {
+    "song": "White Flag",
+    "artist": "Dido",
+    "connection": "Despite the title, Dido refuses to concede and will not surrender.",
+    "emoji": "🏳️"
+  },
+  "concise": {
+    "song": "Help!",
+    "artist": "The Beatles",
+    "connection": "The one-word title is perfectly concise — conveying urgency in a single word.",
+    "emoji": "📝"
+  },
+  "condone": {
+    "song": "Let It Be",
+    "artist": "The Beatles",
+    "connection": "The message of acceptance can be read as condoning what cannot be changed.",
+    "emoji": "🤷"
+  },
+  "conducive": {
+    "song": "Here Comes the Sun",
+    "artist": "The Beatles",
+    "connection": "Sunshine is conducive to happiness — it creates favorable conditions for joy.",
+    "emoji": "🌞"
+  },
+  "confiscate": {
+    "song": "Steal My Sunshine",
+    "artist": "Len",
+    "connection": "Someone stealing your sunshine has effectively confiscated your happiness.",
+    "emoji": "🏴‍☠️"
+  },
+  "connoisseur": {
+    "song": "Smooth",
+    "artist": "Santana ft. Rob Thomas",
+    "connection": "Santana is a guitar connoisseur — an expert with refined taste and deep knowledge.",
+    "emoji": "🎸"
+  },
+  "consecrate": {
+    "song": "Hallelujah",
+    "artist": "Leonard Cohen",
+    "connection": "The hallelujah consecrates the moment, dedicating it to something sacred.",
+    "emoji": "⛪"
+  },
+  "consensus": {
+    "song": "We Are the World",
+    "artist": "USA for Africa",
+    "connection": "Dozens of artists reached a consensus to unite their voices for charity.",
+    "emoji": "🤝"
+  },
+  "contemplate": {
+    "song": "The Sound of Silence",
+    "artist": "Simon & Garfunkel",
+    "connection": "The song invites deep contemplation about communication and isolation.",
+    "emoji": "🤔"
+  },
+  "contemporary": {
+    "song": "Modern Love",
+    "artist": "David Bowie",
+    "connection": "Modern love is contemporary — belonging to the present time and current era.",
+    "emoji": "📱"
+  },
+  "contrite": {
+    "song": "Sorry",
+    "artist": "Justin Bieber",
+    "connection": "The heartfelt apology expresses a contrite, genuinely remorseful spirit.",
+    "emoji": "😞"
+  },
+  "conundrum": {
+    "song": "Should I Stay or Should I Go",
+    "artist": "The Clash",
+    "connection": "The impossible choice is a conundrum — a confusing and difficult problem.",
+    "emoji": "🤯"
+  },
+  "converge": {
+    "song": "Come Together",
+    "artist": "The Beatles",
+    "connection": "The song calls people to converge — to come together from different directions.",
+    "emoji": "🎯"
+  },
+  "convivial": {
+    "song": "Celebration",
+    "artist": "Kool & The Gang",
+    "connection": "The warm, convivial atmosphere of a joyful celebration brings people together.",
+    "emoji": "🥳"
+  },
+  "corroborate": {
+    "song": "I Second That Emotion",
+    "artist": "Smokey Robinson",
+    "connection": "Seconding an emotion corroborates it — confirming and supporting the feeling.",
+    "emoji": "✅"
+  },
+  "cosmopolitan": {
+    "song": "New York, New York",
+    "artist": "Frank Sinatra",
+    "connection": "New York is the quintessentially cosmopolitan city — sophisticated and worldly.",
+    "emoji": "🗽"
+  },
+  "covert": {
+    "song": "Spy",
+    "artist": "Radiohead",
+    "connection": "A spy conducts covert operations — secret and hidden from observation.",
+    "emoji": "🕵️"
+  },
+  "credible": {
+    "song": "Believer",
+    "artist": "Imagine Dragons",
+    "connection": "To believe in something, it must first be credible and worthy of trust.",
+    "emoji": "✅"
+  },
+  "culminate": {
+    "song": "Stairway to Heaven",
+    "artist": "Led Zeppelin",
+    "connection": "The song builds slowly to culminate in an explosive, climactic guitar solo.",
+    "emoji": "🎸"
+  },
+  "cumulative": {
+    "song": "We Didn't Start the Fire",
+    "artist": "Billy Joel",
+    "connection": "The cumulative list of historical events builds increasingly with each verse.",
+    "emoji": "📈"
+  },
+  "cursory": {
+    "song": "In Passing",
+    "artist": "Iron & Wine",
+    "connection": "A cursory glance in passing lacks depth — hasty and without thorough attention.",
+    "emoji": "👁️"
+  },
+  "daunting": {
+    "song": "Lose Yourself",
+    "artist": "Eminem",
+    "connection": "The daunting pressure of one shot at success makes palms sweat nervously.",
+    "emoji": "😰"
+  },
+  "debacle": {
+    "song": "Trainwreck",
+    "artist": "Demi Lovato",
+    "connection": "A trainwreck is a debacle — a sudden, complete disaster and fiasco.",
+    "emoji": "🚂"
+  },
+  "decadent": {
+    "song": "Pour Some Sugar on Me",
+    "artist": "Def Leppard",
+    "connection": "The song celebrates decadent indulgence in pleasure and excess.",
+    "emoji": "🍰"
+  },
+  "decimate": {
+    "song": "Wrecking Ball",
+    "artist": "Miley Cyrus",
+    "connection": "A wrecking ball decimates everything — destroying and devastating completely.",
+    "emoji": "🏗️"
+  },
+  "defamation": {
+    "song": "Rumors",
+    "artist": "Fleetwood Mac",
+    "connection": "The album was born from rumors — a form of defamation that damages reputation.",
+    "emoji": "📰"
+  },
+  "defer": {
+    "song": "Respect",
+    "artist": "Aretha Franklin",
+    "connection": "Demanding respect means insisting others defer to your dignity and worth.",
+    "emoji": "🙇"
+  },
+  "defiant": {
+    "song": "We're Not Gonna Take It",
+    "artist": "Twisted Sister",
+    "connection": "The defiantly rebellious refusal to accept mistreatment defines this anthem.",
+    "emoji": "✊"
+  },
+  "deft": {
+    "song": "Billie Jean",
+    "artist": "Michael Jackson",
+    "connection": "Michael's deft moonwalk demonstrated skillful, nimble precision in every step.",
+    "emoji": "🕺"
+  },
+  "degenerate": {
+    "song": "Welcome to the Black Parade",
+    "artist": "My Chemical Romance",
+    "connection": "The song depicts a world that has degenerated into darkness and despair.",
+    "emoji": "📉"
+  },
+  "deliberate": {
+    "song": "Slow Dancing in a Burning Room",
+    "artist": "John Mayer",
+    "connection": "The deliberate, intentional slow dance despite impending disaster shows careful choice.",
+    "emoji": "🕯️"
+  },
+  "deluge": {
+    "song": "Purple Rain",
+    "artist": "Prince",
+    "connection": "Purple rain falls as a deluge — an overwhelming flood of emotion and sound.",
+    "emoji": "🌧️"
+  },
+  "demeanor": {
+    "song": "Poker Face",
+    "artist": "Lady Gaga",
+    "connection": "A poker face is a controlled demeanor — an outward manner that hides true feelings.",
+    "emoji": "😐"
+  },
+  "demure": {
+    "song": "Shy",
+    "artist": "Ani DiFranco",
+    "connection": "Being demure means being reserved, modest, and shy in behavior.",
+    "emoji": "🌸"
+  },
+  "deplete": {
+    "song": "Running on Empty",
+    "artist": "Jackson Browne",
+    "connection": "Running on empty means your energy reserves are completely depleted.",
+    "emoji": "⛽"
+  },
+  "deprecate": {
+    "song": "Loser",
+    "artist": "Beck",
+    "connection": "Beck's self-deprecating humor mocks and belittles his own worthiness.",
+    "emoji": "👎"
+  },
+  "desolate": {
+    "song": "Boulevard of Broken Dreams",
+    "artist": "Green Day",
+    "connection": "Walking alone on a desolate boulevard conveys bleak emptiness and isolation.",
+    "emoji": "🏚️"
+  },
+  "destitute": {
+    "song": "Hard Knock Life",
+    "artist": "Jay-Z",
+    "connection": "A hard knock life is one lived in destitute poverty, lacking basic necessities.",
+    "emoji": "💸"
+  },
+  "diatribe": {
+    "song": "Killing in the Name",
+    "artist": "Rage Against the Machine",
+    "connection": "The song is a fierce diatribe — a bitter verbal attack against the system.",
+    "emoji": "🎤"
+  },
+  "dichotomy": {
+    "song": "Ebony and Ivory",
+    "artist": "Paul McCartney & Stevie Wonder",
+    "connection": "Black and white keys represent a dichotomy — a division into two contrasting parts.",
+    "emoji": "⬛"
+  },
+  "diffuse": {
+    "song": "Everywhere",
+    "artist": "Fleetwood Mac",
+    "connection": "Memories diffuse everywhere — spreading widely and becoming less concentrated.",
+    "emoji": "🌫️"
+  },
+  "dilapidated": {
+    "song": "Broken",
+    "artist": "Lifehouse",
+    "connection": "Something broken and worn down has become dilapidated from neglect.",
+    "emoji": "🏚️"
+  },
+  "dire": {
+    "song": "Highway to Hell",
+    "artist": "AC/DC",
+    "connection": "Being on the highway to hell is a dire, extremely serious predicament.",
+    "emoji": "🔥"
+  },
+  "discrepancy": {
+    "song": "Ironic",
+    "artist": "Alanis Morissette",
+    "connection": "The discrepancy between expectations and reality is at the heart of irony.",
+    "emoji": "🔀"
+  },
+  "disinterested": {
+    "song": "Whatever",
+    "artist": "Oasis",
+    "connection": "A disinterested observer remains neutral and impartial, like the dismissive 'whatever.'",
+    "emoji": "😑"
+  },
+  "dismiss": {
+    "song": "Shake It Off",
+    "artist": "Taylor Swift",
+    "connection": "Taylor dismisses criticism by shaking off the negativity and moving on.",
+    "emoji": "💅"
+  },
+  "dissent": {
+    "song": "Fight the Power",
+    "artist": "Public Enemy",
+    "connection": "The song voices dissent — strong disagreement and opposition to authority.",
+    "emoji": "✊"
+  },
+  "dissolution": {
+    "song": "Everybody Hurts",
+    "artist": "R.E.M.",
+    "connection": "Emotional dissolution — the breaking apart of hope — is what the song addresses.",
+    "emoji": "💧"
+  },
+  "distinguish": {
+    "song": "One",
+    "artist": "U2",
+    "connection": "The song tries to distinguish the difference between being one and being together.",
+    "emoji": "🔍"
+  },
+  "divert": {
+    "song": "Don't Look Back in Anger",
+    "artist": "Oasis",
+    "connection": "The song diverts attention from anger by redirecting toward acceptance.",
+    "emoji": "↩️"
+  },
+  "dormant": {
+    "song": "Waking Up",
+    "artist": "OneRepublic",
+    "connection": "Waking up implies leaving a dormant, inactive state of sleep.",
+    "emoji": "😴"
+  },
+  "draconian": {
+    "song": "Another Brick in the Wall",
+    "artist": "Pink Floyd",
+    "connection": "The draconian, excessively harsh rules of authoritarian education are protested.",
+    "emoji": "⛓️"
+  },
+  "dwindle": {
+    "song": "Fade to Black",
+    "artist": "Metallica",
+    "connection": "Life and hope dwindle and fade gradually into darkness and nothingness.",
+    "emoji": "📉"
+  },
+  "eccentric": {
+    "song": "Space Oddity",
+    "artist": "David Bowie",
+    "connection": "Bowie was delightfully eccentric — unconventional and strange in the best way.",
+    "emoji": "🪐"
+  },
+  "edify": {
+    "song": "Imagine",
+    "artist": "John Lennon",
+    "connection": "The song aims to edify listeners — improving their moral understanding of peace.",
+    "emoji": "📚"
+  },
+  "efficacy": {
+    "song": "Believer",
+    "artist": "Imagine Dragons",
+    "connection": "The song affirms the efficacy of pain as a catalyst for personal growth.",
+    "emoji": "📊"
+  },
+  "effusive": {
+    "song": "I Wanna Dance with Somebody",
+    "artist": "Whitney Houston",
+    "connection": "Whitney's effusive, unrestrained enthusiasm radiates from every joyful note.",
+    "emoji": "🎉"
+  },
+  "egalitarian": {
+    "song": "Imagine",
+    "artist": "John Lennon",
+    "connection": "Lennon imagines an egalitarian world where all people are treated equally.",
+    "emoji": "⚖️"
+  },
+  "egregious": {
+    "song": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "connection": "The song attacks the egregiously, shockingly bad state of mainstream culture.",
+    "emoji": "🚩"
+  },
+  "elicit": {
+    "song": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "connection": "The song elicits powerful emotional responses — drawing out feelings from listeners.",
+    "emoji": "🎭"
+  },
+  "elucidate": {
+    "song": "Clarity",
+    "artist": "Zedd ft. Foxes",
+    "connection": "Seeking clarity means wanting someone to elucidate and make things clear.",
+    "emoji": "💡"
+  },
+  "eminent": {
+    "song": "Legends Never Die",
+    "artist": "Juice WRLD",
+    "connection": "Legends are eminent — famous and distinguished, standing above the rest.",
+    "emoji": "⭐"
+  },
+  "empathy": {
+    "song": "Put Yourself in My Shoes",
+    "artist": "Clint Black",
+    "connection": "Putting yourself in someone's shoes is the literal act of showing empathy.",
+    "emoji": "👟"
+  },
+  "empirical": {
+    "song": "Proof",
+    "artist": "Paramore",
+    "connection": "Demanding proof means requiring empirical evidence based on observation.",
+    "emoji": "🔬"
+  },
+  "endorse": {
+    "song": "Signed, Sealed, Delivered",
+    "artist": "Stevie Wonder",
+    "connection": "Signing and sealing something is like formally endorsing and approving it.",
+    "emoji": "✍️"
+  },
+  "engender": {
+    "song": "We Are the World",
+    "artist": "USA for Africa",
+    "connection": "The song sought to engender compassion and charitable action worldwide.",
+    "emoji": "🌱"
+  },
+  "enmity": {
+    "song": "Bad Blood",
+    "artist": "Taylor Swift",
+    "connection": "Bad blood signifies enmity — active hostility between former allies.",
+    "emoji": "⚔️"
+  },
+  "enumerate": {
+    "song": "We Didn't Start the Fire",
+    "artist": "Billy Joel",
+    "connection": "Billy Joel enumerates — lists one by one — decades of major historical events.",
+    "emoji": "📋"
+  },
+  "epitome": {
+    "song": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "connection": "The song is the epitome of creative ambition in rock music.",
+    "emoji": "🏆"
+  },
+  "equanimity": {
+    "song": "Don't Worry Be Happy",
+    "artist": "Bobby McFerrin",
+    "connection": "The song embodies equanimity — maintaining calm composure regardless of stress.",
+    "emoji": "😌"
+  },
+  "erroneous": {
+    "song": "Oops!... I Did It Again",
+    "artist": "Britney Spears",
+    "connection": "Making erroneous mistakes again and again despite knowing better.",
+    "emoji": "❌"
+  },
+  "estrange": {
+    "song": "Hello",
+    "artist": "Adele",
+    "connection": "Adele reaches out across estrangement — the alienation that has grown between them.",
+    "emoji": "📞"
+  },
+  "euphoria": {
+    "song": "Euphoria",
+    "artist": "BTS",
+    "connection": "The song is literally named Euphoria, capturing intense happiness and elation.",
+    "emoji": "🌟"
+  },
+  "evocative": {
+    "song": "Strawberry Fields Forever",
+    "artist": "The Beatles",
+    "connection": "The evocative imagery powerfully conjures vivid memories and emotions.",
+    "emoji": "🍓"
+  },
+  "exalt": {
+    "song": "Praise You",
+    "artist": "Fatboy Slim",
+    "connection": "To praise someone is to exalt them — raising them high with admiration.",
+    "emoji": "🙌"
+  },
+  "exhort": {
+    "song": "Get Up, Stand Up",
+    "artist": "Bob Marley",
+    "connection": "Bob Marley exhorts listeners, strongly urging them to stand up for their rights.",
+    "emoji": "📢"
+  },
+  "expedite": {
+    "song": "Speed of Sound",
+    "artist": "Coldplay",
+    "connection": "Moving at the speed of sound means expediting — accelerating the process.",
+    "emoji": "🏃"
+  },
+  "exploit": {
+    "song": "Gold Digger",
+    "artist": "Kanye West",
+    "connection": "The gold digger exploits relationships for selfish financial advantage.",
+    "emoji": "💰"
+  },
+  "extol": {
+    "song": "Praise You",
+    "artist": "Fatboy Slim",
+    "connection": "Praising someone means extolling their virtues with enthusiastic approval.",
+    "emoji": "🎊"
+  },
+  "extraneous": {
+    "song": "Less Is More",
+    "artist": "Relient K",
+    "connection": "Eliminating the extraneous means removing what is irrelevant and unnecessary.",
+    "emoji": "✂️"
+  },
+  "fabricate": {
+    "song": "Lies",
+    "artist": "Fleetwood Mac",
+    "connection": "Telling lies means fabricating false stories and inventing untruths.",
+    "emoji": "🧵"
+  },
+  "facilitate": {
+    "song": "Bridge Over Troubled Water",
+    "artist": "Simon & Garfunkel",
+    "connection": "A bridge facilitates passage — making it easier to cross troubled waters.",
+    "emoji": "🌉"
+  },
+  "fallacious": {
+    "song": "Lies",
+    "artist": "Fleetwood Mac",
+    "connection": "Lies are fallacious — based on false reasoning and mistaken beliefs.",
+    "emoji": "🃏"
+  },
+  "fathom": {
+    "song": "Under the Sea",
+    "artist": "The Little Mermaid",
+    "connection": "The ocean's depths are measured in fathoms — understanding deep mysteries.",
+    "emoji": "🌊"
+  },
+  "fawn": {
+    "song": "Toxic",
+    "artist": "Britney Spears",
+    "connection": "People fawn over someone toxic, giving excessive flattery despite the danger.",
+    "emoji": "🦌"
+  },
+  "feasible": {
+    "song": "Impossible",
+    "artist": "Shontelle",
+    "connection": "Ironically, what seems impossible might actually become feasible with effort.",
+    "emoji": "🔓"
+  },
+  "felicitous": {
+    "song": "Happy Together",
+    "artist": "The Turtles",
+    "connection": "Being happy together is a felicitous arrangement — well-suited and pleasing.",
+    "emoji": "🎵"
+  },
+  "fiasco": {
+    "song": "Trainwreck",
+    "artist": "Demi Lovato",
+    "connection": "A trainwreck is a complete fiasco — a disastrous, humiliating failure.",
+    "emoji": "💥"
+  },
+  "flaunt": {
+    "song": "All I Do Is Win",
+    "artist": "DJ Khaled",
+    "connection": "Flaunting success and victory proudly for everyone to see and admire.",
+    "emoji": "🏆"
+  },
+  "flout": {
+    "song": "I Fought the Law",
+    "artist": "The Clash",
+    "connection": "Fighting the law means flouting rules — openly disregarding authority.",
+    "emoji": "⚖️"
+  },
+  "foment": {
+    "song": "Uprising",
+    "artist": "Muse",
+    "connection": "The song foments rebellion — stirring up discontent and encouraging uprising.",
+    "emoji": "🔥"
+  },
+  "forbearance": {
+    "song": "Let It Be",
+    "artist": "The Beatles",
+    "connection": "Letting things be requires forbearance — patient, tolerant self-restraint.",
+    "emoji": "🙏"
+  },
+  "foreclose": {
+    "song": "Hard Times",
+    "artist": "Paramore",
+    "connection": "Hard times can foreclose possibilities and shut down options for the future.",
+    "emoji": "🔒"
+  },
+  "forestall": {
+    "song": "Stop",
+    "artist": "Spice Girls",
+    "connection": "Telling someone to stop attempts to forestall and prevent their next action.",
+    "emoji": "🛑"
+  },
+  "forfeit": {
+    "song": "Lose Yourself",
+    "artist": "Eminem",
+    "connection": "Not seizing the moment means you forfeit — surrender your one opportunity.",
+    "emoji": "❌"
+  },
+  "forthright": {
+    "song": "Say What You Need to Say",
+    "artist": "John Mayer",
+    "connection": "Being forthright means saying exactly what you need to say — directly and honestly.",
+    "emoji": "💬"
+  },
+  "foster": {
+    "song": "Lean on Me",
+    "artist": "Bill Withers",
+    "connection": "The song fosters a sense of community by encouraging mutual support.",
+    "emoji": "🌱"
+  },
+  "founder": {
+    "song": "Titanic Theme",
+    "artist": "Celine Dion",
+    "connection": "The Titanic foundered — sank after striking an iceberg — inspiring this ballad.",
+    "emoji": "🚢"
+  },
+  "frantic": {
+    "song": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "connection": "The frantic, desperate energy of the song mirrors chaotic adolescent anxiety.",
+    "emoji": "😰"
+  },
+  "frenetic": {
+    "song": "Sabotage",
+    "artist": "Beastie Boys",
+    "connection": "The frenetic, wildly fast pace of the song creates relentless chaotic energy.",
+    "emoji": "🌀"
+  },
+  "furtive": {
+    "song": "Secret",
+    "artist": "The Weeknd",
+    "connection": "Furtive behavior is sneaky and secretive, trying to avoid being noticed.",
+    "emoji": "🤫"
+  },
+  "galvanize": {
+    "song": "Uprising",
+    "artist": "Muse",
+    "connection": "The song galvanizes listeners, shocking them into action against oppression.",
+    "emoji": "⚡"
+  },
+  "garner": {
+    "song": "All I Do Is Win",
+    "artist": "DJ Khaled",
+    "connection": "Winning helps you garner respect and gather support from those around you.",
+    "emoji": "🏅"
+  },
+  "germane": {
+    "song": "Relevant",
+    "artist": "Yelawolf",
+    "connection": "Something germane is directly relevant and closely connected to the topic.",
+    "emoji": "🎯"
+  },
+  "gesticulate": {
+    "song": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "connection": "Freddie Mercury's dramatic performing style involved wild gesticulation on stage.",
+    "emoji": "🤌"
+  },
+  "glean": {
+    "song": "Message in a Bottle",
+    "artist": "The Police",
+    "connection": "Finding a message in a bottle means gleaning information from an unexpected source.",
+    "emoji": "🍇"
+  },
+  "glib": {
+    "song": "Smooth",
+    "artist": "Santana ft. Rob Thomas",
+    "connection": "Being smooth can mean being glib — fluent and persuasive but insincere.",
+    "emoji": "😏"
+  },
+  "gratify": {
+    "song": "(I Can't Get No) Satisfaction",
+    "artist": "The Rolling Stones",
+    "connection": "The inability to be gratified — to find satisfaction — drives the song's frustration.",
+    "emoji": "😤"
+  },
+  "gravity": {
+    "song": "Gravity",
+    "artist": "John Mayer",
+    "connection": "Mayer's song is literally about gravity — the weighty seriousness pulling him down.",
+    "emoji": "🌍"
+  },
+  "guile": {
+    "song": "Smooth Criminal",
+    "artist": "Michael Jackson",
+    "connection": "A smooth criminal uses guile — sly cunning and clever deception.",
+    "emoji": "🦊"
+  },
+  "hamper": {
+    "song": "Ball and Chain",
+    "artist": "Janis Joplin",
+    "connection": "A ball and chain hampers movement — restricting and impeding freedom.",
+    "emoji": "⛓️"
+  },
+  "hapless": {
+    "song": "Creep",
+    "artist": "Radiohead",
+    "connection": "The hapless narrator is unlucky and unfortunate, unable to fit in anywhere.",
+    "emoji": "😢"
+  },
+  "harbinger": {
+    "song": "Another One Bites the Dust",
+    "artist": "Queen",
+    "connection": "Each defeat is a harbinger — a sign warning that more failures may follow.",
+    "emoji": "🔔"
+  },
+  "hasten": {
+    "song": "Run",
+    "artist": "Snow Patrol",
+    "connection": "The urgency to run is about hastening — moving quickly without delay.",
+    "emoji": "🏃"
+  },
+  "heretic": {
+    "song": "Sympathy for the Devil",
+    "artist": "The Rolling Stones",
+    "connection": "Singing from the devil's perspective was considered heretical by many at the time.",
+    "emoji": "⛧"
+  },
+  "heterogeneous": {
+    "song": "It Takes Two",
+    "artist": "Rob Base",
+    "connection": "It takes a heterogeneous, diverse mix of people to make things work.",
+    "emoji": "🎲"
+  },
+  "hierarchical": {
+    "song": "Viva la Vida",
+    "artist": "Coldplay",
+    "connection": "The king at the top of the hierarchical social structure loses his throne.",
+    "emoji": "📊"
+  },
+  "homogeneous": {
+    "song": "Uniform",
+    "artist": "Bloc Party",
+    "connection": "Uniforms create a homogeneous appearance where everyone looks the same.",
+    "emoji": "👔"
+  },
+  "hubris": {
+    "song": "Viva la Vida",
+    "artist": "Coldplay",
+    "connection": "The fallen king's hubris — excessive pride — led to his downfall from power.",
+    "emoji": "👑"
+  },
+  "humility": {
+    "song": "Humble and Kind",
+    "artist": "Tim McGraw",
+    "connection": "The song teaches humility — staying modest and grounded despite success.",
+    "emoji": "🙏"
+  },
+  "hyperbole": {
+    "song": "Best Song Ever",
+    "artist": "One Direction",
+    "connection": "Calling anything the 'best ever' is classic hyperbole — extreme exaggeration.",
+    "emoji": "📢"
+  },
+  "hypothetical": {
+    "song": "What If",
+    "artist": "Coldplay",
+    "connection": "Every 'what if' question explores a hypothetical, imaginary scenario.",
+    "emoji": "💭"
+  },
+  "immutable": {
+    "song": "Changes",
+    "artist": "David Bowie",
+    "connection": "Ironically, Bowie embraced change while exploring what should remain immutable.",
+    "emoji": "🗿"
+  },
+  "impair": {
+    "song": "Hurt",
+    "artist": "Johnny Cash",
+    "connection": "The needle and the damage done impair both body and spirit over time.",
+    "emoji": "💉"
+  },
+  "impartial": {
+    "song": "Imagine",
+    "artist": "John Lennon",
+    "connection": "A world without countries or religion would need impartial, unbiased leadership.",
+    "emoji": "⚖️"
+  },
+  "impassive": {
+    "song": "Poker Face",
+    "artist": "Lady Gaga",
+    "connection": "An impassive poker face shows no emotion — completely unexpressive and calm.",
+    "emoji": "😐"
+  },
+  "impeccable": {
+    "song": "Uptown Funk",
+    "artist": "Bruno Mars",
+    "connection": "Bruno's impeccable style and groove are flawless and beyond criticism.",
+    "emoji": "✨"
+  },
+  "imperious": {
+    "song": "Royals",
+    "artist": "Lorde",
+    "connection": "The imperious attitude of those who flaunt wealth and expect obedience.",
+    "emoji": "👑"
+  },
+  "implacable": {
+    "song": "Unstoppable",
+    "artist": "Sia",
+    "connection": "Being unstoppable means being implacable — impossible to appease or halt.",
+    "emoji": "🦾"
+  },
+  "improvise": {
+    "song": "Freestyle",
+    "artist": "Eminem",
+    "connection": "Freestyling means improvising — creating rap lyrics spontaneously without preparation.",
+    "emoji": "🎤"
+  },
+  "impugn": {
+    "song": "Liar",
+    "artist": "Three Dog Night",
+    "connection": "Calling someone a liar impugns their honesty and questions their integrity.",
+    "emoji": "⚔️"
+  },
+  "inadvertent": {
+    "song": "Oops!... I Did It Again",
+    "artist": "Britney Spears",
+    "connection": "The repeated 'oops' suggests inadvertent mistakes made without intention.",
+    "emoji": "🤭"
+  },
+  "incandescent": {
+    "song": "Firework",
+    "artist": "Katy Perry",
+    "connection": "A firework is incandescent — glowing brilliantly with intense, dazzling light.",
+    "emoji": "🎆"
+  },
+  "incessant": {
+    "song": "Can't Stop",
+    "artist": "Red Hot Chili Peppers",
+    "connection": "Not being able to stop means the action is incessant — never ceasing.",
+    "emoji": "🔁"
+  },
+  "incite": {
+    "song": "Uprising",
+    "artist": "Muse",
+    "connection": "The song incites revolution, stirring people to rise up against oppression.",
+    "emoji": "🔥"
+  },
+  "inclusive": {
+    "song": "Born This Way",
+    "artist": "Lady Gaga",
+    "connection": "The song promotes an inclusive message — welcoming everyone regardless of identity.",
+    "emoji": "🌈"
+  },
+  "incoherent": {
+    "song": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "connection": "Kurt Cobain's deliberately incoherent mumbling defied clarity by design.",
+    "emoji": "🌀"
+  },
+  "indignant": {
+    "song": "You Oughta Know",
+    "artist": "Alanis Morissette",
+    "connection": "The song burns with indignant anger over being treated unfairly in a breakup.",
+    "emoji": "😤"
+  },
+  "indiscriminate": {
+    "song": "Everybody",
+    "artist": "Backstreet Boys",
+    "connection": "Wanting everybody to rock their body is an indiscriminate, unselective invitation.",
+    "emoji": "🎵"
+  },
+  "indispensable": {
+    "song": "Ain't No Sunshine",
+    "artist": "Bill Withers",
+    "connection": "The absent lover is indispensable — absolutely necessary for the singer's happiness.",
+    "emoji": "☀️"
+  },
+  "induce": {
+    "song": "Hypnotize",
+    "artist": "The Notorious B.I.G.",
+    "connection": "Hypnotizing someone induces a trance-like state through persuasive influence.",
+    "emoji": "🌀"
+  },
+  "inert": {
+    "song": "Comfortably Numb",
+    "artist": "Pink Floyd",
+    "connection": "Being comfortably numb renders someone inert — lacking the power to move or act.",
+    "emoji": "🧊"
+  },
+  "inexorable": {
+    "song": "Time",
+    "artist": "Pink Floyd",
+    "connection": "Time's inexorable march forward cannot be stopped or altered by anyone.",
+    "emoji": "⏰"
+  },
+  "infallible": {
+    "song": "God Only Knows",
+    "artist": "The Beach Boys",
+    "connection": "Only a divine being could be truly infallible — incapable of making mistakes.",
+    "emoji": "🙌"
+  },
+  "inflammatory": {
+    "song": "Fight the Power",
+    "artist": "Public Enemy",
+    "connection": "The deliberately inflammatory lyrics were designed to provoke strong reactions.",
+    "emoji": "🔥"
+  },
+  "inherent": {
+    "song": "Born This Way",
+    "artist": "Lady Gaga",
+    "connection": "Being born this way means your qualities are inherent — existing naturally within.",
+    "emoji": "🧬"
+  },
+  "inhibit": {
+    "song": "Break Free",
+    "artist": "Ariana Grande",
+    "connection": "The chains that inhibit freedom are what Ariana desperately wants to escape.",
+    "emoji": "🔗"
+  },
+  "inimical": {
+    "song": "Enemy",
+    "artist": "Imagine Dragons",
+    "connection": "An enemy is inimical — hostile, unfriendly, and harmful to your interests.",
+    "emoji": "⚔️"
+  },
+  "insatiable": {
+    "song": "Hungry Like the Wolf",
+    "artist": "Duran Duran",
+    "connection": "A wolf's hunger is insatiable — impossible to fully satisfy or quench.",
+    "emoji": "🐺"
+  },
+  "insidious": {
+    "song": "Toxic",
+    "artist": "Britney Spears",
+    "connection": "Toxicity works in insidious ways — gradually harmful beneath an attractive surface.",
+    "emoji": "🐍"
+  },
+  "integral": {
+    "song": "We Are Family",
+    "artist": "Sister Sledge",
+    "connection": "Each family member is an integral, essential part of the whole unit.",
+    "emoji": "🧩"
+  },
+  "interim": {
+    "song": "In Between",
+    "artist": "Linkin Park",
+    "connection": "Being in between means existing in the interim period — a temporary middle state.",
+    "emoji": "⏸️"
+  },
+  "intermittent": {
+    "song": "Hot N Cold",
+    "artist": "Katy Perry",
+    "connection": "The partner's intermittent affection starts and stops unpredictably.",
+    "emoji": "🔀"
+  },
+  "intractable": {
+    "song": "I Won't Back Down",
+    "artist": "Tom Petty",
+    "connection": "Petty's intractable stubbornness makes him impossible to manage or persuade.",
+    "emoji": "🐂"
+  },
+  "intrinsic": {
+    "song": "True Colors",
+    "artist": "Cyndi Lauper",
+    "connection": "True colors represent intrinsic, inherent qualities belonging to one's nature.",
+    "emoji": "🌈"
+  },
+  "inveterate": {
+    "song": "Bad Habits",
+    "artist": "Ed Sheeran",
+    "connection": "Bad habits that never change reveal an inveterate, deeply established pattern.",
+    "emoji": "🔄"
+  },
+  "invoke": {
+    "song": "Spirit in the Sky",
+    "artist": "Norman Greenbaum",
+    "connection": "The song invokes a higher spiritual power as a source of salvation.",
+    "emoji": "✨"
+  },
+  "irresolute": {
+    "song": "Should I Stay or Should I Go",
+    "artist": "The Clash",
+    "connection": "The irresolute wavering between staying and going shows complete indecisiveness.",
+    "emoji": "🤷"
+  },
+  "itinerant": {
+    "song": "Ramblin' Man",
+    "artist": "The Allman Brothers Band",
+    "connection": "A ramblin' man is itinerant — traveling from place to place without settling.",
+    "emoji": "🎒"
+  },
+  "jeopardize": {
+    "song": "Dangerous Woman",
+    "artist": "Ariana Grande",
+    "connection": "Being a dangerous woman could jeopardize — put at risk — the safety of others.",
+    "emoji": "⚠️"
+  },
+  "juxtapose": {
+    "song": "Bittersweet Symphony",
+    "artist": "The Verve",
+    "connection": "The song juxtaposes bitter and sweet — placing them side by side for contrast.",
+    "emoji": "↔️"
+  },
+  "kinetic": {
+    "song": "Can't Stop the Feeling",
+    "artist": "Justin Timberlake",
+    "connection": "The unstoppable urge to dance is pure kinetic energy — the energy of motion.",
+    "emoji": "💃"
+  }
+}

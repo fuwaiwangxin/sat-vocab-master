@@ -4,22 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🏆 SAT Vocab Master - Learn 2000+ Words</title>
-<meta name="description" content="Master 2000+ SAT vocabulary words with pronunciation, emoji mnemonics, sports analogies, flashcards, and 456 practice test questions.">
+<meta name="description" content="Master 2000+ SAT vocabulary words with pronunciation, emoji mnemonics, music connections, flashcards, and 456 practice test questions.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏆</text></svg>">
+<script src="https://js.puter.com/v2/"></script>
 <style>
-/*===== RESET & VARS =====*/
 :root{
   --p:#6C5CE7;--pl:#A29BFE;--pd:#4834D4;
   --a:#00B894;--a2:#FDCB6E;--d:#E17055;
   --bg:#0F0F1A;--bg2:#1A1A2E;--bg3:#16213E;
   --c:#1E1E32;--ch:#2A2A45;
-  --t:#E8E8F0;--td:#8888AA;--b:#333355;
-  --s:#00B894;
+  --t:#E8E8F0;--td:#8888AA;--b:#333355;--s:#00B894;
   --g1:linear-gradient(135deg,#6C5CE7,#A29BFE);
   --g2:linear-gradient(135deg,#00B894,#55EFC4);
   --g3:linear-gradient(135deg,#E17055,#FDCB6E);
-  --sh:0 4px 15px rgba(0,0,0,.3);
-  --r:12px;--rs:8px;
+  --sh:0 4px 15px rgba(0,0,0,.3);--r:12px;--rs:8px;
+  --music:#E91E63;--music-bg:rgba(233,30,99,.12);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--t);min-height:100vh;overflow-x:hidden}
@@ -30,7 +29,6 @@ input,select{font-family:inherit}
 ::-webkit-scrollbar-track{background:var(--bg2)}
 ::-webkit-scrollbar-thumb{background:var(--b);border-radius:3px}
 
-/*===== NAV =====*/
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(15,15,26,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--b);padding:0 20px}
 .nav-in{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px}
 .logo{font-size:1.3em;font-weight:800;background:var(--g1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:flex;align-items:center;gap:6px}
@@ -41,7 +39,6 @@ input,select{font-family:inherit}
 .nav-st{display:flex;gap:12px;font-size:.82em;color:var(--td)}
 .nav-st strong{color:var(--a)}
 
-/*===== MOBILE NAV =====*/
 .mob-nav{display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(15,15,26,.98);backdrop-filter:blur(20px);border-top:1px solid var(--b);justify-content:space-around;padding:6px 0;z-index:100}
 .mob-btn{display:flex;flex-direction:column;align-items:center;gap:1px;color:var(--td);font-size:.65em;padding:4px 8px;background:0}
 .mob-btn.active{color:var(--pl)}
@@ -55,12 +52,8 @@ input,select{font-family:inherit}
   .tu-grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))!important}
 }
 
-/*===== MAIN =====*/
 .main{padding-top:76px;max-width:1400px;margin:0 auto;padding-left:20px;padding-right:20px}
-.section{display:none;padding-bottom:50px}
-.section.active{display:block}
-
-/*===== HERO =====*/
+.section{display:none;padding-bottom:50px}.section.active{display:block}
 .hero{text-align:center;padding:30px 10px}
 .hero h1{font-size:2.4em;margin-bottom:8px;background:var(--g1);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .hero p{color:var(--td);font-size:1em;margin-bottom:25px}
@@ -68,8 +61,6 @@ input,select{font-family:inherit}
 .stat-c{background:var(--c);border:1px solid var(--b);border-radius:var(--r);padding:16px 24px;text-align:center;min-width:130px}
 .stat-c .n{font-size:1.8em;font-weight:800;background:var(--g2);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .stat-c .l{color:var(--td);font-size:.8em;margin-top:3px}
-
-/*===== SEARCH =====*/
 .search-c{max-width:600px;margin:25px auto;position:relative}
 .search-in{width:100%;padding:13px 18px 13px 46px;background:var(--c);border:2px solid var(--b);border-radius:30px;color:var(--t);font-size:1em;outline:0;transition:.3s}
 .search-in:focus{border-color:var(--p)}
@@ -77,20 +68,13 @@ input,select{font-family:inherit}
 .search-r{position:absolute;top:100%;left:0;right:0;margin-top:6px;background:var(--c);border:1px solid var(--b);border-radius:var(--r);max-height:380px;overflow-y:auto;z-index:50;display:none}
 .search-r.show{display:block}
 .sr-item{padding:10px 18px;cursor:pointer;border-bottom:1px solid var(--b);transition:.2s}
-.sr-item:hover{background:var(--ch)}
-.sr-item:last-child{border:0}
-.sr-w{font-weight:700;font-size:1em}
-.sr-d{color:var(--td);font-size:.82em;margin-top:2px}
-
-/*===== QUICK ACTIONS =====*/
+.sr-item:hover{background:var(--ch)}.sr-item:last-child{border:0}
+.sr-w{font-weight:700;font-size:1em}.sr-d{color:var(--td);font-size:.82em;margin-top:2px}
 .qa{display:flex;gap:12px;justify-content:center;margin:25px 0;flex-wrap:wrap}
 .qa-btn{padding:12px 26px;border-radius:var(--r);font-size:1em;font-weight:600;transition:.2s}
 .qa-btn:hover{transform:translateY(-2px)}
-.btn-p{background:var(--g1);color:#fff}
-.btn-s{background:var(--g2);color:#fff}
+.btn-p{background:var(--g1);color:#fff}.btn-s{background:var(--g2);color:#fff}
 .btn-o{background:var(--c);color:var(--t);border:1px solid var(--b)}
-
-/*===== WORD CARDS =====*/
 .w-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
 .w-card{background:var(--c);border:1px solid var(--b);border-radius:var(--r);padding:18px;transition:.3s;cursor:pointer;position:relative;overflow:hidden}
 .w-card:hover{transform:translateY(-3px);box-shadow:var(--sh);border-color:var(--p)}
@@ -103,56 +87,50 @@ input,select{font-family:inherit}
 .w-btn.fav{background:var(--d);color:#fff}
 .w-emoji{font-size:1.8em;margin:6px 0}
 .w-def{font-size:.87em;line-height:1.45;margin-bottom:6px}
-.w-chi{font-size:.82em;color:var(--td);margin-bottom:6px}
 .w-sent{font-size:.8em;color:var(--td);font-style:italic;background:var(--bg3);padding:7px 10px;border-radius:var(--rs);line-height:1.35;margin-bottom:6px}
-.w-sport{font-size:.8em;padding:5px 10px;border-radius:var(--rs);background:rgba(108,92,231,.12);border-left:3px solid var(--p);line-height:1.35}
+.w-sent strong{color:var(--pl);font-style:normal}
+.w-music{font-size:.82em;padding:6px 10px;border-radius:var(--rs);background:var(--music-bg);border-left:3px solid var(--music);line-height:1.35;margin-top:6px}
+.w-music a{color:var(--music);font-weight:600}
+.w-visual{font-size:.82em;padding:8px 10px;border-radius:var(--rs);background:rgba(108,92,231,.12);border-left:3px solid var(--pl);line-height:1.35;margin-top:6px;margin-bottom:6px;color:var(--t)}
+.w-visual em{color:var(--pl);font-style:italic}
+.w-img-wrap{position:relative;border-radius:var(--rs);overflow:hidden;margin-top:8px;margin-bottom:8px;background:var(--bg3);min-height:80px}
+.w-img-wrap img{width:100%;border-radius:var(--rs);display:block;max-height:260px;object-fit:cover}
+.w-img-wrap .img-loading{display:flex;align-items:center;justify-content:center;gap:8px;padding:20px;color:var(--td);font-size:.85em}
+.w-img-wrap .img-loading .spinner{width:20px;height:20px;border:2px solid var(--b);border-top:2px solid var(--pl);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.gen-img-btn{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;background:var(--g1);color:#fff;font-size:.82em;font-weight:600;margin-top:6px;transition:.2s}
+.gen-img-btn:hover{transform:translateY(-1px);box-shadow:0 2px 8px rgba(108,92,231,.4)}
 .w-extra{font-size:.78em;color:var(--td);margin-top:6px;padding-top:6px;border-top:1px solid var(--b)}
 .w-tag{position:absolute;top:6px;right:6px;font-size:.65em;padding:2px 7px;border-radius:10px;background:var(--s);color:#fff}
-
-/*===== MODAL =====*/
 .modal-ov{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(5px);z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
 .modal-ov.show{display:flex}
 .modal{background:var(--bg2);border:1px solid var(--b);border-radius:var(--r);max-width:700px;width:100%;max-height:90vh;overflow-y:auto;padding:28px;position:relative}
 .modal-x{position:absolute;top:12px;right:12px;width:34px;height:34px;border-radius:50%;background:var(--bg3);color:var(--t);font-size:1.1em;display:flex;align-items:center;justify-content:center}
 .modal-x:hover{background:var(--d)}
-
-/*===== FILTER BAR =====*/
 .fbar{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
 .f-sel{padding:7px 12px;border-radius:var(--rs);background:var(--c);color:var(--t);border:1px solid var(--b);font-size:.88em;outline:0}
 .f-tag{padding:5px 12px;border-radius:20px;background:var(--bg3);color:var(--td);font-size:.82em;border:1px solid transparent;transition:.2s}
 .f-tag:hover,.f-tag.active{border-color:var(--p);color:var(--pl);background:rgba(108,92,231,.12)}
-
-/*===== ALPHA BAR =====*/
 .abar{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:12px;justify-content:center}
 .a-btn{width:30px;height:30px;border-radius:5px;background:var(--c);color:var(--td);font-size:.75em;font-weight:700;display:flex;align-items:center;justify-content:center;border:1px solid var(--b);transition:.2s}
 .a-btn:hover,.a-btn.active{background:var(--p);color:#fff;border-color:var(--p)}
-
-/*===== MODE BAR =====*/
 .mbar{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
 .m-btn{padding:7px 14px;border-radius:20px;font-size:.82em;font-weight:600;background:var(--c);color:var(--td);border:1px solid var(--b);transition:.2s}
 .m-btn:hover,.m-btn.active{background:var(--p);color:#fff;border-color:var(--p)}
-
-/*===== PAGINATION =====*/
 .pag{display:flex;gap:6px;justify-content:center;margin:25px 0;flex-wrap:wrap}
 .pg-btn{padding:6px 12px;border-radius:var(--rs);background:var(--c);color:var(--t);font-size:.85em;border:1px solid var(--b);transition:.2s}
-.pg-btn:hover{border-color:var(--p)}
-.pg-btn.active{background:var(--p);color:#fff;border-color:var(--p)}
+.pg-btn:hover{border-color:var(--p)}.pg-btn.active{background:var(--p);color:#fff;border-color:var(--p)}
 .pg-btn:disabled{opacity:.35;cursor:not-allowed}
-
-/*===== FLASHCARD =====*/
 .fc-wrap{max-width:600px;margin:0 auto;perspective:1000px}
 .fc{width:100%;min-height:340px;position:relative;cursor:pointer;transform-style:preserve-3d;transition:transform .6s}
 .fc.flip{transform:rotateY(180deg)}
 .fc-face{position:absolute;inset:0;backface-visibility:hidden;background:var(--c);border:2px solid var(--b);border-radius:var(--r);padding:35px;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .fc-back{transform:rotateY(180deg)}
 .fc-nav{display:flex;gap:12px;justify-content:center;margin-top:20px}
-
-/*===== TEST =====*/
 .tu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px;margin-bottom:25px}
 .tu-card{background:var(--c);border:1px solid var(--b);border-radius:var(--r);padding:18px;text-align:center;transition:.3s;cursor:pointer}
 .tu-card:hover{transform:translateY(-2px);border-color:var(--p)}
-.tu-num{font-size:1.3em;font-weight:800;color:var(--pl)}
-.tu-label{color:var(--td);font-size:.8em;margin-top:3px}
+.tu-num{font-size:1.3em;font-weight:800;color:var(--pl)}.tu-label{color:var(--td);font-size:.8em;margin-top:3px}
 .tu-score{font-size:.78em;margin-top:5px}
 .t-wrap{max-width:800px;margin:0 auto}
 .t-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px}
@@ -173,38 +151,20 @@ input,select{font-family:inherit}
 .t-btn{padding:9px 20px;border-radius:var(--rs);font-weight:600;font-size:.9em;transition:.2s}
 .q-dots{display:flex;gap:4px;justify-content:center;margin-top:12px;flex-wrap:wrap}
 .q-dot{width:26px;height:26px;border-radius:50%;font-size:.7em;display:flex;align-items:center;justify-content:center;color:#fff}
-
-/*===== RESULTS =====*/
 .res-card{background:var(--c);border:1px solid var(--b);border-radius:var(--r);padding:35px;text-align:center}
 .res-score{font-size:3.5em;font-weight:800;background:var(--g2);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .res-label{color:var(--td);font-size:1em;margin-bottom:16px}
 .res-row{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin:16px 0}
-.res-item{text-align:center}
-.res-item .n{font-size:1.3em;font-weight:700}
-.res-item .l{font-size:.75em;color:var(--td)}
-
-/*===== FAV EMPTY =====*/
-.fav-empty{text-align:center;padding:50px 20px;color:var(--td)}
-.fav-empty-ic{font-size:3.5em;margin-bottom:12px}
-
-/*===== SECTION TITLE =====*/
+.res-item{text-align:center}.res-item .n{font-size:1.3em;font-weight:700}.res-item .l{font-size:.75em;color:var(--td)}
+.fav-empty{text-align:center;padding:50px 20px;color:var(--td)}.fav-empty-ic{font-size:3.5em;margin-bottom:12px}
 .stitle{font-size:1.4em;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px}
-
-/*===== TOAST =====*/
-.toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:var(--c);border:1px solid var(--b);border-radius:var(--rs);padding:10px 22px;z-index:300;opacity:0;transition:opacity .3s;font-size:.88em}
-.toast.show{opacity:1}
-
-/*===== ANIM =====*/
-@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.fin{animation:fadeIn .35s ease-out}
-
-/*===== WOD =====*/
+.toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:var(--c);border:1px solid var(--b);border-radius:var(--rs);padding:10px 22px;z-index:300;opacity:0;transition:opacity .3s;font-size:.88em}.toast.show{opacity:1}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.fin{animation:fadeIn .35s ease-out}
 .wod{max-width:600px;margin:16px auto}
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav class="nav"><div class="nav-in">
   <div class="logo">🏆 SAT Vocab Master</div>
   <div class="nav-tabs">
@@ -213,13 +173,9 @@ input,select{font-family:inherit}
     <button class="nav-tab" onclick="go('test')">Test</button>
     <button class="nav-tab" onclick="go('fav')">Favorites</button>
   </div>
-  <div class="nav-st">
-    <span>Learned: <strong id="nLearned">0</strong></span>
-    <span>Favs: <strong id="nFav">0</strong></span>
-  </div>
+  <div class="nav-st"><span>Learned: <strong id="nLearned">0</strong></span><span>Favs: <strong id="nFav">0</strong></span></div>
 </div></nav>
 
-<!-- MOBILE NAV -->
 <div class="mob-nav">
   <button class="mob-btn active" data-s="home" onclick="go('home')"><span>🏠</span>Home</button>
   <button class="mob-btn" data-s="learn" onclick="go('learn')"><span>📚</span>Learn</button>
@@ -229,11 +185,10 @@ input,select{font-family:inherit}
 
 <div class="main">
 
-<!-- HOME -->
 <div id="s-home" class="section active">
   <div class="hero">
     <h1>🏆 SAT Vocab Master</h1>
-    <p>Master 2000+ SAT words with pronunciation, emoji mnemonics, sports analogies & quizzes</p>
+    <p>Master 2000+ SAT words with pronunciation, emoji mnemonics, music connections & quizzes</p>
     <div class="stats-row">
       <div class="stat-c"><div class="n" id="stTotal">0</div><div class="l">Total Words</div></div>
       <div class="stat-c"><div class="n">38</div><div class="l">Test Units</div></div>
@@ -251,13 +206,9 @@ input,select{font-family:inherit}
     <button class="qa-btn btn-s" onclick="go('test')">✍️ Take a Test</button>
     <button class="qa-btn btn-o" onclick="startFlash()">🃏 Flashcards</button>
   </div>
-  <div class="wod">
-    <div class="stitle">🌟 Word of the Day</div>
-    <div id="wod" class="w-card" style="cursor:default"></div>
-  </div>
+  <div class="wod"><div class="stitle">🌟 Word of the Day</div><div id="wod" class="w-card" style="cursor:default"></div></div>
 </div>
 
-<!-- LEARN -->
 <div id="s-learn" class="section">
   <div class="stitle">📚 Vocabulary Library</div>
   <div class="mbar" id="learnModes">
@@ -280,18 +231,14 @@ input,select{font-family:inherit}
   <div class="pag" id="lPag"></div>
 </div>
 
-<!-- TEST -->
 <div id="s-test" class="section">
-  <div id="tHome">
-    <div class="stitle">✍️ SAT Vocabulary Tests — 38 Units</div>
-    <p style="color:var(--td);margin-bottom:16px">Each unit has 12 fill-in-the-blank questions. Pick a unit to begin!</p>
-    <div class="tu-grid" id="tuGrid"></div>
-  </div>
+  <div id="tHome"><div class="stitle">✍️ SAT Vocabulary Tests — 38 Units</div>
+    <p style="color:var(--td);margin-bottom:16px">Each unit has 12 fill-in-the-blank questions.</p>
+    <div class="tu-grid" id="tuGrid"></div></div>
   <div id="tActive" style="display:none"></div>
   <div id="tResults" style="display:none"></div>
 </div>
 
-<!-- FAVORITES -->
 <div id="s-fav" class="section">
   <div class="stitle">❤️ My Favorites</div>
   <div class="mbar" id="favModes">
@@ -302,48 +249,45 @@ input,select{font-family:inherit}
   </div>
   <div id="fGrid" class="w-grid"></div>
   <div id="fFlash" class="fc-wrap" style="display:none"></div>
-  <div id="fEmpty" class="fav-empty" style="display:none">
-    <div class="fav-empty-ic">💔</div>
-    <h3>No favorites yet</h3>
-    <p>Click the ❤️ on any word to save it here for future study!</p>
-  </div>
+  <div id="fEmpty" class="fav-empty" style="display:none"><div class="fav-empty-ic">💔</div><h3>No favorites yet</h3><p>Click the ❤️ on any word to save it here!</p></div>
 </div>
 
 </div>
 
-<!-- MODAL -->
 <div class="modal-ov" id="modal" onclick="if(event.target===this)closeM()">
   <div class="modal" id="modalC"></div>
 </div>
-
-<!-- TOAST -->
 <div class="toast" id="toast"></div>
 
 <script>
 // ===== STATE =====
-let V=[],T=[],A={};
+let V=[],T=[],A={},MUSIC={},VISUAL={};
 let favs=new Set(JSON.parse(localStorage.getItem('sf')||'[]'));
 let lrn=new Set(JSON.parse(localStorage.getItem('sl')||'[]'));
 let scores=JSON.parse(localStorage.getItem('ss')||'{}');
-let sec='home',lm='grid',lp=1,lf='all',ll='';
+let sec='home',lm='grid',lp=1,lf='all';
 const PP=24;
 let tUnit=null,tQ=0,tAns={},tDone=false;
 let fi=0,fw=[];
 
-// ===== LOAD DATA =====
+// ===== LOAD =====
 async function loadData(){
   try{
-    const [vr,tr,ar]=await Promise.all([fetch('vocab_data.json'),fetch('test_data.json'),fetch('answers.json')]);
+    const [vr,tr,ar,mr,vsr]=await Promise.all([
+      fetch('vocab_data.json'),fetch('test_data.json'),fetch('answers.json'),
+      fetch('music_data.json').catch(()=>null),
+      fetch('visual_data.json').catch(()=>null)
+    ]);
     V=await vr.json();T=await tr.json();A=await ar.json();
-  }catch(e){console.error('Data load error:',e)}
+    if(mr&&mr.ok)MUSIC=await mr.json();
+    if(vsr&&vsr.ok)VISUAL=await vsr.json();
+  }catch(e){console.error(e)}
   init();
 }
 
 function init(){
   document.getElementById('stTotal').textContent=V.length;
-  updStats();
-  renderWOD();
-  initAlpha();
+  updStats();renderWOD();initAlpha();
 }
 
 // ===== NAV =====
@@ -353,9 +297,7 @@ function go(s){
   document.getElementById('s-'+s).classList.add('active');
   document.querySelectorAll('.nav-tab').forEach(t=>{t.classList.remove('active');if((s==='fav'&&t.textContent==='Favorites')||(s!=='fav'&&t.textContent.toLowerCase().includes(s)))t.classList.add('active')});
   document.querySelectorAll('.mob-btn').forEach(t=>{t.classList.remove('active');if(t.dataset.s===s)t.classList.add('active')});
-  if(s==='learn')renderLearn();
-  if(s==='test')renderTHome();
-  if(s==='fav')renderFav();
+  if(s==='learn')renderLearn();if(s==='test')renderTHome();if(s==='fav')renderFav();
   window.scrollTo(0,0);
 }
 
@@ -364,122 +306,147 @@ function doSearch(q){
   const r=document.getElementById('sResults');
   if(!q||q.length<1){r.classList.remove('show');return}
   const ql=q.toLowerCase();
-  const m=V.filter(w=>w.word.toLowerCase().startsWith(ql)||w.word.toLowerCase().includes(ql)||w.engDef.toLowerCase().includes(ql)||w.chiDef.includes(q)).slice(0,12);
+  const m=V.filter(w=>w.word.toLowerCase().startsWith(ql)||w.word.toLowerCase().includes(ql)||w.engDef.toLowerCase().includes(ql)).slice(0,12);
   if(!m.length){r.innerHTML='<div class="sr-item"><div class="sr-w">No results</div></div>'}
   else{r.innerHTML=m.map(w=>`<div class="sr-item" onclick="showW(${w.id})"><div class="sr-w">${emoji(w)} ${w.word} <span style="color:var(--td);font-weight:400;font-size:.82em">${w.pronunciation}</span></div><div class="sr-d">${w.engDef.substring(0,90)}${w.engDef.length>90?'...':''}</div></div>`).join('')}
   r.classList.add('show');
 }
 document.addEventListener('click',e=>{if(!e.target.closest('.search-c'))document.getElementById('sResults').classList.remove('show')});
 
-// ===== EMOJI =====
+// ===== EMOJI & VISUAL — from visual_data.json =====
 function emoji(w){
-  const d=(w.engDef+' '+w.chiDef).toLowerCase();
-  const rules=[
-    [/prais|acclaim|commend|laud|extol|applau/,'👏'],[/happ|joy|delight|elat|jubil|exult|bliss/,'😊'],
-    [/love|affection|fond|cherish|devot/,'❤️'],[/success|triumph|victor|achiev|prosper|flourish/,'🏆'],
-    [/grow|develop|expand|increas|augment/,'🌱'],[/beauti|elegant|grace|exquisit|magnifi|splend/,'✨'],
-    [/strong|power|might|robust|vigor|fortif/,'💪'],[/fast|quick|rapid|swift|hast|precipit/,'⚡'],
-    [/smart|intellig|clever|wise|astute|shrewd|sagaci/,'🧠'],[/money|wealth|rich|opulen|affluent/,'💰'],
-    [/peace|calm|tranquil|seren|placid/,'☮️'],[/sad|sorrow|grief|mourn|lament|melanchol/,'😢'],
-    [/angry|rage|fury|wrath|irate|incens/,'😤'],[/fear|dread|terror|fright|apprehens|timid/,'😨'],
-    [/danger|risk|peril|hazard|threat|jeopard/,'⚠️'],[/declin|diminish|wane|dwindl|lessen|abat/,'📉'],
-    [/destroy|demolish|annihilat|devastat|ravage/,'💥'],[/confus|perplex|bewilder|baffle|mystif/,'😵'],
-    [/boring|dull|tedious|monoton|mundane|banal/,'😴'],[/oppos|resist|defy|counter|antagoni/,'⚔️'],
-    [/restrict|limit|constrain|confin|inhibit|suppress/,'🔒'],[/speak|talk|utter|articulat|eloqu|rhetoric/,'🗣️'],
-    [/listen|hear|audit|acoust/,'👂'],[/see|look|observ|watch|scrutin|examin|inspect/,'👁️'],
-    [/think|ponder|contempl|reflect|medit|deliberat/,'🤔'],[/move|travel|journey|migrat|wander/,'🏃'],
-    [/build|construct|creat|establish|found|erect/,'🏗️'],[/break|shatter|fractur|ruptur|sever/,'💔'],
-    [/chang|transform|alter|modif|adapt|evolv/,'🔄'],[/mix|blend|merg|combin|fuse|amalgam/,'🔀'],
-    [/hid|conceal|secret|covert|clandest|surreptit/,'🙈'],[/search|seek|quest|investigat|prob|explor/,'🔍'],
-    [/water|liquid|fluid|aqua|moist/,'💧'],[/fire|burn|blaz|ignit|inflam|ferv|ardent/,'🔥'],
-    [/plant|flora|botan|blossom|bloom|verdant/,'🌿'],[/sun|solar|radiant|lumin|bright/,'☀️'],
-    [/old|ancient|antiqu|archaic|primordial/,'🏛️'],[/new|novel|innovat|fresh|pioneer/,'🆕'],
-    [/scienc|research|experiment|hypothes/,'🔬'],[/medicin|heal|cure|treat|therap|remedy/,'💊'],
-    [/write|author|compos|inscrib|draft/,'✍️'],[/book|read|literat|text|manuscript/,'📚'],
-    [/light|illumin|bright|radiant|lustr/,'💡'],[/music|melody|harmon|rhythm/,'🎵'],
-    [/art|paint|sculpt|aesthetic|creativ/,'🎨'],[/food|eat|devour|consum|nourish|feast/,'🍽️'],
-    [/laugh|humor|comic|jest|witty|facetious/,'😂'],[/king|royal|regal|sovereign|monarch/,'👑'],
-    [/war|battle|combat|conflict|militant/,'⚔️'],[/law|legal|judicial|legislat|statute/,'⚖️'],
-    [/teach|instruct|educat|mentor|tutor/,'👨‍🏫'],[/gather|collect|assembl|congregat/,'🤝'],
-    [/scatter|dispers|disseminat|spread|diffus/,'💨'],[/sharp|keen|acute|incisiv|penetrat/,'🗡️'],
-    [/soft|gentle|mild|tender|delicate|subtle/,'🕊️'],[/hard|rigid|stiff|inflexibl|adamant|obdurat/,'🪨'],
-    [/empty|void|vacant|hollow|barren|desolat/,'🕳️'],[/full|abundant|plentif|copious|prolif|ample/,'🌊'],
-    [/true|genuine|authentic|veritable|sincer/,'✅'],[/false|fake|counterfeit|spurious|bogus/,'❌'],
-    [/obey|comply|conform|submit|acquiesc|defer/,'🫡'],[/rebel|revolt|mutiny|insurr|defian/,'✊'],
-    [/mystery|enigma|puzzle|cryptic|obscur|arcane/,'🔮'],[/persist|steadfast|tenaci|resolut/,'🎯'],
-    [/praise|honor|recogn|salut|tribute/,'🎖️']
-  ];
-  for(const[rx,em]of rules)if(rx.test(d))return em;
+  const wl=w.word.toLowerCase();
+  if(VISUAL[wl]&&VISUAL[wl].emoji_scene)return VISUAL[wl].emoji_scene;
   return '📝';
 }
-
-// ===== SPORTS ANALOGY =====
-function sport(w){
-  const d=(w.engDef+' '+w.chiDef).toLowerCase();
-  const map=[
-    [/persist|endur|steadfast|unwaver|resolut|determin|tenaci/,"🏀 Like a team that keeps fighting even when down 20 in the 4th quarter — never giving up until the final buzzer"],
-    [/excel|outstand|except|superb|magnifi|brilliant/,"🏅 Like an MVP performance in a championship game — rising to the occasion when it matters most"],
-    [/declin|diminish|deteriorat|wane|fad|wither/,"📉 Like a star athlete's performance declining after a career injury — a gradual loss of former glory"],
-    [/oppos|resist|defy|counter|combat|contend/,"🥊 Like fighting a higher-ranked opponent and refusing to back down — heart over rankings"],
-    [/quick|fast|rapid|swift|hast|expedi/,"⚡ Like a sprinter's lightning reaction off the starting blocks — pure explosive speed"],
-    [/slow|gradual|deliberat|leisur|unhurri/,"🏊 Like a long-distance swimmer pacing for a 10K open water race — steady wins the marathon"],
-    [/clever|cunning|craft|shrewd|astut|ingenious/,"♟️ Like a coach's trick play that catches the defense completely off guard — brains over brawn"],
-    [/strong|power|might|forc|robus|vigor/,"🏋️ Like a weightlifter setting a personal best — raw strength meets perfect technique"],
-    [/weak|frail|feebl|fragil|delica/,"🤕 Like playing through an injury that saps your normal strength — gutsy but diminished"],
-    [/lead|guid|direct|command|govern/,"🏈 Like a quarterback leading a game-winning drive with seconds left — cool under pressure"],
-    [/unit|join|combin|merg|ally/,"🚣 Like a rowing crew achieving perfect sync — when individuals become one unstoppable force"],
-    [/prais|honor|recogn|acclai|commend|salut/,"👏 Like the standing ovation for an athlete's farewell game — well-earned recognition"],
-    [/criticiz|censur|condemn|reproach|rebuk/,"🟥 Like a referee showing a red card — the ultimate rebuke on the field"],
-    [/cautious|careful|wary|circumspect|pruden/,"♟️ Like a chess player thinking deeply before a crucial move — patience is strategy"],
-    [/bold|brave|courag|audaci|dauntless|intrepid/,"🧗 Like a free-solo climber scaling El Capitan — courage beyond measure"],
-    [/calm|seren|tranquil|compos|placid/,"🧘 Like a clutch free-throw shooter staying calm with the game on the line"],
-    [/excit|enthus|zeal|fervent|passion|ardent/,"📣 Like fans erupting after a walk-off home run in the World Series — pure electric energy"],
-    [/old|ancient|antiqu|archaic/,"🏟️ Like tradition-rich rivalry games played for over 100 years — history in every play"],
-    [/new|novel|innovat|fresh|original/,"🆕 Like a revolutionary training technique that transforms athlete performance"],
-    [/abundant|plentif|copious|profus|prolif/,"🏀 Like a scorer averaging 30+ points every game — consistently overflowing with production"],
-    [/scarc|rare|uncommon|sparse|infre/,"💎 Like a perfect game in baseball — fewer than 25 in 150 years of the sport"],
-    [/honest|sincer|candid|frank|forthright/,"🤝 Like an athlete admitting a foul the ref didn't see — integrity above advantage"],
-    [/deceit|dishonest|duplicit|fraud|disingenuous/,"🃏 Like getting caught using performance-enhancing drugs — a betrayal of fair play"],
-    [/agree|consent|assent|concur|unanim/,"🤝 Like teammates all buying into the coach's game plan — unified purpose"],
-    [/disagree|dissent|object|protest|dispute/,"🟨 Like challenging a call on the field — sometimes you have to fight for what's right"],
-    [/confus|perplex|bewilder|puzzle|mystif/,"😵 Like a batter frozen by a perfectly placed curveball — completely fooled"],
-    [/clear|lucid|transparent|explicit|unambig/,"📋 Like a crystal-clear playbook every player understands — no room for confusion"],
-    [/complex|intricate|elaborate|sophistic/,"🏈 Like a triple-option offense with multiple reads — beautifully complicated"],
-    [/simple|plain|straightforward|uncomplic/,"⚽ Like the elegant simplicity of a perfectly weighted through-ball"],
-    [/secret|hidden|covert|clandest|surreptit/,"🤫 Like a coach hiding their star's injury status before the big game"],
-    [/reveal|disclos|unveil|expos|manifest/,"🎯 Like revealing your secret weapon play in the championship — the perfect moment"],
-    [/versatile|diverse|varied|multifacet/,"🏅 Like a decathlete excelling across ten different events — the ultimate all-rounder"],
-    [/adapt|adjust|accommodat|flexibl/,"🎾 Like adjusting your game plan mid-match when your strategy isn't working"],
-    [/stubborn|obstinate|inflexib|rigid|unyield/,"🪨 Like a coach who refuses to change strategy even when losing — stubbornness as a flaw"],
-    [/prais|acclaim|laud|extol|eulog|panegyr/,"🎖️ Like a retirement ceremony honoring a legendary coach's career"],
-  ];
-  for(const[rx,txt]of map)if(rx.test(d))return txt;
-  if(/^v\./.test(w.engDef))return "🏃 Like executing a play — it's all about the action and follow-through on the field";
-  if(/^adj\./.test(w.engDef))return "🏅 Like a scout's evaluation — every quality matters for the big picture";
-  if(/^n\./.test(w.engDef))return "🏟️ Like a piece of the game — every element has its role in the strategy";
-  if(/^adv\./.test(w.engDef))return "⚡ Like the way an athlete performs — the 'how' matters as much as the 'what'";
-  return "🏆 Like mastering any sport — consistent daily effort builds championship-level skill";
+function getVisual(w){
+  const wl=w.word.toLowerCase();
+  return VISUAL[wl]||null;
+}
+function visualHTML(w){
+  const v=getVisual(w);
+  if(!v||!v.visual)return '';
+  const wl=w.word.toLowerCase();
+  const cached=getImgCache(wl);
+  const imgContent=cached
+    ?`<div class="w-img-wrap"><img src="${cached}" alt="${w.word}"></div>`
+    :`<div class="w-img-wrap" id="imgWrap_${w.id}">
+        <button class="gen-img-btn" onclick="genImg('${wl.replace(/'/g,"\\'")}',${w.id},event)">🎨 Generate AI Image</button>
+      </div>`;
+  return `<div class="w-visual">
+    🖼️ <em>${v.visual}</em>
+    ${imgContent}
+  </div>`;
 }
 
-// ===== SAMPLE SENTENCE =====
+// ===== AI IMAGE GENERATION (Puter.js) =====
+const IMG_CACHE_KEY='sat_img_cache';
+function getImgCache(word){
+  try{const c=JSON.parse(localStorage.getItem(IMG_CACHE_KEY)||'{}');return c[word]||null}catch(e){return null}
+}
+function setImgCache(word,dataUrl){
+  try{
+    const c=JSON.parse(localStorage.getItem(IMG_CACHE_KEY)||'{}');
+    c[word]=dataUrl;
+    // Keep cache under 4MB by removing oldest entries if needed
+    const str=JSON.stringify(c);
+    if(str.length>4000000){const keys=Object.keys(c);for(let i=0;i<10&&keys.length>0;i++)delete c[keys.shift()]}
+    localStorage.setItem(IMG_CACHE_KEY,JSON.stringify(c));
+  }catch(e){console.warn('Cache full',e)}
+}
+async function genImg(word,id,ev){
+  if(ev){ev.stopPropagation();ev.preventDefault()}
+  const v=VISUAL[word];
+  if(!v)return;
+  const wrap=document.getElementById('imgWrap_'+id);
+  if(!wrap)return;
+  wrap.innerHTML=`<div class="img-loading"><div class="spinner"></div>Generating image for "${word}"...</div>`;
+  try{
+    const prompt=`Simple, clear illustration for vocabulary word "${word}": ${v.visual}. Clean, colorful, educational style, no text.`;
+    const imgEl=await puter.ai.txt2img(prompt,{model:'dall-e-3',size:'1024x1024'});
+    // Convert to data URL for caching
+    const canvas=document.createElement('canvas');
+    canvas.width=512;canvas.height=512;
+    const ctx=canvas.getContext('2d');
+    const img=new Image();
+    img.crossOrigin='anonymous';
+    img.onload=()=>{
+      ctx.drawImage(img,0,0,512,512);
+      try{
+        const dataUrl=canvas.toDataURL('image/jpeg',0.7);
+        setImgCache(word,dataUrl);
+        wrap.innerHTML=`<img src="${dataUrl}" alt="${word}">`;
+      }catch(e){
+        wrap.innerHTML=`<img src="${img.src}" alt="${word}">`;
+      }
+    };
+    img.onerror=()=>{
+      // If cross-origin fails, just show the image directly
+      wrap.innerHTML='';
+      wrap.appendChild(imgEl);
+    };
+    img.src=imgEl.src;
+  }catch(e){
+    console.error('Image gen failed:',e);
+    wrap.innerHTML=`<div class="img-loading" style="color:var(--d)">⚠️ Image generation failed. Try again later.</div>
+    <button class="gen-img-btn" onclick="genImg('${word}',${id},event)" style="margin:8px auto;display:flex">🔄 Retry</button>`;
+  }
+}
+
+// ===== SAMPLE SENTENCE — from visual_data.json =====
 function sentence(w){
-  const d=w.engDef.replace(/^[a-z]+\.\s*\d*\)\s*/,'').replace(/;.*$/,'').split(',')[0].trim().toLowerCase();
-  return `The author's writing style could be described as ${w.word}, meaning ${d}.`;
+  const wl=w.word.toLowerCase();
+  const wrd=w.word;
+  if(VISUAL[wl]&&VISUAL[wl].sentence){
+    // Bold the word in the sentence
+    const s=VISUAL[wl].sentence;
+    const rx=new RegExp('\\b'+wrd.replace(/[.*+?^\${}()|[\]\\]/g,'\\$&')+'\\b','gi');
+    return s.replace(rx,'<strong>$&</strong>');
+  }
+  return `The concept of <strong>${wrd}</strong> is important in academic contexts.`;
 }
 
-// ===== SPEAK =====
+// ===== PRONUNCIATION — use ResponsiveVoice or Web Speech API with correct settings =====
 function speak(word,ev){
   if(ev){ev.stopPropagation();ev.preventDefault()}
   if(!('speechSynthesis' in window))return;
   speechSynthesis.cancel();
   const u=new SpeechSynthesisUtterance(word);
-  u.lang='en-US';u.rate=0.85;u.pitch=1;
+  u.lang='en-US';
+  u.rate=0.75; // Slower for clarity
+  u.pitch=1.0;
+  u.volume=1.0;
+  // Prefer high-quality voices
   const vs=speechSynthesis.getVoices();
-  const v=vs.find(x=>x.lang==='en-US')||vs.find(x=>x.lang.startsWith('en'));
-  if(v)u.voice=v;
+  const pref=['Google US English','Samantha','Alex','Daniel','Karen','Moira','Tessa'];
+  let voice=null;
+  for(const name of pref){voice=vs.find(v=>v.name.includes(name));if(voice)break}
+  if(!voice)voice=vs.find(v=>v.lang==='en-US'&&!v.localService)||vs.find(v=>v.lang==='en-US')||vs.find(v=>v.lang.startsWith('en'));
+  if(voice)u.voice=voice;
   speechSynthesis.speak(u);
 }
-if('speechSynthesis' in window)speechSynthesis.onvoiceschanged=()=>speechSynthesis.getVoices();
+// Pre-load voices
+if('speechSynthesis' in window){
+  speechSynthesis.getVoices();
+  speechSynthesis.onvoiceschanged=()=>speechSynthesis.getVoices();
+}
+
+// ===== MUSIC CONNECTION =====
+function getMusic(w){
+  const wl=w.word.toLowerCase();
+  if(MUSIC[wl])return MUSIC[wl];
+  return null;
+}
+
+function musicHTML(w){
+  const m=getMusic(w);
+  if(!m)return '';
+  const searchQ=encodeURIComponent(m.song+' '+m.artist);
+  return `<div class="w-music">
+    🎵 <a href="https://www.youtube.com/results?search_query=${searchQ}" target="_blank">"${m.song}"</a> by ${m.artist}
+    <div style="color:var(--td);font-size:.9em;margin-top:3px">${m.connection}</div>
+  </div>`;
+}
 
 // ===== FAVORITES =====
 function togFav(id,ev){
@@ -488,8 +455,7 @@ function togFav(id,ev){
   else{favs.add(id);toast('Added to favorites ❤️')}
   localStorage.setItem('sf',JSON.stringify([...favs]));
   updStats();
-  if(sec==='learn')renderLearn();
-  if(sec==='fav')renderFav();
+  if(sec==='learn')renderLearn();if(sec==='fav')renderFav();
 }
 function markL(id){lrn.add(id);localStorage.setItem('sl',JSON.stringify([...lrn]));updStats()}
 function updStats(){
@@ -503,7 +469,7 @@ function showW(id){
   const w=V.find(x=>x.id===id);if(!w)return;
   markL(id);
   document.getElementById('sResults').classList.remove('show');
-  const em=emoji(w),sp=sport(w),sn=sentence(w),isFav=favs.has(w.id);
+  const em=emoji(w),sn=sentence(w),isFav=favs.has(w.id),mus=musicHTML(w),vis=visualHTML(w);
   document.getElementById('modalC').innerHTML=`
     <button class="modal-x" onclick="closeM()">✕</button>
     <div style="text-align:center;margin-bottom:18px">
@@ -512,13 +478,13 @@ function showW(id){
       <div style="color:var(--td);margin-top:4px;font-size:.95em">${w.pronunciation}</div>
       <div style="margin-top:10px;display:flex;gap:8px;justify-content:center">
         <button class="w-btn ${isFav?'fav':''}" onclick="togFav(${w.id},event);showW(${w.id})" style="width:38px;height:38px;font-size:1em">${isFav?'❤️':'🤍'}</button>
-        <button class="w-btn" onclick="speak('${w.word}',event)" style="width:38px;height:38px;font-size:1em">🔊</button>
+        <button class="w-btn" onclick="speak('${w.word.replace(/'/g,"\\'")}',event)" style="width:38px;height:38px;font-size:1em">🔊</button>
       </div>
     </div>
-    <div style="margin-bottom:14px"><div style="font-weight:600;color:var(--pl);margin-bottom:5px">📖 English Definition</div><div class="w-def">${w.engDef}</div></div>
-    <div style="margin-bottom:14px"><div style="font-weight:600;color:var(--a);margin-bottom:5px">🀄 中文释义</div><div style="font-size:.92em;color:var(--t)">${w.chiDef}</div></div>
+    <div style="margin-bottom:14px"><div style="font-weight:600;color:var(--pl);margin-bottom:5px">📖 Definition</div><div class="w-def">${w.engDef}</div></div>
+    ${vis?`<div style="margin-bottom:14px"><div style="font-weight:600;color:var(--pl);margin-bottom:5px">🖼️ Picture This</div>${vis}</div>`:''}
     <div style="margin-bottom:14px"><div style="font-weight:600;color:var(--a2);margin-bottom:5px">💬 Example Sentence</div><div class="w-sent">${sn}</div></div>
-    <div style="margin-bottom:14px"><div style="font-weight:600;color:var(--d);margin-bottom:5px">🏆 Sports Analogy</div><div class="w-sport">${sp}</div></div>
+    ${mus?`<div style="margin-bottom:14px"><div style="font-weight:600;color:var(--music);margin-bottom:5px">🎵 Music Connection</div>${mus}</div>`:''}
     ${w.extra?`<div><div style="font-weight:600;color:var(--td);margin-bottom:5px">📝 Word Roots & Related</div><div class="w-extra" style="border:0;padding:0">${w.extra}</div></div>`:''}
   `;
   document.getElementById('modal').classList.add('show');
@@ -530,7 +496,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeM()});
 function getFiltered(){
   let ws=[...V];
   const q=(document.getElementById('lSearch')?.value||'').toLowerCase();
-  if(q)ws=ws.filter(w=>w.word.toLowerCase().includes(q)||w.engDef.toLowerCase().includes(q)||w.chiDef.includes(q));
+  if(q)ws=ws.filter(w=>w.word.toLowerCase().includes(q)||w.engDef.toLowerCase().includes(q));
   const lt=document.getElementById('lLetter')?.value||'';
   if(lt)ws=ws.filter(w=>w.word.toLowerCase().startsWith(lt));
   if(lf==='new')ws=ws.filter(w=>!lrn.has(w.id));
@@ -540,17 +506,14 @@ function getFiltered(){
 }
 
 function renderLearn(){
-  const ws=getFiltered();
-  const tp=Math.ceil(ws.length/PP);
+  const ws=getFiltered(),tp=Math.ceil(ws.length/PP);
   if(lp>tp)lp=1;
   const start=(lp-1)*PP,pg=ws.slice(start,start+PP);
-
   if(lm==='grid'){
     show('lGrid');hide('lFlash');hide('lList');
     document.getElementById('lGrid').innerHTML=pg.map(w=>wCard(w)).join('');
   }else if(lm==='flash'){
-    hide('lGrid');show('lFlash');hide('lList');
-    fw=ws;fi=start;renderFC('lFlash');
+    hide('lGrid');show('lFlash');hide('lList');fw=ws;fi=start;renderFC('lFlash');
   }else{
     hide('lGrid');hide('lFlash');show('lList');
     document.getElementById('lList').innerHTML=`<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse">
@@ -566,7 +529,7 @@ function renderLearn(){
         <td style="padding:8px;font-size:.85em">${w.engDef.substring(0,70)}...</td>
         <td style="padding:8px;text-align:center;white-space:nowrap">
           <button class="w-btn ${favs.has(w.id)?'fav':''}" onclick="togFav(${w.id},event)">${favs.has(w.id)?'❤️':'🤍'}</button>
-          <button class="w-btn" onclick="speak('${w.word}',event)">🔊</button>
+          <button class="w-btn" onclick="speak('${w.word.replace(/'/g,"\\'")}',event)">🔊</button>
         </td>
       </tr>`).join('')}</tbody></table></div>`;
   }
@@ -574,21 +537,25 @@ function renderLearn(){
 }
 
 function wCard(w){
-  const em=emoji(w),isFav=favs.has(w.id),isL=lrn.has(w.id);
+  const em=emoji(w),isFav=favs.has(w.id),isL=lrn.has(w.id),mus=getMusic(w),vis=getVisual(w);
+  const wl=w.word.toLowerCase();
+  const cachedImg=getImgCache(wl);
   return `<div class="w-card fin" onclick="showW(${w.id})">
     ${isL?'<div class="w-tag">✓ Learned</div>':''}
     <div class="w-head"><div><div class="w-title">${w.word}</div><div class="w-pron">${w.pronunciation}</div></div>
-    <div class="w-acts"><button class="w-btn ${isFav?'fav':''}" onclick="togFav(${w.id},event)">${isFav?'❤️':'🤍'}</button><button class="w-btn" onclick="speak('${w.word}',event)">🔊</button></div></div>
-    <div class="w-emoji">${em}</div>
+    <div class="w-acts"><button class="w-btn ${isFav?'fav':''}" onclick="togFav(${w.id},event)">${isFav?'❤️':'🤍'}</button><button class="w-btn" onclick="speak('${w.word.replace(/'/g,"\\'")}',event)">🔊</button></div></div>
+    ${cachedImg?`<div class="w-img-wrap" style="margin:6px 0;max-height:140px"><img src="${cachedImg}" alt="${w.word}" style="max-height:140px"></div>`
+      :`<div class="w-emoji">${em}</div>`}
     <div class="w-def">${w.engDef.substring(0,110)}${w.engDef.length>110?'...':''}</div>
-    <div class="w-chi">${w.chiDef.substring(0,50)}</div>
+    ${!cachedImg&&vis?`<div class="w-visual" style="margin-top:6px">🖼️ <em>${vis.visual.substring(0,80)}${vis.visual.length>80?'...':''}</em></div>`:''}
+    ${mus?`<div class="w-music" style="margin-top:6px">🎵 "${mus.song}" — ${mus.artist}</div>`:''}
   </div>`;
 }
 
 function renderFC(target){
   if(!fw.length)return;
   if(fi>=fw.length)fi=0;if(fi<0)fi=fw.length-1;
-  const w=fw[fi],em=emoji(w),sp=sport(w),sn=sentence(w);
+  const w=fw[fi],em=emoji(w),sn=sentence(w),mus=musicHTML(w),vis=visualHTML(w);
   markL(w.id);
   document.getElementById(target).innerHTML=`
     <div style="text-align:center;margin-bottom:12px;color:var(--td)">Card ${fi+1} of ${fw.length}</div>
@@ -603,45 +570,38 @@ function renderFC(target){
         <div style="text-align:center;margin-bottom:12px"><span style="font-size:1.8em">${em}</span>
         <div style="font-size:1.2em;font-weight:700;color:var(--pl)">${w.word}</div></div>
         <div style="margin-bottom:8px"><b style="color:var(--pl)">📖</b> ${w.engDef}</div>
-        <div style="margin-bottom:8px"><b style="color:var(--a)">🀄</b> ${w.chiDef}</div>
+        ${vis?`<div style="margin-bottom:8px">${vis}</div>`:''}
         <div class="w-sent" style="margin-bottom:8px">💬 ${sn}</div>
-        <div class="w-sport">🏆 ${sp}</div>
+        ${mus||''}
       </div>
     </div>
     <div class="fc-nav">
       <button class="t-btn btn-o" onclick="fi--;renderFC('${target}')">← Prev</button>
       <button class="w-btn ${favs.has(w.id)?'fav':''}" onclick="togFav(${w.id});renderFC('${target}')" style="width:40px;height:40px;font-size:1em">${favs.has(w.id)?'❤️':'🤍'}</button>
-      <button class="w-btn" onclick="speak('${w.word}')" style="width:40px;height:40px;font-size:1em">🔊</button>
+      <button class="w-btn" onclick="speak('${w.word.replace(/'/g,"\\'")}')">🔊</button>
       <button class="t-btn btn-p" onclick="fi++;renderFC('${target}')">Next →</button>
     </div>`;
 }
 
 function startFlash(){go('learn');setLM('flash');fw=V;fi=Math.floor(Math.random()*V.length);renderFC('lFlash')}
-
 function setLM(m){
   lm=m;
   document.querySelectorAll('#learnModes .m-btn').forEach(b=>{b.classList.remove('active');
     if((m==='grid'&&b.textContent.includes('Grid'))||(m==='flash'&&b.textContent.includes('Flash'))||(m==='list'&&b.textContent.includes('List')))b.classList.add('active')});
   renderLearn();
 }
-
 function setLF(f,btn){
   lf=f;lp=1;
   document.querySelectorAll('.fbar .f-tag').forEach(b=>b.classList.remove('active'));
-  if(btn)btn.classList.add('active');
-  renderLearn();
+  if(btn)btn.classList.add('active');renderLearn();
 }
 
 function renderPag(tp,cid,cb){
-  const c=document.getElementById(cid);
-  if(tp<=1){c.innerHTML='';return}
-  let h='';
-  h+=`<button class="pg-btn" ${lp===1?'disabled':''} data-p="${lp-1}">← Prev</button>`;
-  const ps=[];ps.push(1);
-  if(lp>3)ps.push('...');
+  const c=document.getElementById(cid);if(tp<=1){c.innerHTML='';return}
+  let h=`<button class="pg-btn" ${lp===1?'disabled':''} data-p="${lp-1}">← Prev</button>`;
+  const ps=[1];if(lp>3)ps.push('...');
   for(let i=Math.max(2,lp-1);i<=Math.min(tp-1,lp+1);i++)ps.push(i);
-  if(lp<tp-2)ps.push('...');
-  if(tp>1)ps.push(tp);
+  if(lp<tp-2)ps.push('...');if(tp>1)ps.push(tp);
   ps.forEach(p=>{if(p==='...')h+=`<span style="color:var(--td);padding:6px 3px">...</span>`;
     else h+=`<button class="pg-btn ${p===lp?'active':''}" data-p="${p}">${p}</button>`});
   h+=`<button class="pg-btn" ${lp===tp?'disabled':''} data-p="${lp+1}">Next →</button>`;
@@ -657,10 +617,9 @@ function initAlpha(){
     if(cnt>0){const o=document.createElement('option');o.value=l.toLowerCase();o.textContent=`${l} (${cnt})`;sel.appendChild(o)}});
 }
 function toggleAlpha(l,btn){
-  const lv=l.toLowerCase();
   const sel=document.getElementById('lLetter');
-  if(sel.value===lv){sel.value='';btn.classList.remove('active')}
-  else{sel.value=lv;document.querySelectorAll('.a-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active')}
+  if(sel.value===l.toLowerCase()){sel.value='';btn.classList.remove('active')}
+  else{sel.value=l.toLowerCase();document.querySelectorAll('.a-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active')}
   lp=1;renderLearn();
 }
 
@@ -674,14 +633,10 @@ function renderTHome(){
     return `<div class="tu-card" onclick="startT(${u.unit})"><div class="tu-num">Unit ${u.unit}</div><div class="tu-label">12 Questions</div><div class="tu-score" style="color:${col}">${txt}</div></div>`;
   }).join('');
 }
-
 function startT(n){
   tUnit=T.find(u=>u.unit===n);if(!tUnit)return;
-  tQ=0;tAns={};tDone=false;
-  hide('tHome');show('tActive');hide('tResults');
-  renderQ();
+  tQ=0;tAns={};tDone=false;hide('tHome');show('tActive');hide('tResults');renderQ();
 }
-
 function renderQ(){
   if(!tUnit)return;
   const total=tUnit.questions.length,q=tUnit.questions[tQ],prog=(tQ+1)/total*100,sel=tAns[q.number],cor=A[String(q.number)];
@@ -691,7 +646,6 @@ function renderQ(){
     else if(o.letter===sel)cls+=' sel';
     return `<button class="${cls}" onclick="${tDone?'':`selA(${q.number},'${o.letter}')`}"><span class="opt-l">${o.letter}</span><span>${o.text}</span></button>`;
   }).join('');
-
   document.getElementById('tActive').innerHTML=`<div class="t-wrap">
     <div class="t-head"><h2 style="font-size:1.2em">Unit ${tUnit.unit}</h2><button class="t-btn btn-o" onclick="renderTHome()">✕ Exit</button></div>
     <div class="t-prog"><div class="t-prog-bar" style="width:${prog}%"></div></div>
@@ -711,28 +665,20 @@ function renderQ(){
       if(tDone){const ok=tAns[qq.number]===A[String(qq.number)];bg=ans?(ok?'var(--s)':'var(--d)'):'var(--bg3)'}
       else if(cur)bg='var(--p)';else if(ans)bg='var(--pl)';
       return `<button class="q-dot" style="background:${bg};border:${cur?'2px solid #fff':'none'}" onclick="tQ=${i};renderQ()">${i+1}</button>`;
-    }).join('')}</div>
-  </div>`;
+    }).join('')}</div></div>`;
 }
-
 function selA(qn,l){if(tDone)return;tAns[qn]=l;renderQ()}
-
 function submitT(){
-  tDone=true;
-  let cor=0;const total=tUnit.questions.length;
+  tDone=true;let cor=0;const total=tUnit.questions.length;
   tUnit.questions.forEach(q=>{if(tAns[q.number]===A[String(q.number)])cor++});
-  scores[tUnit.unit]=cor;
-  localStorage.setItem('ss',JSON.stringify(scores));
+  scores[tUnit.unit]=cor;localStorage.setItem('ss',JSON.stringify(scores));
   const pct=Math.round(cor/total*100);
   let g='🏆',gt='Perfect Score!';
   if(pct<100){g='🌟';gt='Excellent!'}if(pct<85){g='👍';gt='Good Job!'}
   if(pct<70){g='📚';gt='Keep Studying!'}if(pct<50){g='💪';gt='More Practice Needed'}
-
   hide('tActive');show('tResults');
   document.getElementById('tResults').innerHTML=`<div class="t-wrap"><div class="res-card fin">
-    <div style="font-size:3.5em;margin-bottom:8px">${g}</div>
-    <div class="res-score">${pct}%</div>
-    <div class="res-label">${gt}</div>
+    <div style="font-size:3.5em;margin-bottom:8px">${g}</div><div class="res-score">${pct}%</div><div class="res-label">${gt}</div>
     <div class="res-row">
       <div class="res-item"><div class="n" style="color:var(--s)">${cor}</div><div class="l">Correct</div></div>
       <div class="res-item"><div class="n" style="color:var(--d)">${total-cor}</div><div class="l">Wrong</div></div>
@@ -742,8 +688,7 @@ function submitT(){
       <button class="t-btn btn-p" onclick="tQ=0;tDone=true;hide('tResults');show('tActive');renderQ()">📋 Review</button>
       <button class="t-btn btn-s" onclick="startT(${tUnit.unit})">🔄 Retake</button>
       <button class="t-btn btn-o" onclick="renderTHome()">← Units</button>
-    </div>
-  </div></div>`;
+    </div></div></div>`;
 }
 
 // ===== FAVORITES =====
@@ -756,21 +701,17 @@ function renderFav(){
 function setFM(m){
   const ws=V.filter(w=>favs.has(w.id));
   document.querySelectorAll('#favModes .m-btn').forEach(b=>b.classList.remove('active'));
-  if(m==='grid'){show('fGrid');hide('fFlash');hide('fEmpty');renderFav();
-    document.querySelectorAll('#favModes .m-btn')[0].classList.add('active')}
+  if(m==='grid'){show('fGrid');hide('fFlash');hide('fEmpty');renderFav();document.querySelectorAll('#favModes .m-btn')[0].classList.add('active')}
   else if(m==='flash'){
     if(!ws.length){toast('No favorites yet');return}
-    hide('fGrid');show('fFlash');hide('fEmpty');fw=ws;fi=0;renderFC('fFlash');
-    document.querySelectorAll('#favModes .m-btn')[1].classList.add('active')}
+    hide('fGrid');show('fFlash');hide('fEmpty');fw=ws;fi=0;renderFC('fFlash');document.querySelectorAll('#favModes .m-btn')[1].classList.add('active')}
 }
 function exportFav(){
-  const ws=V.filter(w=>favs.has(w.id));
-  if(!ws.length){toast('No favorites');return}
-  let csv='Word,Pronunciation,English Definition,Chinese Definition\n';
-  ws.forEach(w=>{csv+=`"${w.word}","${w.pronunciation}","${w.engDef.replace(/"/g,'""')}","${w.chiDef.replace(/"/g,'""')}"\n`});
+  const ws=V.filter(w=>favs.has(w.id));if(!ws.length){toast('No favorites');return}
+  let csv='Word,Pronunciation,Definition\n';
+  ws.forEach(w=>{csv+=`"${w.word}","${w.pronunciation}","${w.engDef.replace(/"/g,'""')}"\n`});
   const blob=new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8;'});
-  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='sat_favorites.csv';a.click();
-  toast('Exported!');
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='sat_favorites.csv';a.click();toast('Exported!');
 }
 function clearFav(){if(!confirm('Clear all favorites?'))return;favs.clear();localStorage.setItem('sf','[]');updStats();renderFav();toast('Cleared')}
 
@@ -778,14 +719,13 @@ function clearFav(){if(!confirm('Clear all favorites?'))return;favs.clear();loca
 function renderWOD(){
   const d=new Date(),idx=(d.getFullYear()*366+d.getMonth()*31+d.getDate())%V.length,w=V[idx];
   if(!w)return;
-  const em=emoji(w),sp=sport(w);
+  const em=emoji(w),mus=getMusic(w);
   document.getElementById('wod').innerHTML=`
     <div class="w-head"><div><div class="w-title" style="font-size:1.4em">${w.word}</div><div class="w-pron">${w.pronunciation}</div></div>
-    <div class="w-acts"><button class="w-btn ${favs.has(w.id)?'fav':''}" onclick="togFav(${w.id},event)">${favs.has(w.id)?'❤️':'🤍'}</button><button class="w-btn" onclick="speak('${w.word}',event)">🔊</button></div></div>
+    <div class="w-acts"><button class="w-btn ${favs.has(w.id)?'fav':''}" onclick="togFav(${w.id},event)">${favs.has(w.id)?'❤️':'🤍'}</button><button class="w-btn" onclick="speak('${w.word.replace(/'/g,"\\'")}',event)">🔊</button></div></div>
     <div class="w-emoji">${em}</div>
     <div class="w-def">${w.engDef}</div>
-    <div class="w-chi">${w.chiDef}</div>
-    <div class="w-sport" style="margin-top:8px">${sp}</div>`;
+    ${mus?`<div class="w-music" style="margin-top:8px">🎵 "${mus.song}" — ${mus.artist}<div style="color:var(--td);font-size:.9em;margin-top:2px">${mus.connection}</div></div>`:''}`;
   document.getElementById('wod').onclick=()=>showW(w.id);
 }
 
@@ -794,7 +734,6 @@ function show(id){document.getElementById(id).style.display=''}
 function hide(id){document.getElementById(id).style.display='none'}
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2000)}
 
-// ===== BOOT =====
 loadData();
 </script>
 </body>
