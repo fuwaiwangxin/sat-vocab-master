@@ -377,8 +377,8 @@ function genImg(word,id,ev){
   const wrap=document.getElementById('imgWrap_'+id);
   if(!wrap)return;
   wrap.innerHTML=`<div class="img-loading"><div class="spinner"></div>Generating image for "${word}"...</div>`;
-  const prompt=encodeURIComponent(`Simple clear illustration for vocabulary word "${word}": ${v.visual}. Clean, colorful, educational style, no text, white background`);
-  const imgUrl=`https://image.pollinations.ai/prompt/${prompt}?width=512&height=512&nologo=true&seed=${word.length*31}`;
+  const prompt=encodeURIComponent(`Simple clear educational illustration: ${v.visual}. Colorful, no text`);
+  const imgUrl=`https://image.pollinations.ai/prompt/${prompt}`;
   const img=new Image();
   img.crossOrigin='anonymous';
   img.onload=()=>{
