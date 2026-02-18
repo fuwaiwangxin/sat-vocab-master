@@ -6,6 +6,9 @@
 <title>🏆 SAT Vocab Master - Learn 2000+ Words</title>
 <meta name="description" content="Master 2000+ SAT vocabulary words with pronunciation, emoji mnemonics, music connections, flashcards, and 456 practice test questions.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏆</text></svg>">
+<!-- Google Analytics - Replace G-XXXXXXXXXX with your Measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 <script src="https://js.puter.com/v2/"></script>
 <style>
 :root{
@@ -100,6 +103,11 @@ input,select{font-family:inherit}
 @keyframes spin{to{transform:rotate(360deg)}}
 .gen-img-btn{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;background:var(--g1);color:#fff;font-size:.82em;font-weight:600;margin-top:6px;transition:.2s}
 .gen-img-btn:hover{transform:translateY(-1px);box-shadow:0 2px 8px rgba(108,92,231,.4)}
+.site-footer{text-align:center;padding:30px 20px 20px;margin-top:40px;border-top:1px solid var(--b);color:var(--td);font-size:.82em}
+.visitor-counter{display:inline-flex;align-items:center;gap:8px;background:var(--c);border:1px solid var(--b);border-radius:20px;padding:8px 18px;margin-bottom:12px}
+.visitor-counter .vc-icon{font-size:1.2em}
+.visitor-counter .vc-num{font-weight:700;color:var(--a);font-size:1.1em}
+.visitor-counter .vc-label{color:var(--td)}
 .w-extra{font-size:.78em;color:var(--td);margin-top:6px;padding-top:6px;border-top:1px solid var(--b)}
 .w-tag{position:absolute;top:6px;right:6px;font-size:.65em;padding:2px 7px;border-radius:10px;background:var(--s);color:#fff}
 .modal-ov{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(5px);z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
@@ -258,6 +266,15 @@ input,select{font-family:inherit}
   <div class="modal" id="modalC"></div>
 </div>
 <div class="toast" id="toast"></div>
+
+<footer class="site-footer">
+  <div class="visitor-counter">
+    <span class="vc-icon">👥</span>
+    <span class="vc-label">Visitors:</span>
+    <span class="vc-num" id="visitorCount">--</span>
+  </div>
+  <div>© 2026 SAT Vocab Master | fun2learnsatvocabtw.com</div>
+</footer>
 
 <script>
 // ===== STATE =====
@@ -733,6 +750,30 @@ function renderWOD(){
 function show(id){document.getElementById(id).style.display=''}
 function hide(id){document.getElementById(id).style.display='none'}
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2000)}
+
+// ===== VISITOR COUNTER =====
+(function(){
+  const vc=document.getElementById('visitorCount');
+  // Use hits.seeyoufarm.com free counter API (reliable, no registration)
+  fetch('https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ffun2learnsatvocabtw.com&count_bg=%2300B894&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visits&edge_flat=true')
+    .then(r=>r.text())
+    .then(svg=>{
+      // Extract total count from SVG text
+      const m=svg.match(/(\d+)\s*\/\s*(\d+)/);
+      if(m&&vc){
+        vc.textContent=m[2];// total hits
+        vc.title='Today: '+m[1]+' | Total: '+m[2];
+      }
+    })
+    .catch(()=>{});
+  // Fallback display with local counter
+  const VC_KEY='sat_vc';
+  let c=parseInt(localStorage.getItem(VC_KEY)||'0');
+  const lastVisit=localStorage.getItem(VC_KEY+'_t');
+  const now=Date.now();
+  if(!lastVisit||now-parseInt(lastVisit)>300000){c++;localStorage.setItem(VC_KEY,c);localStorage.setItem(VC_KEY+'_t',now)}
+  if(vc&&vc.textContent==='--')vc.textContent=c>0?c.toLocaleString():'1';
+})();
 
 loadData();
 </script>
