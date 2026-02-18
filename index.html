@@ -9,7 +9,6 @@
 <!-- Google Analytics - Replace G-LCGNFJ3J9R with your Measurement ID -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCGNFJ3J9R"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LCGNFJ3J9R');</script>
-<script src="https://js.puter.com/v2/"></script>
 <style>
 :root{
   --p:#6C5CE7;--pl:#A29BFE;--pd:#4834D4;
@@ -356,58 +355,41 @@ function visualHTML(w){
   </div>`;
 }
 
-// ===== AI IMAGE GENERATION (Puter.js) =====
+// ===== AI IMAGE GENERATION (Pollinations.ai - FREE unlimited) =====
 const IMG_CACHE_KEY='sat_img_cache';
 function getImgCache(word){
   try{const c=JSON.parse(localStorage.getItem(IMG_CACHE_KEY)||'{}');return c[word]||null}catch(e){return null}
 }
-function setImgCache(word,dataUrl){
+function setImgCache(word,url){
   try{
     const c=JSON.parse(localStorage.getItem(IMG_CACHE_KEY)||'{}');
-    c[word]=dataUrl;
-    // Keep cache under 4MB by removing oldest entries if needed
+    c[word]=url;
+    // Keep cache under 3MB by removing oldest entries if needed
     const str=JSON.stringify(c);
-    if(str.length>4000000){const keys=Object.keys(c);for(let i=0;i<10&&keys.length>0;i++)delete c[keys.shift()]}
+    if(str.length>3000000){const keys=Object.keys(c);for(let i=0;i<10&&keys.length>0;i++)delete c[keys.shift()]}
     localStorage.setItem(IMG_CACHE_KEY,JSON.stringify(c));
   }catch(e){console.warn('Cache full',e)}
 }
-async function genImg(word,id,ev){
+function genImg(word,id,ev){
   if(ev){ev.stopPropagation();ev.preventDefault()}
   const v=VISUAL[word];
   if(!v)return;
   const wrap=document.getElementById('imgWrap_'+id);
   if(!wrap)return;
   wrap.innerHTML=`<div class="img-loading"><div class="spinner"></div>Generating image for "${word}"...</div>`;
-  try{
-    const prompt=`Simple, clear illustration for vocabulary word "${word}": ${v.visual}. Clean, colorful, educational style, no text.`;
-    const imgEl=await puter.ai.txt2img(prompt,{model:'dall-e-3',size:'1024x1024'});
-    // Convert to data URL for caching
-    const canvas=document.createElement('canvas');
-    canvas.width=512;canvas.height=512;
-    const ctx=canvas.getContext('2d');
-    const img=new Image();
-    img.crossOrigin='anonymous';
-    img.onload=()=>{
-      ctx.drawImage(img,0,0,512,512);
-      try{
-        const dataUrl=canvas.toDataURL('image/jpeg',0.7);
-        setImgCache(word,dataUrl);
-        wrap.innerHTML=`<img src="${dataUrl}" alt="${word}">`;
-      }catch(e){
-        wrap.innerHTML=`<img src="${img.src}" alt="${word}">`;
-      }
-    };
-    img.onerror=()=>{
-      // If cross-origin fails, just show the image directly
-      wrap.innerHTML='';
-      wrap.appendChild(imgEl);
-    };
-    img.src=imgEl.src;
-  }catch(e){
-    console.error('Image gen failed:',e);
+  const prompt=encodeURIComponent(`Simple clear illustration for vocabulary word "${word}": ${v.visual}. Clean, colorful, educational style, no text, white background`);
+  const imgUrl=`https://image.pollinations.ai/prompt/${prompt}?width=512&height=512&nologo=true&seed=${word.length*31}`;
+  const img=new Image();
+  img.crossOrigin='anonymous';
+  img.onload=()=>{
+    setImgCache(word,imgUrl);
+    wrap.innerHTML=`<img src="${imgUrl}" alt="${word}" style="width:100%;border-radius:var(--rs);display:block">`;
+  };
+  img.onerror=()=>{
     wrap.innerHTML=`<div class="img-loading" style="color:var(--d)">⚠️ Image generation failed. Try again later.</div>
     <button class="gen-img-btn" onclick="genImg('${word}',${id},event)" style="margin:8px auto;display:flex">🔄 Retry</button>`;
-  }
+  };
+  img.src=imgUrl;
 }
 
 // ===== SAMPLE SENTENCE — from visual_data.json =====
