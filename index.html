@@ -348,7 +348,7 @@ function visualHTML(w){
   const imgContent=cached
     ?`<div class="w-img-wrap"><img src="${cached}" alt="${w.word}"></div>`
     :`<div class="w-img-wrap" id="imgWrap_${w.id}">
-        <button class="gen-img-btn" onclick="genImg('${wl.replace(/'/g,"\\'")}',${w.id},event)">🎨 Generate AI Image</button>
+        <button class="gen-img-btn" onclick="genImg('${wl.replace(/'/g,"\\'")}',${w.id},event)">🎨 Generate Visual Card</button>
       </div>`;
   return `<div class="w-visual">
     🖼️ <em>${v.visual}</em>
@@ -356,41 +356,89 @@ function visualHTML(w){
   </div>`;
 }
 
-// ===== AI IMAGE GENERATION (Pollinations.ai - FREE unlimited) =====
+// ===== VISUAL CARD GENERATION =====
 const IMG_CACHE_KEY='sat_img_cache';
 function getImgCache(word){
   try{const c=JSON.parse(localStorage.getItem(IMG_CACHE_KEY)||'{}');return c[word]||null}catch(e){return null}
 }
-function setImgCache(word,url){
+function setImgCache(word,dataUrl){
   try{
     const c=JSON.parse(localStorage.getItem(IMG_CACHE_KEY)||'{}');
-    c[word]=url;
-    // Keep cache under 3MB by removing oldest entries if needed
+    c[word]=dataUrl;
     const str=JSON.stringify(c);
-    if(str.length>3000000){const keys=Object.keys(c);for(let i=0;i<10&&keys.length>0;i++)delete c[keys.shift()]}
+    if(str.length>4000000){const keys=Object.keys(c);for(let i=0;i<10&&keys.length>0;i++)delete c[keys.shift()]}
     localStorage.setItem(IMG_CACHE_KEY,JSON.stringify(c));
   }catch(e){console.warn('Cache full',e)}
 }
+// Color palettes for visual cards
+const PALETTES=[
+  ['#667eea','#764ba2'],['#f093fb','#f5576c'],['#4facfe','#00f2fe'],
+  ['#43e97b','#38f9d7'],['#fa709a','#fee140'],['#a18cd1','#fbc2eb'],
+  ['#fccb90','#d57eeb'],['#e0c3fc','#8ec5fc'],['#f5576c','#ff6a88'],
+  ['#667eea','#00f2fe'],['#ff9a9e','#fecfef'],['#a1c4fd','#c2e9fb'],
+  ['#fbc2eb','#a6c1ee'],['#fdcbf1','#e6dee9'],['#ff9966','#ff5e62']
+];
 function genImg(word,id,ev){
   if(ev){ev.stopPropagation();ev.preventDefault()}
   const v=VISUAL[word];
   if(!v)return;
   const wrap=document.getElementById('imgWrap_'+id);
   if(!wrap)return;
-  wrap.innerHTML=`<div class="img-loading"><div class="spinner"></div>Generating image for "${word}"...</div>`;
-  const prompt=encodeURIComponent(`Simple clear educational illustration: ${v.visual}. Colorful, no text`);
-  const imgUrl=`https://image.pollinations.ai/prompt/${prompt}`;
-  const img=new Image();
-  img.crossOrigin='anonymous';
-  img.onload=()=>{
-    setImgCache(word,imgUrl);
-    wrap.innerHTML=`<img src="${imgUrl}" alt="${word}" style="width:100%;border-radius:var(--rs);display:block">`;
-  };
-  img.onerror=()=>{
-    wrap.innerHTML=`<div class="img-loading" style="color:var(--d)">⚠️ Image generation failed. Try again later.</div>
-    <button class="gen-img-btn" onclick="genImg('${word}',${id},event)" style="margin:8px auto;display:flex">🔄 Retry</button>`;
-  };
-  img.src=imgUrl;
+  // Generate beautiful emoji visual card using Canvas
+  const canvas=document.createElement('canvas');
+  canvas.width=480;canvas.height=480;
+  const ctx=canvas.getContext('2d');
+  // Pick color palette based on word
+  const hash=word.split('').reduce((a,c)=>a+c.charCodeAt(0),0);
+  const pal=PALETTES[hash%PALETTES.length];
+  // Draw gradient background
+  const grd=ctx.createLinearGradient(0,0,480,480);
+  grd.addColorStop(0,pal[0]);grd.addColorStop(1,pal[1]);
+  ctx.fillStyle=grd;
+  ctx.beginPath();
+  ctx.roundRect(0,0,480,480,24);
+  ctx.fill();
+  // Add subtle pattern overlay
+  ctx.fillStyle='rgba(255,255,255,0.08)';
+  for(let i=0;i<6;i++){
+    const x=((hash*(i+1)*37)%400)+40;
+    const y=((hash*(i+1)*53)%300)+40;
+    const r=((hash*(i+1)*17)%40)+20;
+    ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();
+  }
+  // Draw big emoji
+  const em=v.emoji_scene||'📝';
+  ctx.textAlign='center';
+  ctx.font='120px serif';
+  ctx.fillText(em,240,200);
+  // Draw word
+  ctx.fillStyle='#fff';
+  ctx.font='bold 36px "Segoe UI",system-ui,sans-serif';
+  ctx.shadowColor='rgba(0,0,0,0.3)';ctx.shadowBlur=8;
+  ctx.fillText(word.charAt(0).toUpperCase()+word.slice(1),240,300);
+  ctx.shadowBlur=0;
+  // Draw description (wrapped)
+  ctx.font='16px "Segoe UI",system-ui,sans-serif';
+  ctx.fillStyle='rgba(255,255,255,0.9)';
+  const desc=v.visual||'';
+  const words=desc.split(' ');
+  let line='',ly=340;
+  for(const w of words){
+    const test=line+w+' ';
+    if(ctx.measureText(test).width>400&&line){
+      ctx.fillText(line.trim(),240,ly);ly+=22;line=w+' ';
+      if(ly>440)break;
+    }else{line=test}
+  }
+  if(ly<=440)ctx.fillText(line.trim(),240,ly);
+  // Convert to image
+  try{
+    const dataUrl=canvas.toDataURL('image/jpeg',0.85);
+    setImgCache(word,dataUrl);
+    wrap.innerHTML=`<img src="${dataUrl}" alt="${word}" style="width:100%;border-radius:var(--rs);display:block">`;
+  }catch(e){
+    wrap.innerHTML=`<div style="text-align:center;padding:20px;font-size:4em">${em}</div>`;
+  }
 }
 
 // ===== SAMPLE SENTENCE — from visual_data.json =====
