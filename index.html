@@ -168,6 +168,32 @@ input,select{font-family:inherit}
 .toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:var(--c);border:1px solid var(--b);border-radius:var(--rs);padding:10px 22px;z-index:300;opacity:0;transition:opacity .3s;font-size:.88em}.toast.show{opacity:1}
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.fin{animation:fadeIn .35s ease-out}
 .wod{max-width:600px;margin:16px auto}
+
+/* Auth UI */
+.auth-area{display:flex;align-items:center;gap:10px;margin-left:10px}
+.auth-btn{padding:6px 16px;border-radius:20px;background:var(--g1);color:#fff;font-size:.82em;font-weight:600;transition:.2s;white-space:nowrap}
+.auth-btn:hover{transform:translateY(-1px);box-shadow:0 2px 8px rgba(108,92,231,.4)}
+.user-info{display:flex;align-items:center;gap:8px;font-size:.85em}
+.user-avatar{width:30px;height:30px;border-radius:50%;border:2px solid var(--pl);object-fit:cover;background:var(--bg3)}
+.user-name{color:var(--t);font-weight:600;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.logout-btn{padding:4px 12px;border-radius:15px;background:var(--bg3);color:var(--td);font-size:.78em;transition:.2s;white-space:nowrap}
+.logout-btn:hover{background:var(--d);color:#fff}
+.auth-modal{max-width:420px}
+.auth-title{font-size:1.4em;font-weight:700;text-align:center;margin-bottom:20px;background:var(--g1);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.auth-input{width:100%;padding:12px 16px;background:var(--c);border:2px solid var(--b);border-radius:var(--rs);color:var(--t);font-size:.95em;outline:0;margin-bottom:12px;transition:.3s}
+.auth-input:focus{border-color:var(--p)}
+.auth-submit{width:100%;padding:12px;border-radius:var(--rs);background:var(--g1);color:#fff;font-size:1em;font-weight:600;margin-top:4px;transition:.2s;cursor:pointer}
+.auth-submit:hover{transform:translateY(-1px)}
+.auth-divider{display:flex;align-items:center;gap:12px;margin:16px 0;color:var(--td);font-size:.85em}
+.auth-divider::before,.auth-divider::after{content:'';flex:1;height:1px;background:var(--b)}
+.google-btn{width:100%;padding:12px;border-radius:var(--rs);background:#fff;color:#333;font-size:.95em;font-weight:600;display:flex;align-items:center;justify-content:center;gap:10px;transition:.2s;cursor:pointer}
+.google-btn:hover{background:#f1f1f1;transform:translateY(-1px)}
+.google-btn img{width:20px;height:20px}
+.auth-switch{text-align:center;margin-top:16px;font-size:.85em;color:var(--td)}
+.auth-switch a{color:var(--pl);cursor:pointer;font-weight:600}
+.auth-error{color:var(--d);font-size:.85em;text-align:center;margin-bottom:10px;display:none}
+.auth-name-row{display:flex;gap:10px;margin-bottom:0}
+.auth-name-row .auth-input{flex:1}
 </style>
 </head>
 <body>
@@ -180,7 +206,9 @@ input,select{font-family:inherit}
     <button class="nav-tab" onclick="go('test')">Test</button>
     <button class="nav-tab" onclick="go('fav')">Favorites</button>
   </div>
-  <div class="nav-st"><span>Learned: <strong id="nLearned">0</strong></span><span>Favs: <strong id="nFav">0</strong></span></div>
+  <div class="nav-st"><span>Learned: <strong id="nLearned">0</strong></span><span>Favs: <strong id="nFav">0</strong></span>
+    <div class="auth-area" id="authArea"><button class="auth-btn" onclick="showAuth()">Sign In</button></div>
+  </div>
 </div></nav>
 
 <div class="mob-nav">
@@ -188,6 +216,7 @@ input,select{font-family:inherit}
   <button class="mob-btn" data-s="learn" onclick="go('learn')"><span>📚</span>Learn</button>
   <button class="mob-btn" data-s="test" onclick="go('test')"><span>✍️</span>Test</button>
   <button class="mob-btn" data-s="fav" onclick="go('fav')"><span>❤️</span>Favs</button>
+  <button class="mob-btn" id="mobAuth" onclick="showAuth()"><span>👤</span>Sign In</button>
 </div>
 
 <div class="main">
@@ -266,6 +295,31 @@ input,select{font-family:inherit}
 </div>
 <div class="toast" id="toast"></div>
 
+<div class="modal-ov" id="authModal" onclick="if(event.target===this)closeAuth()">
+  <div class="modal auth-modal">
+    <button class="modal-x" onclick="closeAuth()">&#10005;</button>
+    <div class="auth-title" id="authTitle">Sign In</div>
+    <div class="auth-error" id="authError"></div>
+    <div id="authFormFields">
+      <div class="auth-name-row" id="nameRow" style="display:none">
+        <input class="auth-input" id="authFirst" type="text" placeholder="First name">
+        <input class="auth-input" id="authLast" type="text" placeholder="Last name">
+      </div>
+      <input class="auth-input" id="authEmail" type="email" placeholder="Email address">
+      <input class="auth-input" id="authPass" type="password" placeholder="Password">
+      <button class="auth-submit" id="authSubmit" onclick="doAuth()">Sign In</button>
+      <div class="auth-divider">or</div>
+      <button class="google-btn" onclick="googleSignIn()">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="G">
+        Continue with Google
+      </button>
+      <div class="auth-switch" id="authSwitch">
+        Don't have an account? <a onclick="toggleAuthMode()">Sign Up</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <footer class="site-footer">
   <div class="visitor-counter">
     <span class="vc-icon">👥</span>
@@ -275,7 +329,230 @@ input,select{font-family:inherit}
   <div style="margin-top:6px">© 2026 SAT Vocab Master | fun2learnsatvocabtw.com</div>
 </footer>
 
+<!-- Firebase SDKs (compat mode for vanilla JS) -->
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+
 <script>
+// ===== FIREBASE SETUP =====
+const firebaseConfig = {
+  apiKey: "AIzaSyDw7-QixlK5-pbnAGnTsBOwNpccxe0GsP4",
+  authDomain: "sat-vocab-master.firebaseapp.com",
+  databaseURL: "https://sat-vocab-master-default-rtdb.firebaseio.com",
+  projectId: "sat-vocab-master",
+  storageBucket: "sat-vocab-master.firebasestorage.app",
+  messagingSenderId: "7831579979",
+  appId: "1:7831579979:web:cdaaeb64b2847a75f2ccce"
+};
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+db.enablePersistence({synchronizeTabs:true}).catch(err=>{
+  if(err.code==='failed-precondition')console.warn('Firestore persistence: multiple tabs');
+  else if(err.code==='unimplemented')console.warn('Firestore persistence: not supported');
+});
+let currentUser = null;
+
+// ===== AUTH LOGIC =====
+let authMode = 'login';
+
+function showAuth(){
+  if(currentUser)return;
+  authMode='login';updateAuthModal();
+  document.getElementById('authModal').classList.add('show');
+}
+function closeAuth(){
+  document.getElementById('authModal').classList.remove('show');
+  document.getElementById('authError').style.display='none';
+  document.getElementById('authEmail').value='';
+  document.getElementById('authPass').value='';
+  document.getElementById('authFirst').value='';
+  document.getElementById('authLast').value='';
+}
+function toggleAuthMode(){
+  authMode=authMode==='login'?'signup':'login';
+  updateAuthModal();
+}
+function updateAuthModal(){
+  const isLogin=authMode==='login';
+  document.getElementById('authTitle').textContent=isLogin?'Sign In':'Create Account';
+  document.getElementById('authSubmit').textContent=isLogin?'Sign In':'Sign Up';
+  document.getElementById('nameRow').style.display=isLogin?'none':'flex';
+  document.getElementById('authSwitch').innerHTML=isLogin
+    ?"Don't have an account? <a onclick=\"toggleAuthMode()\">Sign Up</a>"
+    :"Already have an account? <a onclick=\"toggleAuthMode()\">Sign In</a>";
+  document.getElementById('authError').style.display='none';
+}
+function showAuthError(msg){
+  const el=document.getElementById('authError');
+  el.textContent=msg;el.style.display='block';
+}
+async function doAuth(){
+  const email=document.getElementById('authEmail').value.trim();
+  const pass=document.getElementById('authPass').value;
+  if(!email||!pass){showAuthError('Please enter email and password');return}
+  if(pass.length<6){showAuthError('Password must be at least 6 characters');return}
+  try{
+    if(authMode==='signup'){
+      const first=document.getElementById('authFirst').value.trim();
+      const last=document.getElementById('authLast').value.trim();
+      const cred=await auth.createUserWithEmailAndPassword(email,pass);
+      if(first||last){
+        await cred.user.updateProfile({displayName:(first+' '+last).trim()});
+      }
+    }else{
+      await auth.signInWithEmailAndPassword(email,pass);
+    }
+    closeAuth();
+  }catch(e){
+    const msgs={
+      'auth/email-already-in-use':'Email already registered. Try signing in.',
+      'auth/invalid-email':'Invalid email address.',
+      'auth/user-not-found':'No account found. Try signing up.',
+      'auth/wrong-password':'Incorrect password.',
+      'auth/too-many-requests':'Too many attempts. Try again later.',
+      'auth/invalid-credential':'Invalid email or password.'
+    };
+    showAuthError(msgs[e.code]||e.message);
+  }
+}
+async function googleSignIn(){
+  try{
+    const provider=new firebase.auth.GoogleAuthProvider();
+    // Use redirect on mobile for better compatibility
+    if(/Mobi|Android/i.test(navigator.userAgent)){
+      await auth.signInWithRedirect(provider);
+    }else{
+      await auth.signInWithPopup(provider);
+      closeAuth();
+    }
+  }catch(e){
+    if(e.code!=='auth/popup-closed-by-user'){
+      showAuthError('Google sign-in failed: '+e.message);
+    }
+  }
+}
+function doLogout(){
+  if(confirm('Sign out? Your progress is saved.')){
+    auth.signOut();
+  }
+}
+
+// Auth state listener
+auth.onAuthStateChanged(async(user)=>{
+  currentUser=user;
+  updateAuthUI();
+  if(user){
+    // Wait for vocab data to be loaded before syncing
+    if(V.length>0){
+      await syncFromCloud();
+    }else{
+      // Data not loaded yet, sync will happen after loadData
+      window._pendingSync=true;
+    }
+  }
+});
+
+function updateAuthUI(){
+  const authArea=document.getElementById('authArea');
+  const mobAuth=document.getElementById('mobAuth');
+  if(currentUser){
+    const name=currentUser.displayName||currentUser.email.split('@')[0];
+    const photo=currentUser.photoURL;
+    authArea.innerHTML=`
+      <div class="user-info">
+        ${photo?`<img class="user-avatar" src="${photo}" alt="">`:`<div class="user-avatar" style="display:flex;align-items:center;justify-content:center;font-size:.85em">👤</div>`}
+        <span class="user-name">${name}</span>
+        <button class="logout-btn" onclick="doLogout()">Sign Out</button>
+      </div>`;
+    mobAuth.innerHTML=`<span>🟢</span>${name.substring(0,5)}`;
+    mobAuth.onclick=doLogout;
+  }else{
+    authArea.innerHTML=`<button class="auth-btn" onclick="showAuth()">Sign In</button>`;
+    mobAuth.innerHTML='<span>👤</span>Sign In';
+    mobAuth.onclick=showAuth;
+  }
+}
+
+// ===== CLOUD SYNC =====
+let syncTimer=null;
+const SYNC_DEBOUNCE=2000;
+
+function getUserDocRef(){
+  if(!currentUser)return null;
+  return db.collection('users').doc(currentUser.uid);
+}
+
+async function syncFromCloud(){
+  if(!currentUser)return;
+  try{
+    const ref=getUserDocRef();
+    const doc=await ref.get();
+    if(doc.exists){
+      const data=doc.data();
+      const cloudFavs=new Set(data.favorites||[]);
+      const cloudLrn=new Set(data.learned||[]);
+      const cloudScores=data.scores||{};
+      // Union merge for favorites and learned
+      cloudFavs.forEach(id=>favs.add(id));
+      favs.forEach(id=>cloudFavs.add(id));
+      favs=cloudFavs;
+      cloudLrn.forEach(id=>lrn.add(id));
+      lrn.forEach(id=>cloudLrn.add(id));
+      lrn=cloudLrn;
+      // Best-score merge for test scores
+      const merged={...scores};
+      for(const[unit,score]of Object.entries(cloudScores)){
+        if(merged[unit]===undefined||score>merged[unit])merged[unit]=score;
+      }
+      scores=merged;
+    }
+    saveToLocal();
+    await saveToCloud();
+    updStats();
+    if(sec==='learn')renderLearn();
+    if(sec==='fav')renderFav();
+    if(sec==='test')renderTHome();
+    if(sec==='home')renderWOD();
+    toast(currentUser.displayName
+      ?'Welcome, '+currentUser.displayName.split(' ')[0]+'! Progress synced.'
+      :'Signed in - progress synced');
+  }catch(e){
+    console.error('Sync error:',e);
+    toast('Sync error - using local data');
+  }
+}
+
+function saveToLocal(){
+  localStorage.setItem('sf',JSON.stringify([...favs]));
+  localStorage.setItem('sl',JSON.stringify([...lrn]));
+  localStorage.setItem('ss',JSON.stringify(scores));
+}
+
+async function saveToCloud(){
+  if(!currentUser)return;
+  try{
+    const ref=getUserDocRef();
+    await ref.set({
+      email:currentUser.email||'',
+      displayName:currentUser.displayName||'',
+      photoURL:currentUser.photoURL||'',
+      favorites:[...favs],
+      learned:[...lrn],
+      scores:scores,
+      lastUpdated:firebase.firestore.FieldValue.serverTimestamp()
+    },{merge:true});
+  }catch(e){
+    console.error('Cloud save error:',e);
+  }
+}
+
+function scheduleSyncToCloud(){
+  if(syncTimer)clearTimeout(syncTimer);
+  syncTimer=setTimeout(()=>{saveToCloud()},SYNC_DEBOUNCE);
+}
+
 // ===== STATE =====
 let V=[],T=[],A={},MUSIC={},VISUAL={};
 let favs=new Set(JSON.parse(localStorage.getItem('sf')||'[]'));
@@ -301,9 +578,14 @@ async function loadData(){
   init();
 }
 
-function init(){
+async function init(){
   document.getElementById('stTotal').textContent=V.length;
   updStats();renderWOD();initAlpha();
+  // If user was already signed in but data wasn't loaded yet, sync now
+  if(window._pendingSync&&currentUser){
+    window._pendingSync=false;
+    await syncFromCloud();
+  }
 }
 
 // ===== NAV =====
@@ -418,10 +700,11 @@ function togFav(id,ev){
   if(favs.has(id)){favs.delete(id);toast('Removed from favorites')}
   else{favs.add(id);toast('Added to favorites ❤️')}
   localStorage.setItem('sf',JSON.stringify([...favs]));
+  scheduleSyncToCloud();
   updStats();
   if(sec==='learn')renderLearn();if(sec==='fav')renderFav();
 }
-function markL(id){lrn.add(id);localStorage.setItem('sl',JSON.stringify([...lrn]));updStats()}
+function markL(id){lrn.add(id);localStorage.setItem('sl',JSON.stringify([...lrn]));scheduleSyncToCloud();updStats()}
 function updStats(){
   document.getElementById('nLearned').textContent=lrn.size;
   document.getElementById('nFav').textContent=favs.size;
@@ -634,7 +917,7 @@ function selA(qn,l){if(tDone)return;tAns[qn]=l;renderQ()}
 function submitT(){
   tDone=true;let cor=0;const total=tUnit.questions.length;
   tUnit.questions.forEach(q=>{if(tAns[q.number]===A[String(q.number)])cor++});
-  scores[tUnit.unit]=cor;localStorage.setItem('ss',JSON.stringify(scores));
+  scores[tUnit.unit]=cor;localStorage.setItem('ss',JSON.stringify(scores));scheduleSyncToCloud();
   const pct=Math.round(cor/total*100);
   let g='🏆',gt='Perfect Score!';
   if(pct<100){g='🌟';gt='Excellent!'}if(pct<85){g='👍';gt='Good Job!'}
@@ -676,7 +959,7 @@ function exportFav(){
   const blob=new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8;'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='sat_favorites.csv';a.click();toast('Exported!');
 }
-function clearFav(){if(!confirm('Clear all favorites?'))return;favs.clear();localStorage.setItem('sf','[]');updStats();renderFav();toast('Cleared')}
+function clearFav(){if(!confirm('Clear all favorites?'))return;favs.clear();localStorage.setItem('sf','[]');scheduleSyncToCloud();updStats();renderFav();toast('Cleared')}
 
 // ===== WOD =====
 function renderWOD(){
