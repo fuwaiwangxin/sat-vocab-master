@@ -353,22 +353,65 @@ db.enablePersistence({synchronizeTabs:true}).catch(err=>{
   else if(err.code==='unimplemented')console.warn('Firestore persistence: not supported');
 });
 let currentUser = null;
+let firebaseBlocked = false;
+
+// ===== FIREBASE CONNECTIVITY CHECK =====
+// Try an actual Firebase Auth call to detect if Google services are blocked
+async function checkFirebaseAccess(){
+  try{
+    // signInWithEmailAndPassword with dummy credentials will either:
+    // - throw auth/invalid-credential (Firebase reachable ✓)
+    // - throw auth/network-request-failed (Firebase blocked ✗)
+    await auth.signInWithEmailAndPassword('__connectivity_test__@test.com','__test__');
+  }catch(e){
+    const isNetErr=e.code==='auth/network-request-failed'||(e.message&&e.message.includes('network-request-failed'));
+    if(isNetErr){
+      firebaseBlocked=true;
+      console.warn('Firebase unreachable, enabling local mode');
+      const saved=localStorage.getItem('localUser');
+      if(saved){
+        const u=JSON.parse(saved);
+        currentUser={displayName:u.name,uid:'local_'+u.name,isLocal:true};
+        updateAuthUI();
+      }
+    }else{
+      // Any other error means Firebase IS reachable (e.g. auth/invalid-credential, auth/user-not-found)
+      firebaseBlocked=false;
+    }
+  }
+}
+checkFirebaseAccess();
 
 // ===== AUTH LOGIC =====
 let authMode = 'login';
 
 function showAuth(){
   if(currentUser)return;
+  if(firebaseBlocked){
+    showLocalAuth();return;
+  }
   authMode='login';updateAuthModal();
+  document.getElementById('authModal').classList.add('show');
+}
+function showLocalAuth(){
+  document.getElementById('authTitle').textContent='Welcome!';
+  document.getElementById('authError').style.display='none';
+  document.getElementById('authFormFields').innerHTML=`
+    <div style="text-align:center;margin-bottom:16px;padding:12px;background:rgba(253,203,110,.1);border:1px solid rgba(253,203,110,.3);border-radius:var(--rs);font-size:.85em;color:var(--a2)">
+      ⚠️ Network restricted — using local mode<br><span style="color:var(--td);font-size:.9em">Your progress will be saved on this device</span>
+    </div>
+    <input class="auth-input" id="localName" type="text" placeholder="Enter your name" autofocus>
+    <button class="auth-submit" onclick="doLocalLogin()">🚀 Start Learning</button>
+  `;
   document.getElementById('authModal').classList.add('show');
 }
 function closeAuth(){
   document.getElementById('authModal').classList.remove('show');
-  document.getElementById('authError').style.display='none';
-  document.getElementById('authEmail').value='';
-  document.getElementById('authPass').value='';
-  document.getElementById('authFirst').value='';
-  document.getElementById('authLast').value='';
+  const err=document.getElementById('authError');if(err)err.style.display='none';
+  const em=document.getElementById('authEmail');if(em)em.value='';
+  const pw=document.getElementById('authPass');if(pw)pw.value='';
+  const fn=document.getElementById('authFirst');if(fn)fn.value='';
+  const ln=document.getElementById('authLast');if(ln)ln.value='';
 }
 function toggleAuthMode(){
   authMode=authMode==='login'?'signup':'login';
@@ -406,6 +449,14 @@ async function doAuth(){
     }
     closeAuth();
   }catch(e){
+    const isNetErr=e.code==='auth/network-request-failed'||(e.message&&e.message.includes('network-request-failed'));
+    if(isNetErr){
+      // Firebase is blocked — switch to local mode on the fly
+      firebaseBlocked=true;
+      closeAuth();
+      showLocalAuth();
+      return;
+    }
     const msgs={
       'auth/email-already-in-use':'Email already registered. Try signing in.',
       'auth/invalid-email':'Invalid email address.',
@@ -428,14 +479,59 @@ async function googleSignIn(){
       closeAuth();
     }
   }catch(e){
+    const isNetErr=e.code==='auth/network-request-failed'||(e.message&&e.message.includes('network-request-failed'));
+    if(isNetErr){
+      firebaseBlocked=true;
+      closeAuth();
+      showLocalAuth();
+      return;
+    }
     if(e.code!=='auth/popup-closed-by-user'){
       showAuthError('Google sign-in failed: '+e.message);
     }
   }
 }
+function doLocalLogin(){
+  const name=(document.getElementById('localName')?.value||'').trim();
+  if(!name){
+    const el=document.getElementById('authError');
+    el.textContent='Please enter your name';el.style.display='block';
+    return;
+  }
+  localStorage.setItem('localUser',JSON.stringify({name}));
+  currentUser={displayName:name,uid:'local_'+name,isLocal:true};
+  // Track local signup via hits counter
+  fetch('https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ffun2learnsatvocabtw.com%2Flocal-signup&count_bg=%23E17055&title_bg=%23555555&title=local-signups&edge_flat=true').catch(()=>{});
+  updateAuthUI();
+  closeAuth();
+  toast('Welcome, '+name+'! Progress saved locally.');
+}
 function doLogout(){
   if(confirm('Sign out? Your progress is saved.')){
-    auth.signOut();
+    if(currentUser&&currentUser.isLocal){
+      localStorage.removeItem('localUser');
+      currentUser=null;
+      updateAuthUI();
+      // Restore the original auth form HTML for next showAuth
+      document.getElementById('authFormFields').innerHTML=`
+        <div class="auth-name-row" id="nameRow" style="display:none">
+          <input class="auth-input" id="authFirst" type="text" placeholder="First name">
+          <input class="auth-input" id="authLast" type="text" placeholder="Last name">
+        </div>
+        <input class="auth-input" id="authEmail" type="email" placeholder="Email address">
+        <input class="auth-input" id="authPass" type="password" placeholder="Password">
+        <button class="auth-submit" id="authSubmit" onclick="doAuth()">Sign In</button>
+        <div class="auth-divider">or</div>
+        <button class="google-btn" onclick="googleSignIn()">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="G">
+          Continue with Google
+        </button>
+        <div class="auth-switch" id="authSwitch">
+          Don't have an account? <a onclick="toggleAuthMode()">Sign Up</a>
+        </div>`;
+    }else{
+      auth.signOut();
+    }
   }
 }
 
@@ -485,7 +581,7 @@ function getUserDocRef(){
 }
 
 async function syncFromCloud(){
-  if(!currentUser)return;
+  if(!currentUser||currentUser.isLocal)return;
   try{
     const ref=getUserDocRef();
     const doc=await ref.get();
@@ -531,7 +627,7 @@ function saveToLocal(){
 }
 
 async function saveToCloud(){
-  if(!currentUser)return;
+  if(!currentUser||currentUser.isLocal)return;
   try{
     const ref=getUserDocRef();
     await ref.set({
