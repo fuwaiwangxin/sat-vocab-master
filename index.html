@@ -327,11 +327,6 @@ input,select{font-family:inherit}
       <span class="vc-label">Visitors:</span>
       <span class="vc-num" id="visitorCount">--</span>
     </div>
-    <div class="visitor-counter">
-      <span class="vc-icon">🇨🇳</span>
-      <span class="vc-label">Local Signups:</span>
-      <span class="vc-num" id="localSignupCount">--</span>
-    </div>
   </div>
   <div style="margin-top:6px">© 2026 SAT Vocab Master | fun2learnsatvocabtw.com</div>
 </footer>
@@ -507,8 +502,6 @@ function doLocalLogin(){
   }
   localStorage.setItem('localUser',JSON.stringify({name}));
   currentUser={displayName:name,uid:'local_'+name,isLocal:true};
-  // Track local signup via hits counter
-  fetch('https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ffun2learnsatvocabtw.com%2Flocal-signup&count_bg=%23E17055&title_bg=%23555555&title=local-signups&edge_flat=true').catch(()=>{});
   updateAuthUI();
   closeAuth();
   toast('Welcome, '+name+'! Progress saved locally.');
@@ -1105,18 +1098,6 @@ function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t
   const now=Date.now();
   if(!lastVisit||now-parseInt(lastVisit)>300000){c++;localStorage.setItem(VC_KEY,c);localStorage.setItem(VC_KEY+'_t',now)}
   if(vc&&vc.textContent==='--')vc.textContent=c>0?c.toLocaleString():'1';
-  // Local signup counter
-  const lsc=document.getElementById('localSignupCount');
-  fetch('https://hits.seeyoufarm.com/api/count/keep/badge.svg?url=https%3A%2F%2Ffun2learnsatvocabtw.com%2Flocal-signup&count_bg=%23E17055&title_bg=%23555555&title=local-signups&edge_flat=true')
-    .then(r=>r.text())
-    .then(svg=>{
-      const m=svg.match(/(\d+)\s*\/\s*(\d+)/);
-      if(m&&lsc){
-        lsc.textContent=m[2];
-        lsc.title='Today: '+m[1]+' | Total: '+m[2];
-      }
-    })
-    .catch(()=>{if(lsc)lsc.textContent='0'});
 })();
 
 loadData();
