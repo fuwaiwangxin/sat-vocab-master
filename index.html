@@ -4,11 +4,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🏆 SAT Vocab Master - Learn 2000+ Words</title>
-<meta name="description" content="Master 2000+ SAT vocabulary words with pronunciation, emoji mnemonics, music connections, flashcards, and 456 practice test questions.">
+<meta name="description" content="Master 2000+ SAT vocabulary words with AI-generated images, music connections, pronunciation, emoji mnemonics, flashcards, and 456 practice test questions. Free SAT prep tool.">
+<meta name="keywords" content="SAT vocabulary, SAT words, SAT prep, SAT study, vocabulary flashcards, SAT practice test, learn SAT words, SAT word list">
+<meta property="og:title" content="SAT Vocab Master - Learn 2000+ Words with AI Images & Music">
+<meta property="og:description" content="Free AI-powered SAT vocabulary learning platform with images, music connections, flashcards and practice tests.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fun2learnsatvocabtw.com">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://fun2learnsatvocabtw.com">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏆</text></svg>">
-<!-- Google Analytics - Replace G-LCGNFJ3J9R with your Measurement ID -->
+<!-- Google Analytics with Bot Filtering -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCGNFJ3J9R"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LCGNFJ3J9R');</script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());
+// P3: Enhanced GA config - filter bots, track engagement
+(function(){
+  var ua=navigator.userAgent||'';
+  var isBot=/bot|crawl|spider|slurp|mediapartners|facebookexternalhit|bingpreview|googlebot|yandex|baidu|semrush|ahrefs|mj12bot|dotbot/i.test(ua);
+  if(isBot){
+    // Don't send GA data for known bots
+    window['ga-disable-G-LCGNFJ3J9R']=true;
+    console.log('[Analytics] Bot detected, GA disabled');
+    return;
+  }
+  gtag('config','G-LCGNFJ3J9R',{
+    'send_page_view':true,
+    'cookie_flags':'SameSite=None;Secure',
+    // Track real engagement time
+    'engagement_time_msec':100
+  });
+  // Custom event: track if user is likely real (has interaction)
+  var realUser=false;
+  ['click','scroll','keydown','touchstart'].forEach(function(evt){
+    document.addEventListener(evt,function(){
+      if(!realUser){realUser=true;gtag('event','real_user_confirmed',{event_category:'engagement'})}
+    },{once:true,passive:true});
+  });
+})();
+</script>
 <style>
 :root{
   --p:#6C5CE7;--pl:#A29BFE;--pd:#4834D4;
@@ -194,9 +227,75 @@ input,select{font-family:inherit}
 .auth-error{color:var(--d);font-size:.85em;text-align:center;margin-bottom:10px;display:none}
 .auth-name-row{display:flex;gap:10px;margin-bottom:0}
 .auth-name-row .auth-input{flex:1}
+
+/* ===== P0: Welcome Overlay ===== */
+.welcome-ov{position:fixed;inset:0;z-index:999;background:radial-gradient(ellipse at center,#1A1A2E 0%,#0F0F1A 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px;transition:opacity .6s,transform .6s}
+.welcome-ov.hide{opacity:0;transform:scale(1.05);pointer-events:none}
+.welcome-logo{font-size:4em;margin-bottom:16px;animation:welcomePulse 2s ease-in-out infinite}
+@keyframes welcomePulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+.welcome-title{font-size:2.2em;font-weight:800;background:var(--g1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:10px}
+.welcome-sub{color:var(--td);font-size:1.05em;margin-bottom:35px;max-width:500px;line-height:1.5}
+.welcome-start{padding:18px 50px;border-radius:50px;background:var(--g1);color:#fff;font-size:1.2em;font-weight:700;cursor:pointer;border:none;transition:all .3s;box-shadow:0 4px 25px rgba(108,92,231,.5);position:relative;overflow:hidden}
+.welcome-start:hover{transform:translateY(-3px);box-shadow:0 8px 35px rgba(108,92,231,.6)}
+.welcome-start:active{transform:translateY(0)}
+.welcome-start::after{content:'';position:absolute;inset:0;background:linear-gradient(45deg,transparent 30%,rgba(255,255,255,.15) 50%,transparent 70%);animation:welcomeShine 3s infinite}
+@keyframes welcomeShine{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.welcome-stats{display:flex;gap:30px;margin-top:30px;color:var(--td);font-size:.9em}
+.welcome-stats strong{color:var(--a);display:block;font-size:1.4em}
+
+/* ===== P1: Streak System ===== */
+.streak-bar{background:linear-gradient(135deg,rgba(253,203,110,.08),rgba(225,112,85,.08));border:1px solid rgba(253,203,110,.25);border-radius:var(--r);padding:14px 20px;margin-bottom:18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;animation:fadeIn .5s}
+.streak-left{display:flex;align-items:center;gap:12px}
+.streak-fire{font-size:2em;animation:fireFlicker 1s ease-in-out infinite alternate}
+@keyframes fireFlicker{0%{transform:scale(1) rotate(-3deg)}100%{transform:scale(1.1) rotate(3deg)}}
+.streak-count{font-size:1.8em;font-weight:800;color:var(--a2)}
+.streak-label{font-size:.85em;color:var(--td)}
+.streak-right{text-align:right}
+.streak-msg{font-size:.9em;color:var(--t);font-weight:600}
+.streak-sub{font-size:.78em;color:var(--td);margin-top:2px}
+.streak-dead .streak-fire{animation:none;filter:grayscale(1);opacity:.5}
+.review-banner{background:linear-gradient(135deg,rgba(108,92,231,.1),rgba(162,155,254,.1));border:1px solid rgba(108,92,231,.25);border-radius:var(--r);padding:14px 20px;margin-bottom:18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;cursor:pointer;transition:.3s}
+.review-banner:hover{border-color:var(--p);transform:translateY(-2px)}
+.review-text{font-size:.95em;color:var(--t)}
+.review-text strong{color:var(--pl)}
+.review-btn{padding:8px 20px;border-radius:20px;background:var(--g1);color:#fff;font-size:.85em;font-weight:600;border:none;cursor:pointer}
+
+/* ===== P2: Feedback System ===== */
+.feedback-float{position:fixed;bottom:80px;right:20px;z-index:150;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+@media(max-width:768px){.feedback-float{bottom:85px;right:12px}}
+.feedback-toggle{width:50px;height:50px;border-radius:50%;background:var(--g1);color:#fff;font-size:1.5em;display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;box-shadow:0 4px 15px rgba(108,92,231,.4);transition:.3s}
+.feedback-toggle:hover{transform:scale(1.1)}
+.feedback-panel{background:var(--bg2);border:1px solid var(--b);border-radius:var(--r);padding:20px;width:300px;max-width:calc(100vw - 40px);display:none;box-shadow:0 8px 30px rgba(0,0,0,.4)}
+.feedback-panel.show{display:block;animation:fadeIn .3s}
+.feedback-title{font-size:1.1em;font-weight:700;margin-bottom:12px;color:var(--t)}
+.feedback-q{font-size:.9em;color:var(--td);margin-bottom:10px}
+.feedback-thumbs{display:flex;gap:12px;margin-bottom:14px}
+.feedback-thumb{width:50px;height:50px;border-radius:var(--rs);background:var(--c);border:2px solid var(--b);font-size:1.5em;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s}
+.feedback-thumb:hover{border-color:var(--p);transform:scale(1.1)}
+.feedback-thumb.selected{border-color:var(--s);background:rgba(0,184,148,.15)}
+.feedback-text{width:100%;padding:10px;background:var(--c);border:1px solid var(--b);border-radius:var(--rs);color:var(--t);font-size:.88em;resize:vertical;min-height:60px;outline:none;font-family:inherit}
+.feedback-text:focus{border-color:var(--p)}
+.feedback-send{width:100%;padding:10px;border-radius:var(--rs);background:var(--g2);color:#fff;font-size:.9em;font-weight:600;border:none;cursor:pointer;margin-top:10px;transition:.2s}
+.feedback-send:hover{transform:translateY(-1px)}
+.feedback-thanks{text-align:center;padding:20px 0;font-size:1em;color:var(--s)}
 </style>
 </head>
 <body>
+
+<!-- P0: Welcome Overlay - triggers user interaction for audio -->
+<div class="welcome-ov" id="welcomeOverlay">
+  <div class="welcome-logo">🏆</div>
+  <div class="welcome-title">SAT Vocab Master</div>
+  <div class="welcome-sub">Master 2000+ SAT words with AI-powered images, music connections, and interactive quizzes</div>
+  <button class="welcome-start" id="welcomeStartBtn" onclick="dismissWelcome()">
+    🎵 Tap to Start Learning
+  </button>
+  <div class="welcome-stats">
+    <div><strong>2000+</strong>Words</div>
+    <div><strong>456</strong>Questions</div>
+    <div><strong>38</strong>Test Units</div>
+  </div>
+</div>
 
 <nav class="nav"><div class="nav-in">
   <div class="logo">🏆 SAT Vocab Master</div>
@@ -232,6 +331,26 @@ input,select{font-family:inherit}
       <div class="stat-c"><div class="n" id="stMast">0</div><div class="l">Mastered</div></div>
     </div>
   </div>
+  <!-- P1: Streak Bar -->
+  <div id="streakBar" class="streak-bar" style="display:none">
+    <div class="streak-left">
+      <span class="streak-fire" id="streakFireIcon">🔥</span>
+      <div>
+        <div class="streak-count" id="streakCount">0</div>
+        <div class="streak-label">Day Streak</div>
+      </div>
+    </div>
+    <div class="streak-right">
+      <div class="streak-msg" id="streakMsg">Keep it going!</div>
+      <div class="streak-sub" id="streakSub">Come back tomorrow to continue your streak</div>
+    </div>
+  </div>
+  <!-- P1: Review Banner (shows when user has words to review) -->
+  <div id="reviewBanner" class="review-banner" style="display:none" onclick="go('learn');setLF('learned',null)">
+    <div class="review-text" id="reviewText">📖 You have <strong>0</strong> words to review</div>
+    <button class="review-btn">Review Now</button>
+  </div>
+
   <div class="search-c">
     <span class="search-ic">🔍</span>
     <input class="search-in" id="sInput" placeholder="Search any SAT word..." oninput="doSearch(this.value)" onfocus="doSearch(this.value)">
@@ -330,6 +449,21 @@ input,select{font-family:inherit}
   </div>
   <div style="margin-top:6px">© 2026 SAT Vocab Master | fun2learnsatvocabtw.com</div>
 </footer>
+
+<!-- P2: Floating Feedback Button -->
+<div class="feedback-float" id="feedbackFloat">
+  <div class="feedback-panel" id="feedbackPanel">
+    <div class="feedback-title">💬 Your Feedback</div>
+    <div class="feedback-q">Was this helpful for your SAT prep?</div>
+    <div class="feedback-thumbs">
+      <button class="feedback-thumb" id="fbThumbUp" onclick="selectFeedback('up')">👍</button>
+      <button class="feedback-thumb" id="fbThumbDown" onclick="selectFeedback('down')">👎</button>
+    </div>
+    <textarea class="feedback-text" id="feedbackText" placeholder="Any suggestions? What would make this better? (optional)"></textarea>
+    <button class="feedback-send" onclick="sendFeedback()">Send Feedback</button>
+  </div>
+  <button class="feedback-toggle" onclick="toggleFeedback()" title="Send Feedback">💬</button>
+</div>
 
 <!-- Firebase SDKs (compat mode for vanilla JS) -->
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
@@ -1099,6 +1233,223 @@ function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t
   if(!lastVisit||now-parseInt(lastVisit)>300000){c++;localStorage.setItem(VC_KEY,c);localStorage.setItem(VC_KEY+'_t',now)}
   if(vc&&vc.textContent==='--')vc.textContent=c>0?c.toLocaleString():'1';
 })();
+
+// ===== P0: WELCOME OVERLAY =====
+(function(){
+  var welcomed=localStorage.getItem('sat_welcomed');
+  var overlay=document.getElementById('welcomeOverlay');
+  if(welcomed){
+    // Already visited before - hide immediately
+    overlay.style.display='none';
+  }
+})();
+
+function dismissWelcome(){
+  var overlay=document.getElementById('welcomeOverlay');
+  overlay.classList.add('hide');
+  localStorage.setItem('sat_welcomed','1');
+  // Trigger audio context for browsers that block autoplay
+  try{
+    var ctx=new(window.AudioContext||window.webkitAudioContext)();
+    ctx.resume().then(function(){console.log('[Audio] Context unlocked')});
+  }catch(e){}
+  // Track as GA event
+  if(typeof gtag==='function')gtag('event','welcome_start_clicked',{event_category:'engagement'});
+  setTimeout(function(){overlay.style.display='none'},700);
+}
+
+// ===== P1: STREAK SYSTEM =====
+var STREAK_KEY='sat_streak';
+var STREAK_DATE_KEY='sat_streak_date';
+var STREAK_BEST_KEY='sat_streak_best';
+
+function getToday(){
+  var d=new Date();
+  return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();
+}
+
+function getYesterday(){
+  var d=new Date();
+  d.setDate(d.getDate()-1);
+  return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();
+}
+
+function updateStreak(){
+  var today=getToday();
+  var yesterday=getYesterday();
+  var lastDate=localStorage.getItem(STREAK_DATE_KEY)||'';
+  var streak=parseInt(localStorage.getItem(STREAK_KEY)||'0');
+  var best=parseInt(localStorage.getItem(STREAK_BEST_KEY)||'0');
+  var streakDied=false;
+
+  if(lastDate===today){
+    // Already visited today, no change
+  }else if(lastDate===yesterday){
+    // Consecutive day! Increment streak
+    streak++;
+    localStorage.setItem(STREAK_KEY,streak);
+    localStorage.setItem(STREAK_DATE_KEY,today);
+  }else if(lastDate===''){
+    // First ever visit
+    streak=1;
+    localStorage.setItem(STREAK_KEY,streak);
+    localStorage.setItem(STREAK_DATE_KEY,today);
+  }else{
+    // Streak broken! Reset to 1
+    streakDied=streak>1;
+    streak=1;
+    localStorage.setItem(STREAK_KEY,streak);
+    localStorage.setItem(STREAK_DATE_KEY,today);
+  }
+
+  // Update best streak
+  if(streak>best){
+    best=streak;
+    localStorage.setItem(STREAK_BEST_KEY,best);
+  }
+
+  // Render streak bar
+  renderStreakBar(streak,best,streakDied,lastDate===today);
+}
+
+function renderStreakBar(streak,best,streakDied,alreadyVisitedToday){
+  var bar=document.getElementById('streakBar');
+  var fire=document.getElementById('streakFireIcon');
+  var count=document.getElementById('streakCount');
+  var msg=document.getElementById('streakMsg');
+  var sub=document.getElementById('streakSub');
+
+  bar.style.display='flex';
+  count.textContent=streak;
+
+  if(streakDied){
+    bar.classList.add('streak-dead');
+    fire.textContent='💨';
+    msg.textContent='Streak lost! Start fresh today';
+    sub.textContent='Your best was '+best+' days. Let\'s beat it!';
+    msg.style.color='var(--d)';
+    // Remove dead state after a moment
+    setTimeout(function(){bar.classList.remove('streak-dead');fire.textContent='🔥';msg.style.color=''},3000);
+  }else if(streak>=7){
+    fire.textContent='🔥';
+    msg.textContent='You\'re on fire! '+streak+' days!';
+    sub.textContent='Best: '+best+' days. Keep going!';
+    msg.style.color='var(--a2)';
+  }else if(streak>1){
+    fire.textContent='🔥';
+    msg.textContent='Nice! '+streak+' day streak!';
+    sub.textContent='Come back tomorrow to keep it going';
+    msg.style.color='';
+  }else{
+    fire.textContent='🔥';
+    msg.textContent=alreadyVisitedToday?'Welcome back today!':'Day 1 - Let\'s go!';
+    sub.textContent='Visit daily to build your streak';
+    msg.style.color='';
+  }
+
+  // Track streak in GA
+  if(typeof gtag==='function'){
+    gtag('event','streak_check',{event_category:'retention',event_label:'day_'+streak,value:streak});
+  }
+}
+
+function renderReviewBanner(){
+  var banner=document.getElementById('reviewBanner');
+  var text=document.getElementById('reviewText');
+  var learnedCount=lrn.size;
+
+  if(learnedCount>0&&learnedCount<V.length){
+    var reviewCount=Math.min(learnedCount,10);
+    banner.style.display='flex';
+    text.innerHTML='📖 Welcome back! You have <strong>'+reviewCount+'</strong> words to review today';
+  }else if(learnedCount===0){
+    banner.style.display='flex';
+    text.innerHTML='🚀 Ready to start? <strong>2000+</strong> SAT words are waiting for you!';
+  }else{
+    banner.style.display='none';
+  }
+}
+
+// ===== P2: FEEDBACK SYSTEM =====
+var feedbackRating=null;
+
+function toggleFeedback(){
+  var panel=document.getElementById('feedbackPanel');
+  panel.classList.toggle('show');
+}
+
+function selectFeedback(type){
+  feedbackRating=type;
+  document.getElementById('fbThumbUp').classList.toggle('selected',type==='up');
+  document.getElementById('fbThumbDown').classList.toggle('selected',type==='down');
+}
+
+function sendFeedback(){
+  var text=(document.getElementById('feedbackText').value||'').trim();
+  if(!feedbackRating&&!text){toast('Please select 👍 or 👎, or write a comment');return}
+
+  // Save feedback to Firestore if available
+  var feedbackData={
+    rating:feedbackRating,
+    comment:text,
+    timestamp:new Date().toISOString(),
+    streak:parseInt(localStorage.getItem(STREAK_KEY)||'0'),
+    learnedWords:lrn.size,
+    userAgent:navigator.userAgent.substring(0,100),
+    lang:navigator.language||''
+  };
+
+  // Try saving to Firestore
+  if(!firebaseBlocked&&db){
+    try{
+      db.collection('feedback').add(feedbackData);
+    }catch(e){console.warn('Feedback save error:',e)}
+  }
+
+  // Also save locally
+  var localFeedback=JSON.parse(localStorage.getItem('sat_feedback')||'[]');
+  localFeedback.push(feedbackData);
+  localStorage.setItem('sat_feedback',JSON.stringify(localFeedback));
+
+  // Track in GA
+  if(typeof gtag==='function'){
+    gtag('event','feedback_submitted',{
+      event_category:'feedback',
+      event_label:feedbackRating||'comment_only',
+      value:feedbackRating==='up'?1:0
+    });
+  }
+
+  // Show thanks
+  var panel=document.getElementById('feedbackPanel');
+  panel.innerHTML='<div class="feedback-thanks">🎉 Thank you for your feedback!<br><span style="font-size:.8em;color:var(--td)">Your input helps us improve.</span></div>';
+  setTimeout(function(){
+    panel.classList.remove('show');
+    // Reset panel after hiding
+    setTimeout(function(){
+      panel.innerHTML='<div class="feedback-title">💬 Your Feedback</div><div class="feedback-q">Was this helpful for your SAT prep?</div><div class="feedback-thumbs"><button class="feedback-thumb" id="fbThumbUp" onclick="selectFeedback(\'up\')">👍</button><button class="feedback-thumb" id="fbThumbDown" onclick="selectFeedback(\'down\')">👎</button></div><textarea class="feedback-text" id="feedbackText" placeholder="Any suggestions? What would make this better? (optional)"></textarea><button class="feedback-send" onclick="sendFeedback()">Send Feedback</button>';
+      feedbackRating=null;
+    },500);
+  },2000);
+
+  toast('Feedback sent! Thank you! 🙏');
+}
+
+// Close feedback when clicking outside
+document.addEventListener('click',function(e){
+  if(!e.target.closest('.feedback-float')){
+    var panel=document.getElementById('feedbackPanel');
+    if(panel)panel.classList.remove('show');
+  }
+});
+
+// ===== INIT: Hook streak and review into existing init =====
+var _origInit=init;
+init=async function(){
+  await _origInit();
+  updateStreak();
+  renderReviewBanner();
+};
 
 loadData();
 </script>
