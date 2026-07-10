@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🏆 SAT Vocab Master - Learn 2000+ Words</title>
-<meta name="description" content="Master 2000+ SAT vocabulary words with AI-generated images, pronunciation, emoji mnemonics, flashcards, and 456 practice test questions. Free SAT prep tool.">
-<meta name="keywords" content="SAT vocabulary, SAT words, SAT prep, SAT study, vocabulary flashcards, SAT practice test, learn SAT words, SAT word list">
-<meta property="og:title" content="SAT Vocab Master - Learn 2000+ Words with AI Images">
-<meta property="og:description" content="Free AI-powered SAT vocabulary learning platform with images, flashcards and practice tests.">
+<title>🏆 SAT词汇大师 - 掌握 2000+ SAT 单词</title>
+<meta name="description" content="免费 SAT 词汇学习工具：2000+ 单词、AI 配图、发音、闪卡、38 单元 456 道模拟题，助你高效备考 SAT。">
+<meta name="keywords" content="SAT词汇, SAT单词, SAT备考, SAT词汇书, SAT闪卡, SAT模考, SAT词汇量, 学SAT">
+<meta property="og:title" content="SAT词汇大师 - 掌握 2000+ SAT 单词">
+<meta property="og:description" content="免费 SAT 词汇学习平台，AI 配图 + 闪卡 + 模拟测试，助你高效备考。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://fun2learnsatvocabtw.com">
 <meta name="robots" content="index, follow">
@@ -119,7 +119,8 @@ input,select{font-family:inherit}
 .w-btn:hover{background:var(--p);color:#fff}
 .w-btn.fav{background:var(--d);color:#fff}
 .w-emoji{font-size:1.8em;margin:6px 0}
-.w-def{font-size:.87em;line-height:1.45;margin-bottom:6px}
+.w-zh{font-size:1em;color:var(--pl);font-weight:600;line-height:1.45;margin-bottom:6px}
+.w-def{font-size:.87em;line-height:1.45;margin-bottom:6px;color:var(--td)}
 .w-sent{font-size:.8em;color:var(--td);font-style:italic;background:var(--bg3);padding:7px 10px;border-radius:var(--rs);line-height:1.35;margin-bottom:6px}
 .w-sent strong{color:var(--pl);font-style:normal}
 .w-visual{font-size:.82em;padding:8px 10px;border-radius:var(--rs);background:rgba(108,92,231,.12);border-left:3px solid var(--pl);line-height:1.35;margin-top:6px;margin-bottom:6px;color:var(--t)}
@@ -257,47 +258,47 @@ input,select{font-family:inherit}
 <!-- P0: Welcome Overlay - triggers user interaction for audio -->
 <div class="welcome-ov" id="welcomeOverlay">
   <div class="welcome-logo">🏆</div>
-  <div class="welcome-title">SAT Vocab Master</div>
-  <div class="welcome-sub">Master 2000+ SAT words with AI-powered images and interactive quizzes</div>
+  <div class="welcome-title">SAT词汇大师</div>
+  <div class="welcome-sub">2000+ SAT 单词，AI 配图 + 互动测试，打开就能背</div>
   <button class="welcome-start" id="welcomeStartBtn" onclick="dismissWelcome()">
-    🎵 Tap to Start Learning
+    🚀 开始学习
   </button>
   <div class="welcome-stats">
-    <div><strong>2000+</strong>Words</div>
-    <div><strong>456</strong>Questions</div>
-    <div><strong>38</strong>Test Units</div>
+    <div><strong>2000+</strong>单词</div>
+    <div><strong>456</strong>题目</div>
+    <div><strong>38</strong>单元</div>
   </div>
 </div>
 
 <nav class="nav"><div class="nav-in">
-  <div class="logo">🏆 SAT Vocab Master</div>
+  <div class="logo">🏆 SAT词汇大师</div>
   <div class="nav-tabs">
-    <button class="nav-tab active" onclick="go('home')">Home</button>
-    <button class="nav-tab" onclick="go('learn')">Learn</button>
-    <button class="nav-tab" onclick="go('test')">Test</button>
-    <button class="nav-tab" onclick="go('fav')">Favorites</button>
+    <button class="nav-tab active" data-s="home" onclick="go('home')">首页</button>
+    <button class="nav-tab" data-s="learn" onclick="go('learn')">学习</button>
+    <button class="nav-tab" data-s="test" onclick="go('test')">测试</button>
+    <button class="nav-tab" data-s="fav" onclick="go('fav')">收藏</button>
   </div>
-  <div class="nav-st"><span>Learned: <strong id="nLearned">0</strong></span><span>Favs: <strong id="nFav">0</strong></span></div>
+  <div class="nav-st"><span>已学: <strong id="nLearned">0</strong></span><span>收藏: <strong id="nFav">0</strong></span></div>
 </div></nav>
 
 <div class="mob-nav">
-  <button class="mob-btn active" data-s="home" onclick="go('home')"><span>🏠</span>Home</button>
-  <button class="mob-btn" data-s="learn" onclick="go('learn')"><span>📚</span>Learn</button>
-  <button class="mob-btn" data-s="test" onclick="go('test')"><span>✍️</span>Test</button>
-  <button class="mob-btn" data-s="fav" onclick="go('fav')"><span>❤️</span>Favs</button>
+  <button class="mob-btn active" data-s="home" onclick="go('home')"><span>🏠</span>首页</button>
+  <button class="mob-btn" data-s="learn" onclick="go('learn')"><span>📚</span>学习</button>
+  <button class="mob-btn" data-s="test" onclick="go('test')"><span>✍️</span>测试</button>
+  <button class="mob-btn" data-s="fav" onclick="go('fav')"><span>❤️</span>收藏</button>
 </div>
 
 <div class="main">
 
 <div id="s-home" class="section active">
   <div class="hero">
-    <h1>🏆 SAT Vocab Master</h1>
-    <p>Master 2000+ SAT words with pronunciation, emoji mnemonics & quizzes</p>
+    <h1>🏆 SAT词汇大师</h1>
+    <p>2000+ SAT 单词，发音 + emoji 助记 + 模拟测试，一口气搞定</p>
     <div class="stats-row">
-      <div class="stat-c"><div class="n" id="stTotal">0</div><div class="l">Total Words</div></div>
-      <div class="stat-c"><div class="n">38</div><div class="l">Test Units</div></div>
-      <div class="stat-c"><div class="n">456</div><div class="l">Questions</div></div>
-      <div class="stat-c"><div class="n" id="stMast">0</div><div class="l">Mastered</div></div>
+      <div class="stat-c"><div class="n" id="stTotal">0</div><div class="l">总词数</div></div>
+      <div class="stat-c"><div class="n">38</div><div class="l">测试单元</div></div>
+      <div class="stat-c"><div class="n">456</div><div class="l">题目</div></div>
+      <div class="stat-c"><div class="n" id="stMast">0</div><div class="l">已掌握</div></div>
     </div>
   </div>
   <!-- P1: Streak Bar -->
@@ -306,47 +307,47 @@ input,select{font-family:inherit}
       <span class="streak-fire" id="streakFireIcon">🔥</span>
       <div>
         <div class="streak-count" id="streakCount">0</div>
-        <div class="streak-label">Day Streak</div>
+        <div class="streak-label">连续天数</div>
       </div>
     </div>
     <div class="streak-right">
-      <div class="streak-msg" id="streakMsg">Keep it going!</div>
-      <div class="streak-sub" id="streakSub">Come back tomorrow to continue your streak</div>
+      <div class="streak-msg" id="streakMsg">继续保持！</div>
+      <div class="streak-sub" id="streakSub">明天回来继续打卡</div>
     </div>
   </div>
   <!-- P1: Review Banner (shows when user has words to review) -->
   <div id="reviewBanner" class="review-banner" style="display:none" onclick="go('learn');setLF('learned',null)">
-    <div class="review-text" id="reviewText">📖 You have <strong>0</strong> words to review</div>
-    <button class="review-btn">Review Now</button>
+    <div class="review-text" id="reviewText">📖 你有 <strong>0</strong> 个词要复习</div>
+    <button class="review-btn">立即复习</button>
   </div>
 
   <div class="search-c">
     <span class="search-ic">🔍</span>
-    <input class="search-in" id="sInput" placeholder="Search any SAT word..." oninput="doSearch(this.value)" onfocus="doSearch(this.value)">
+    <input class="search-in" id="sInput" placeholder="搜索任意 SAT 单词..." oninput="doSearch(this.value)" onfocus="doSearch(this.value)">
     <div class="search-r" id="sResults"></div>
   </div>
   <div class="qa">
-    <button class="qa-btn btn-p" onclick="go('learn')">📚 Start Learning</button>
-    <button class="qa-btn btn-s" onclick="go('test')">✍️ Take a Test</button>
-    <button class="qa-btn btn-o" onclick="startFlash()">🃏 Flashcards</button>
+    <button class="qa-btn btn-p" onclick="go('learn')">📚 开始背单词</button>
+    <button class="qa-btn btn-s" onclick="go('test')">✍️ 模拟测试</button>
+    <button class="qa-btn btn-o" onclick="startFlash()">🃏 闪卡模式</button>
   </div>
-  <div class="wod"><div class="stitle">🌟 Word of the Day</div><div id="wod" class="w-card" style="cursor:default"></div></div>
+  <div class="wod"><div class="stitle">🌟 今日单词</div><div id="wod" class="w-card" style="cursor:default"></div></div>
 </div>
 
 <div id="s-learn" class="section">
-  <div class="stitle">📚 Vocabulary Library</div>
+  <div class="stitle">📚 词汇库</div>
   <div class="mbar" id="learnModes">
-    <button class="m-btn active" onclick="setLM('grid')">📋 Grid</button>
-    <button class="m-btn" onclick="setLM('flash')">🃏 Flashcards</button>
-    <button class="m-btn" onclick="setLM('list')">📝 List</button>
+    <button class="m-btn active" onclick="setLM('grid')">📋 网格</button>
+    <button class="m-btn" onclick="setLM('flash')">🃏 闪卡</button>
+    <button class="m-btn" onclick="setLM('list')">📝 列表</button>
   </div>
   <div class="fbar">
-    <input class="search-in" id="lSearch" placeholder="Filter words..." style="max-width:280px;padding-left:14px" oninput="renderLearn()">
-    <select class="f-sel" id="lLetter" onchange="renderLearn()"><option value="">All Letters</option></select>
-    <button class="f-tag active" onclick="setLF('all',this)">All</button>
-    <button class="f-tag" onclick="setLF('new',this)">New</button>
-    <button class="f-tag" onclick="setLF('learned',this)">Learned</button>
-    <button class="f-tag" onclick="setLF('fav',this)">★ Fav</button>
+    <input class="search-in" id="lSearch" placeholder="筛选单词..." style="max-width:280px;padding-left:14px" oninput="renderLearn()">
+    <select class="f-sel" id="lLetter" onchange="renderLearn()"><option value="">所有字母</option></select>
+    <button class="f-tag active" onclick="setLF('all',this)">全部</button>
+    <button class="f-tag" onclick="setLF('new',this)">新词</button>
+    <button class="f-tag" onclick="setLF('learned',this)">已学</button>
+    <button class="f-tag" onclick="setLF('fav',this)">★ 收藏</button>
   </div>
   <div class="abar" id="abar"></div>
   <div id="lGrid" class="w-grid"></div>
@@ -356,24 +357,24 @@ input,select{font-family:inherit}
 </div>
 
 <div id="s-test" class="section">
-  <div id="tHome"><div class="stitle">✍️ SAT Vocabulary Tests — 38 Units</div>
-    <p style="color:var(--td);margin-bottom:16px">Each unit has 12 fill-in-the-blank questions.</p>
+  <div id="tHome"><div class="stitle">✍️ SAT 词汇测试 · 38 单元</div>
+    <p style="color:var(--td);margin-bottom:16px">每个单元 12 道填空题。</p>
     <div class="tu-grid" id="tuGrid"></div></div>
   <div id="tActive" style="display:none"></div>
   <div id="tResults" style="display:none"></div>
 </div>
 
 <div id="s-fav" class="section">
-  <div class="stitle">❤️ My Favorites</div>
+  <div class="stitle">❤️ 我的收藏</div>
   <div class="mbar" id="favModes">
-    <button class="m-btn active" onclick="setFM('grid')">📋 Grid</button>
-    <button class="m-btn" onclick="setFM('flash')">🃏 Flashcards</button>
-    <button class="m-btn" onclick="exportFav()">📥 Export CSV</button>
-    <button class="m-btn" onclick="clearFav()">🗑️ Clear All</button>
+    <button class="m-btn active" onclick="setFM('grid')">📋 网格</button>
+    <button class="m-btn" onclick="setFM('flash')">🃏 闪卡</button>
+    <button class="m-btn" onclick="exportFav()">📥 导出 CSV</button>
+    <button class="m-btn" onclick="clearFav()">🗑️ 清空</button>
   </div>
   <div id="fGrid" class="w-grid"></div>
   <div id="fFlash" class="fc-wrap" style="display:none"></div>
-  <div id="fEmpty" class="fav-empty" style="display:none"><div class="fav-empty-ic">💔</div><h3>No favorites yet</h3><p>Click the ❤️ on any word to save it here!</p></div>
+  <div id="fEmpty" class="fav-empty" style="display:none"><div class="fav-empty-ic">💔</div><h3>还没有收藏</h3><p>点击任意单词右侧的 ❤️ 就能收藏到这里！</p></div>
 </div>
 
 </div>
@@ -387,26 +388,26 @@ input,select{font-family:inherit}
   <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
     <div class="visitor-counter">
       <span class="vc-icon">👥</span>
-      <span class="vc-label">Visitors:</span>
+      <span class="vc-label">访客:</span>
       <span class="vc-num" id="visitorCount">--</span>
     </div>
   </div>
-  <div style="margin-top:6px">© 2026 SAT Vocab Master | fun2learnsatvocabtw.com</div>
+  <div style="margin-top:6px">© 2026 SAT词汇大师</div>
 </footer>
 
 <!-- P2: Floating Feedback Button -->
 <div class="feedback-float" id="feedbackFloat">
   <div class="feedback-panel" id="feedbackPanel">
-    <div class="feedback-title">💬 Your Feedback</div>
-    <div class="feedback-q">Was this helpful for your SAT prep?</div>
+    <div class="feedback-title">💬 反馈建议</div>
+    <div class="feedback-q">这个 app 对你备考 SAT 有帮助吗？</div>
     <div class="feedback-thumbs">
       <button class="feedback-thumb" id="fbThumbUp" onclick="selectFeedback('up')">👍</button>
       <button class="feedback-thumb" id="fbThumbDown" onclick="selectFeedback('down')">👎</button>
     </div>
-    <textarea class="feedback-text" id="feedbackText" placeholder="Any suggestions? What would make this better? (optional)"></textarea>
-    <button class="feedback-send" onclick="sendFeedback()">Send Feedback</button>
+    <textarea class="feedback-text" id="feedbackText" placeholder="有什么建议？说说怎么能更好用（可选）"></textarea>
+    <button class="feedback-send" onclick="sendFeedback()">发送反馈</button>
   </div>
-  <button class="feedback-toggle" onclick="toggleFeedback()" title="Send Feedback">💬</button>
+  <button class="feedback-toggle" onclick="toggleFeedback()" title="发送反馈">💬</button>
 </div>
 
 <!-- 腾讯云 CloudBase SDK -->
@@ -581,7 +582,7 @@ function go(s){
   sec=s;
   document.querySelectorAll('.section').forEach(e=>e.classList.remove('active'));
   document.getElementById('s-'+s).classList.add('active');
-  document.querySelectorAll('.nav-tab').forEach(t=>{t.classList.remove('active');if((s==='fav'&&t.textContent==='Favorites')||(s!=='fav'&&t.textContent.toLowerCase().includes(s)))t.classList.add('active')});
+  document.querySelectorAll('.nav-tab').forEach(t=>{t.classList.remove('active');if(t.dataset.s===s)t.classList.add('active')});
   document.querySelectorAll('.mob-btn').forEach(t=>{t.classList.remove('active');if(t.dataset.s===s)t.classList.add('active')});
   if(s==='learn')renderLearn();if(s==='test')renderTHome();if(s==='fav')renderFav();
   window.scrollTo(0,0);
@@ -593,7 +594,7 @@ function doSearch(q){
   if(!q||q.length<1){r.classList.remove('show');return}
   const ql=q.toLowerCase();
   const m=V.filter(w=>w.word.toLowerCase().startsWith(ql)||w.word.toLowerCase().includes(ql)||w.engDef.toLowerCase().includes(ql)).slice(0,12);
-  if(!m.length){r.innerHTML='<div class="sr-item"><div class="sr-w">No results</div></div>'}
+  if(!m.length){r.innerHTML='<div class="sr-item"><div class="sr-w">没有结果</div></div>'}
   else{r.innerHTML=m.map(w=>`<div class="sr-item" onclick="showW(${w.id})"><div class="sr-w">${emoji(w)} ${w.word} <span style="color:var(--td);font-weight:400;font-size:.82em">${w.pronunciation}</span></div><div class="sr-d">${w.engDef.substring(0,90)}${w.engDef.length>90?'...':''}</div></div>`).join('')}
   r.classList.add('show');
 }
@@ -668,8 +669,8 @@ if('speechSynthesis' in window){
 // ===== FAVORITES =====
 function togFav(id,ev){
   if(ev){ev.stopPropagation();ev.preventDefault()}
-  if(favs.has(id)){favs.delete(id);toast('Removed from favorites')}
-  else{favs.add(id);toast('Added to favorites ❤️')}
+  if(favs.has(id)){favs.delete(id);toast('已取消收藏')}
+  else{favs.add(id);toast('已加入收藏 ❤️')}
   localStorage.setItem('sf',JSON.stringify([...favs]));
   scheduleSyncToCloud();
   updStats();
@@ -699,10 +700,10 @@ function showW(id){
         <button class="w-btn" onclick="speak('${w.word.replace(/'/g,"\\'")}',event)" style="width:38px;height:38px;font-size:1em">🔊</button>
       </div>
     </div>
-    <div style="margin-bottom:14px"><div style="font-weight:600;color:var(--pl);margin-bottom:5px">📖 Definition</div><div class="w-def">${w.engDef}</div></div>
-    ${vis?`<div style="margin-bottom:14px"><div style="font-weight:600;color:var(--pl);margin-bottom:5px">🖼️ Picture This</div>${vis}</div>`:''}
-    <div style="margin-bottom:14px"><div style="font-weight:600;color:var(--a2);margin-bottom:5px">💬 Example Sentence</div><div class="w-sent">${sn}</div></div>
-    ${w.extra?`<div><div style="font-weight:600;color:var(--td);margin-bottom:5px">📝 Word Roots & Related</div><div class="w-extra" style="border:0;padding:0">${w.extra}</div></div>`:''}
+    <div style="margin-bottom:14px"><div style="font-weight:600;color:var(--pl);margin-bottom:5px">📖 释义</div>${w.zh?`<div class="w-zh">${w.zh}</div>`:''}<div class="w-def">${w.engDef}</div></div>
+    ${vis?`<div style="margin-bottom:14px"><div style="font-weight:600;color:var(--pl);margin-bottom:5px">🖼️ 图像联想</div>${vis}</div>`:''}
+    <div style="margin-bottom:14px"><div style="font-weight:600;color:var(--a2);margin-bottom:5px">💬 例句</div><div class="w-sent">${sn}</div></div>
+    ${w.extra?`<div><div style="font-weight:600;color:var(--td);margin-bottom:5px">📝 词根 & 相关</div><div class="w-extra" style="border:0;padding:0">${w.extra}</div></div>`:''}
   `;
   document.getElementById('modal').classList.add('show');
 }
@@ -735,10 +736,10 @@ function renderLearn(){
     hide('lGrid');hide('lFlash');show('lList');
     document.getElementById('lList').innerHTML=`<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse">
       <thead><tr style="border-bottom:2px solid var(--b)">
-        <th style="padding:8px;text-align:left;color:var(--td)">Word</th>
-        <th style="padding:8px;text-align:left;color:var(--td)">Pronunciation</th>
-        <th style="padding:8px;text-align:left;color:var(--td)">Definition</th>
-        <th style="padding:8px;text-align:center;color:var(--td)">Actions</th>
+        <th style="padding:8px;text-align:left;color:var(--td)">单词</th>
+        <th style="padding:8px;text-align:left;color:var(--td)">发音</th>
+        <th style="padding:8px;text-align:left;color:var(--td)">释义</th>
+        <th style="padding:8px;text-align:center;color:var(--td)">操作</th>
       </tr></thead><tbody>
       ${pg.map(w=>`<tr style="border-bottom:1px solid var(--b);cursor:pointer" onclick="showW(${w.id})">
         <td style="padding:8px;font-weight:700">${emoji(w)} ${w.word}</td>
@@ -759,10 +760,11 @@ function wCard(w){
   const fn=safeFilename(wl);
   const imgSrc=`images/${fn}.jpg`;
   return `<div class="w-card fin" onclick="showW(${w.id})">
-    ${isL?'<div class="w-tag">✓ Learned</div>':''}
+    ${isL?'<div class="w-tag">✓ 已学</div>':''}
     <div class="w-head"><div><div class="w-title">${w.word}</div><div class="w-pron">${w.pronunciation}</div></div>
     <div class="w-acts"><button class="w-btn ${isFav?'fav':''}" onclick="togFav(${w.id},event)">${isFav?'❤️':'🤍'}</button><button class="w-btn" onclick="speak('${w.word.replace(/'/g,"\\'")}',event)">🔊</button></div></div>
     <div class="w-img-wrap" style="margin:6px 0;max-height:140px"><img src="${imgSrc}" alt="${w.word}" style="max-height:140px" onerror="this.parentElement.innerHTML='<div class=\\'w-emoji\\'>${em}</div>'"></div>
+    ${w.zh?`<div class="w-zh">${w.zh}</div>`:''}
     <div class="w-def">${w.engDef.substring(0,110)}${w.engDef.length>110?'...':''}</div>
   </div>`;
 }
@@ -773,27 +775,28 @@ function renderFC(target){
   const w=fw[fi],em=emoji(w),sn=sentence(w),vis=visualHTML(w);
   markL(w.id);
   document.getElementById(target).innerHTML=`
-    <div style="text-align:center;margin-bottom:12px;color:var(--td)">Card ${fi+1} of ${fw.length}</div>
+    <div style="text-align:center;margin-bottom:12px;color:var(--td)">第 ${fi+1} 张 / 共 ${fw.length} 张</div>
     <div class="fc" id="fc" onclick="this.classList.toggle('flip')">
       <div class="fc-face">
         <div style="font-size:2.5em;margin-bottom:8px">${em}</div>
         <div style="font-size:2.2em;font-weight:800;background:var(--g1);-webkit-background-clip:text;-webkit-text-fill-color:transparent">${w.word}</div>
         <div style="color:var(--td);margin-top:6px">${w.pronunciation}</div>
-        <div style="color:var(--td);margin-top:12px;font-size:.85em">Tap to flip →</div>
+        <div style="color:var(--td);margin-top:12px;font-size:.85em">点击翻面 →</div>
       </div>
       <div class="fc-face fc-back" style="text-align:left;justify-content:flex-start;padding-top:22px;overflow-y:auto">
         <div style="text-align:center;margin-bottom:12px"><span style="font-size:1.8em">${em}</span>
         <div style="font-size:1.2em;font-weight:700;color:var(--pl)">${w.word}</div></div>
+        ${w.zh?`<div class="w-zh" style="margin-bottom:8px">${w.zh}</div>`:''}
         <div style="margin-bottom:8px"><b style="color:var(--pl)">📖</b> ${w.engDef}</div>
         ${vis?`<div style="margin-bottom:8px">${vis}</div>`:''}
         <div class="w-sent" style="margin-bottom:8px">💬 ${sn}</div>
       </div>
     </div>
     <div class="fc-nav">
-      <button class="t-btn btn-o" onclick="fi--;renderFC('${target}')">← Prev</button>
+      <button class="t-btn btn-o" onclick="fi--;renderFC('${target}')">← 上一张</button>
       <button class="w-btn ${favs.has(w.id)?'fav':''}" onclick="togFav(${w.id});renderFC('${target}')" style="width:40px;height:40px;font-size:1em">${favs.has(w.id)?'❤️':'🤍'}</button>
       <button class="w-btn" onclick="speak('${w.word.replace(/'/g,"\\'")}')">🔊</button>
-      <button class="t-btn btn-p" onclick="fi++;renderFC('${target}')">Next →</button>
+      <button class="t-btn btn-p" onclick="fi++;renderFC('${target}')">下一张 →</button>
     </div>`;
 }
 
@@ -812,13 +815,13 @@ function setLF(f,btn){
 
 function renderPag(tp,cid,cb){
   const c=document.getElementById(cid);if(tp<=1){c.innerHTML='';return}
-  let h=`<button class="pg-btn" ${lp===1?'disabled':''} data-p="${lp-1}">← Prev</button>`;
+  let h=`<button class="pg-btn" ${lp===1?'disabled':''} data-p="${lp-1}">← 上一页</button>`;
   const ps=[1];if(lp>3)ps.push('...');
   for(let i=Math.max(2,lp-1);i<=Math.min(tp-1,lp+1);i++)ps.push(i);
   if(lp<tp-2)ps.push('...');if(tp>1)ps.push(tp);
   ps.forEach(p=>{if(p==='...')h+=`<span style="color:var(--td);padding:6px 3px">...</span>`;
     else h+=`<button class="pg-btn ${p===lp?'active':''}" data-p="${p}">${p}</button>`});
-  h+=`<button class="pg-btn" ${lp===tp?'disabled':''} data-p="${lp+1}">Next →</button>`;
+  h+=`<button class="pg-btn" ${lp===tp?'disabled':''} data-p="${lp+1}">下一页 →</button>`;
   c.innerHTML=h;
   c.querySelectorAll('.pg-btn[data-p]').forEach(b=>b.addEventListener('click',()=>{const p=parseInt(b.dataset.p);if(p>=1&&p<=tp)cb(p)}));
 }
@@ -842,9 +845,9 @@ function renderTHome(){
   show('tHome');hide('tActive');hide('tResults');
   document.getElementById('tuGrid').innerHTML=T.map(u=>{
     const sc=scores[u.unit],
-      txt=sc!==undefined?`${sc}/12 (${Math.round(sc/12*100)}%)`:'Not taken',
+      txt=sc!==undefined?`${sc}/12 (${Math.round(sc/12*100)}%)`:'未测试',
       col=sc!==undefined?(sc>=10?'var(--s)':sc>=7?'var(--a2)':'var(--d)'):'var(--td)';
-    return `<div class="tu-card" onclick="startT(${u.unit})"><div class="tu-num">Unit ${u.unit}</div><div class="tu-label">12 Questions</div><div class="tu-score" style="color:${col}">${txt}</div></div>`;
+    return `<div class="tu-card" onclick="startT(${u.unit})"><div class="tu-num">第 ${u.unit} 单元</div><div class="tu-label">12 题</div><div class="tu-score" style="color:${col}">${txt}</div></div>`;
   }).join('');
 }
 function startT(n){
@@ -861,17 +864,17 @@ function renderQ(){
     return `<button class="${cls}" onclick="${tDone?'':`selA(${q.number},'${o.letter}')`}"><span class="opt-l">${o.letter}</span><span>${o.text}</span></button>`;
   }).join('');
   document.getElementById('tActive').innerHTML=`<div class="t-wrap">
-    <div class="t-head"><h2 style="font-size:1.2em">Unit ${tUnit.unit}</h2><button class="t-btn btn-o" onclick="renderTHome()">✕ Exit</button></div>
+    <div class="t-head"><h2 style="font-size:1.2em">第 ${tUnit.unit} 单元</h2><button class="t-btn btn-o" onclick="renderTHome()">✕ 退出</button></div>
     <div class="t-prog"><div class="t-prog-bar" style="width:${prog}%"></div></div>
     <div class="q-card fin">
-      <div class="q-num">Question ${tQ+1} of ${total}</div>
+      <div class="q-num">第 ${tQ+1} 题 / 共 ${total} 题</div>
       <div class="q-text">${q.text.replace(/_{2,}/g,'<span class="q-blank">&nbsp;</span>')}</div>
       <div class="opts">${optsH}</div>
     </div>
     <div class="t-nav">
-      <button class="t-btn btn-o" onclick="tQ>0&&(tQ--,renderQ())" ${tQ===0?'disabled style="opacity:.4"':''}>← Prev</button>
-      ${tQ<total-1?`<button class="t-btn btn-p" onclick="tQ++;renderQ()">Next →</button>`
-        :`<button class="t-btn btn-s" onclick="submitT()">📝 Submit</button>`}
+      <button class="t-btn btn-o" onclick="tQ>0&&(tQ--,renderQ())" ${tQ===0?'disabled style="opacity:.4"':''}>← 上一题</button>
+      ${tQ<total-1?`<button class="t-btn btn-p" onclick="tQ++;renderQ()">下一题 →</button>`
+        :`<button class="t-btn btn-s" onclick="submitT()">📝 提交</button>`}
     </div>
     <div class="q-dots">${tUnit.questions.map((qq,i)=>{
       const ans=tAns[qq.number]!==undefined,cur=i===tQ;
@@ -887,21 +890,21 @@ function submitT(){
   tUnit.questions.forEach(q=>{if(tAns[q.number]===A[String(q.number)])cor++});
   scores[tUnit.unit]=cor;localStorage.setItem('ss',JSON.stringify(scores));scheduleSyncToCloud();
   const pct=Math.round(cor/total*100);
-  let g='🏆',gt='Perfect Score!';
-  if(pct<100){g='🌟';gt='Excellent!'}if(pct<85){g='👍';gt='Good Job!'}
-  if(pct<70){g='📚';gt='Keep Studying!'}if(pct<50){g='💪';gt='More Practice Needed'}
+  let g='🏆',gt='满分！！';
+  if(pct<100){g='🌟';gt='非常棒！'}if(pct<85){g='👍';gt='不错！'}
+  if(pct<70){g='📚';gt='还需努力'}if(pct<50){g='💪';gt='多练练吧'}
   hide('tActive');show('tResults');
   document.getElementById('tResults').innerHTML=`<div class="t-wrap"><div class="res-card fin">
     <div style="font-size:3.5em;margin-bottom:8px">${g}</div><div class="res-score">${pct}%</div><div class="res-label">${gt}</div>
     <div class="res-row">
-      <div class="res-item"><div class="n" style="color:var(--s)">${cor}</div><div class="l">Correct</div></div>
-      <div class="res-item"><div class="n" style="color:var(--d)">${total-cor}</div><div class="l">Wrong</div></div>
-      <div class="res-item"><div class="n" style="color:var(--pl)">${total}</div><div class="l">Total</div></div>
+      <div class="res-item"><div class="n" style="color:var(--s)">${cor}</div><div class="l">正确</div></div>
+      <div class="res-item"><div class="n" style="color:var(--d)">${total-cor}</div><div class="l">错误</div></div>
+      <div class="res-item"><div class="n" style="color:var(--pl)">${total}</div><div class="l">总数</div></div>
     </div>
     <div style="margin-top:16px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
-      <button class="t-btn btn-p" onclick="tQ=0;tDone=true;hide('tResults');show('tActive');renderQ()">📋 Review</button>
-      <button class="t-btn btn-s" onclick="startT(${tUnit.unit})">🔄 Retake</button>
-      <button class="t-btn btn-o" onclick="renderTHome()">← Units</button>
+      <button class="t-btn btn-p" onclick="tQ=0;tDone=true;hide('tResults');show('tActive');renderQ()">📋 回看</button>
+      <button class="t-btn btn-s" onclick="startT(${tUnit.unit})">🔄 再考一次</button>
+      <button class="t-btn btn-o" onclick="renderTHome()">← 单元列表</button>
     </div></div></div>`;
 }
 
@@ -917,17 +920,17 @@ function setFM(m){
   document.querySelectorAll('#favModes .m-btn').forEach(b=>b.classList.remove('active'));
   if(m==='grid'){show('fGrid');hide('fFlash');hide('fEmpty');renderFav();document.querySelectorAll('#favModes .m-btn')[0].classList.add('active')}
   else if(m==='flash'){
-    if(!ws.length){toast('No favorites yet');return}
+    if(!ws.length){toast('还没有收藏');return}
     hide('fGrid');show('fFlash');hide('fEmpty');fw=ws;fi=0;renderFC('fFlash');document.querySelectorAll('#favModes .m-btn')[1].classList.add('active')}
 }
 function exportFav(){
-  const ws=V.filter(w=>favs.has(w.id));if(!ws.length){toast('No favorites');return}
+  const ws=V.filter(w=>favs.has(w.id));if(!ws.length){toast('还没有收藏');return}
   let csv='Word,Pronunciation,Definition\n';
   ws.forEach(w=>{csv+=`"${w.word}","${w.pronunciation}","${w.engDef.replace(/"/g,'""')}"\n`});
   const blob=new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8;'});
-  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='sat_favorites.csv';a.click();toast('Exported!');
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='sat_favorites.csv';a.click();toast('已导出！');
 }
-function clearFav(){if(!confirm('Clear all favorites?'))return;favs.clear();localStorage.setItem('sf','[]');scheduleSyncToCloud();updStats();renderFav();toast('Cleared')}
+function clearFav(){if(!confirm('清空所有收藏？'))return;favs.clear();localStorage.setItem('sf','[]');scheduleSyncToCloud();updStats();renderFav();toast('已清空')}
 
 // ===== WOD =====
 function renderWOD(){
@@ -938,6 +941,7 @@ function renderWOD(){
     <div class="w-head"><div><div class="w-title" style="font-size:1.4em">${w.word}</div><div class="w-pron">${w.pronunciation}</div></div>
     <div class="w-acts"><button class="w-btn ${favs.has(w.id)?'fav':''}" onclick="togFav(${w.id},event)">${favs.has(w.id)?'❤️':'🤍'}</button><button class="w-btn" onclick="speak('${w.word.replace(/'/g,"\\'")}',event)">🔊</button></div></div>
     <div class="w-emoji">${em}</div>
+    ${w.zh?`<div class="w-zh">${w.zh}</div>`:''}
     <div class="w-def">${w.engDef}</div>`;
   document.getElementById('wod').onclick=()=>showW(w.id);
 }
@@ -1062,25 +1066,25 @@ function renderStreakBar(streak,best,streakDied,alreadyVisitedToday){
   if(streakDied){
     bar.classList.add('streak-dead');
     fire.textContent='💨';
-    msg.textContent='Streak lost! Start fresh today';
-    sub.textContent='Your best was '+best+' days. Let\'s beat it!';
+    msg.textContent='打卡中断！从今天重新开始';
+    sub.textContent='你的最长连续是 '+best+' 天，冲！';
     msg.style.color='var(--d)';
     // Remove dead state after a moment
     setTimeout(function(){bar.classList.remove('streak-dead');fire.textContent='🔥';msg.style.color=''},3000);
   }else if(streak>=7){
     fire.textContent='🔥';
-    msg.textContent='You\'re on fire! '+streak+' days!';
-    sub.textContent='Best: '+best+' days. Keep going!';
+    msg.textContent='连续 '+streak+' 天！太猛了！';
+    sub.textContent='最长纪录：'+best+' 天，继续冲！';
     msg.style.color='var(--a2)';
   }else if(streak>1){
     fire.textContent='🔥';
-    msg.textContent='Nice! '+streak+' day streak!';
-    sub.textContent='Come back tomorrow to keep it going';
+    msg.textContent='已连续打卡 '+streak+' 天！';
+    sub.textContent='明天记得回来继续';
     msg.style.color='';
   }else{
     fire.textContent='🔥';
-    msg.textContent=alreadyVisitedToday?'Welcome back today!':'Day 1 - Let\'s go!';
-    sub.textContent='Visit daily to build your streak';
+    msg.textContent=alreadyVisitedToday?'今天已打卡！':'第 1 天 - 开始吧！';
+    sub.textContent='每天来一下就能连续打卡';
     msg.style.color='';
   }
 
@@ -1096,10 +1100,10 @@ function renderReviewBanner(){
   if(learnedCount>0&&learnedCount<V.length){
     var reviewCount=Math.min(learnedCount,10);
     banner.style.display='flex';
-    text.innerHTML='📖 Welcome back! You have <strong>'+reviewCount+'</strong> words to review today';
+    text.innerHTML='📖 欢迎回来！今天有 <strong>'+reviewCount+'</strong> 个词等你复习';
   }else if(learnedCount===0){
     banner.style.display='flex';
-    text.innerHTML='🚀 Ready to start? <strong>2000+</strong> SAT words are waiting for you!';
+    text.innerHTML='🚀 准备开始？<strong>2000+</strong> 个 SAT 单词等着你！';
   }else{
     banner.style.display='none';
   }
@@ -1121,7 +1125,7 @@ function selectFeedback(type){
 
 function sendFeedback(){
   var text=(document.getElementById('feedbackText').value||'').trim();
-  if(!feedbackRating&&!text){toast('Please select 👍 or 👎, or write a comment');return}
+  if(!feedbackRating&&!text){toast('请点 👍 或 👎，或者写点评论');return}
 
   // Save feedback to Firestore if available
   var feedbackData={
@@ -1151,17 +1155,17 @@ function sendFeedback(){
 
   // Show thanks
   var panel=document.getElementById('feedbackPanel');
-  panel.innerHTML='<div class="feedback-thanks">🎉 Thank you for your feedback!<br><span style="font-size:.8em;color:var(--td)">Your input helps us improve.</span></div>';
+  panel.innerHTML='<div class="feedback-thanks">🎉 感谢你的反馈！<br><span style="font-size:.8em;color:var(--td)">你的意见帮助我们改进。</span></div>';
   setTimeout(function(){
     panel.classList.remove('show');
     // Reset panel after hiding
     setTimeout(function(){
-      panel.innerHTML='<div class="feedback-title">💬 Your Feedback</div><div class="feedback-q">Was this helpful for your SAT prep?</div><div class="feedback-thumbs"><button class="feedback-thumb" id="fbThumbUp" onclick="selectFeedback(\'up\')">👍</button><button class="feedback-thumb" id="fbThumbDown" onclick="selectFeedback(\'down\')">👎</button></div><textarea class="feedback-text" id="feedbackText" placeholder="Any suggestions? What would make this better? (optional)"></textarea><button class="feedback-send" onclick="sendFeedback()">Send Feedback</button>';
+      panel.innerHTML='<div class="feedback-title">💬 反馈建议</div><div class="feedback-q">这个 app 对你备考 SAT 有帮助吗？</div><div class="feedback-thumbs"><button class="feedback-thumb" id="fbThumbUp" onclick="selectFeedback(\'up\')">👍</button><button class="feedback-thumb" id="fbThumbDown" onclick="selectFeedback(\'down\')">👎</button></div><textarea class="feedback-text" id="feedbackText" placeholder="有什么建议？说说怎么能更好用（可选）"></textarea><button class="feedback-send" onclick="sendFeedback()">发送反馈</button>';
       feedbackRating=null;
     },500);
   },2000);
 
-  toast('Feedback sent! Thank you! 🙏');
+  toast('反馈已发送，谢啦！🙏');
 }
 
 // Close feedback when clicking outside
