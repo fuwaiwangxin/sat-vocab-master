@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🏆 SAT Vocab Master - Learn 2000+ Words</title>
-<meta name="description" content="Master 2000+ SAT vocabulary words with AI-generated images, music connections, pronunciation, emoji mnemonics, flashcards, and 456 practice test questions. Free SAT prep tool.">
+<meta name="description" content="Master 2000+ SAT vocabulary words with AI-generated images, pronunciation, emoji mnemonics, flashcards, and 456 practice test questions. Free SAT prep tool.">
 <meta name="keywords" content="SAT vocabulary, SAT words, SAT prep, SAT study, vocabulary flashcards, SAT practice test, learn SAT words, SAT word list">
-<meta property="og:title" content="SAT Vocab Master - Learn 2000+ Words with AI Images & Music">
-<meta property="og:description" content="Free AI-powered SAT vocabulary learning platform with images, music connections, flashcards and practice tests.">
+<meta property="og:title" content="SAT Vocab Master - Learn 2000+ Words with AI Images">
+<meta property="og:description" content="Free AI-powered SAT vocabulary learning platform with images, flashcards and practice tests.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://fun2learnsatvocabtw.com">
 <meta name="robots" content="index, follow">
@@ -52,7 +52,6 @@ function trackEvent(category, action, label, value) {
   --g2:linear-gradient(135deg,#00B894,#55EFC4);
   --g3:linear-gradient(135deg,#E17055,#FDCB6E);
   --sh:0 4px 15px rgba(0,0,0,.3);--r:12px;--rs:8px;
-  --music:#E91E63;--music-bg:rgba(233,30,99,.12);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--t);min-height:100vh;overflow-x:hidden}
@@ -123,8 +122,6 @@ input,select{font-family:inherit}
 .w-def{font-size:.87em;line-height:1.45;margin-bottom:6px}
 .w-sent{font-size:.8em;color:var(--td);font-style:italic;background:var(--bg3);padding:7px 10px;border-radius:var(--rs);line-height:1.35;margin-bottom:6px}
 .w-sent strong{color:var(--pl);font-style:normal}
-.w-music{font-size:.82em;padding:6px 10px;border-radius:var(--rs);background:var(--music-bg);border-left:3px solid var(--music);line-height:1.35;margin-top:6px}
-.w-music a{color:var(--music);font-weight:600}
 .w-visual{font-size:.82em;padding:8px 10px;border-radius:var(--rs);background:rgba(108,92,231,.12);border-left:3px solid var(--pl);line-height:1.35;margin-top:6px;margin-bottom:6px;color:var(--t)}
 .w-visual em{color:var(--pl);font-style:italic}
 .w-img-wrap{position:relative;border-radius:var(--rs);overflow:hidden;margin-top:8px;margin-bottom:8px;background:var(--bg3);min-height:80px}
@@ -261,7 +258,7 @@ input,select{font-family:inherit}
 <div class="welcome-ov" id="welcomeOverlay">
   <div class="welcome-logo">🏆</div>
   <div class="welcome-title">SAT Vocab Master</div>
-  <div class="welcome-sub">Master 2000+ SAT words with AI-powered images, music connections, and interactive quizzes</div>
+  <div class="welcome-sub">Master 2000+ SAT words with AI-powered images and interactive quizzes</div>
   <button class="welcome-start" id="welcomeStartBtn" onclick="dismissWelcome()">
     🎵 Tap to Start Learning
   </button>
@@ -295,7 +292,7 @@ input,select{font-family:inherit}
 <div id="s-home" class="section active">
   <div class="hero">
     <h1>🏆 SAT Vocab Master</h1>
-    <p>Master 2000+ SAT words with pronunciation, emoji mnemonics, music connections & quizzes</p>
+    <p>Master 2000+ SAT words with pronunciation, emoji mnemonics & quizzes</p>
     <div class="stats-row">
       <div class="stat-c"><div class="n" id="stTotal">0</div><div class="l">Total Words</div></div>
       <div class="stat-c"><div class="n">38</div><div class="l">Test Units</div></div>
@@ -536,7 +533,7 @@ function scheduleSyncToCloud(){
 }
 
 // ===== STATE =====
-let V=[],T=[],A={},MUSIC={},VISUAL={};
+let V=[],T=[],A={},VISUAL={};
 let favs=new Set(JSON.parse(localStorage.getItem('sf')||'[]'));
 let lrn=new Set(JSON.parse(localStorage.getItem('sl')||'[]'));
 let scores=JSON.parse(localStorage.getItem('ss')||'{}');
@@ -548,13 +545,11 @@ let fi=0,fw=[];
 // ===== LOAD =====
 async function loadData(){
   try{
-    const [vr,tr,ar,mr,vsr]=await Promise.all([
+    const [vr,tr,ar,vsr]=await Promise.all([
       fetch('vocab_data.json'),fetch('test_data.json'),fetch('answers.json'),
-      fetch('music_data.json').catch(()=>null),
       fetch('visual_data.json').catch(()=>null)
     ]);
     V=await vr.json();T=await tr.json();A=await ar.json();
-    if(mr&&mr.ok)MUSIC=await mr.json();
     if(vsr&&vsr.ok)VISUAL=await vsr.json();
   }catch(e){console.error(e)}
   init();
@@ -659,23 +654,6 @@ if('speechSynthesis' in window){
   speechSynthesis.onvoiceschanged=()=>speechSynthesis.getVoices();
 }
 
-// ===== MUSIC CONNECTION =====
-function getMusic(w){
-  const wl=w.word.toLowerCase();
-  if(MUSIC[wl])return MUSIC[wl];
-  return null;
-}
-
-function musicHTML(w){
-  const m=getMusic(w);
-  if(!m)return '';
-  const searchQ=encodeURIComponent(m.song+' '+m.artist);
-  return `<div class="w-music">
-    🎵 <a href="https://www.youtube.com/results?search_query=${searchQ}" target="_blank">"${m.song}"</a> by ${m.artist}
-    <div style="color:var(--td);font-size:.9em;margin-top:3px">${m.connection}</div>
-  </div>`;
-}
-
 // ===== FAVORITES =====
 function togFav(id,ev){
   if(ev){ev.stopPropagation();ev.preventDefault()}
@@ -698,7 +676,7 @@ function showW(id){
   const w=V.find(x=>x.id===id);if(!w)return;
   markL(id);
   document.getElementById('sResults').classList.remove('show');
-  const em=emoji(w),sn=sentence(w),isFav=favs.has(w.id),mus=musicHTML(w),vis=visualHTML(w);
+  const em=emoji(w),sn=sentence(w),isFav=favs.has(w.id),vis=visualHTML(w);
   document.getElementById('modalC').innerHTML=`
     <button class="modal-x" onclick="closeM()">✕</button>
     <div style="text-align:center;margin-bottom:18px">
@@ -713,7 +691,6 @@ function showW(id){
     <div style="margin-bottom:14px"><div style="font-weight:600;color:var(--pl);margin-bottom:5px">📖 Definition</div><div class="w-def">${w.engDef}</div></div>
     ${vis?`<div style="margin-bottom:14px"><div style="font-weight:600;color:var(--pl);margin-bottom:5px">🖼️ Picture This</div>${vis}</div>`:''}
     <div style="margin-bottom:14px"><div style="font-weight:600;color:var(--a2);margin-bottom:5px">💬 Example Sentence</div><div class="w-sent">${sn}</div></div>
-    ${mus?`<div style="margin-bottom:14px"><div style="font-weight:600;color:var(--music);margin-bottom:5px">🎵 Music Connection</div>${mus}</div>`:''}
     ${w.extra?`<div><div style="font-weight:600;color:var(--td);margin-bottom:5px">📝 Word Roots & Related</div><div class="w-extra" style="border:0;padding:0">${w.extra}</div></div>`:''}
   `;
   document.getElementById('modal').classList.add('show');
@@ -766,7 +743,7 @@ function renderLearn(){
 }
 
 function wCard(w){
-  const em=emoji(w),isFav=favs.has(w.id),isL=lrn.has(w.id),mus=getMusic(w),vis=getVisual(w);
+  const em=emoji(w),isFav=favs.has(w.id),isL=lrn.has(w.id),vis=getVisual(w);
   const wl=w.word.toLowerCase();
   const fn=safeFilename(wl);
   const imgSrc=`images/${fn}.jpg`;
@@ -776,14 +753,13 @@ function wCard(w){
     <div class="w-acts"><button class="w-btn ${isFav?'fav':''}" onclick="togFav(${w.id},event)">${isFav?'❤️':'🤍'}</button><button class="w-btn" onclick="speak('${w.word.replace(/'/g,"\\'")}',event)">🔊</button></div></div>
     <div class="w-img-wrap" style="margin:6px 0;max-height:140px"><img src="${imgSrc}" alt="${w.word}" style="max-height:140px" onerror="this.parentElement.innerHTML='<div class=\\'w-emoji\\'>${em}</div>'"></div>
     <div class="w-def">${w.engDef.substring(0,110)}${w.engDef.length>110?'...':''}</div>
-    ${mus?`<div class="w-music" style="margin-top:6px">🎵 "${mus.song}" — ${mus.artist}</div>`:''}
   </div>`;
 }
 
 function renderFC(target){
   if(!fw.length)return;
   if(fi>=fw.length)fi=0;if(fi<0)fi=fw.length-1;
-  const w=fw[fi],em=emoji(w),sn=sentence(w),mus=musicHTML(w),vis=visualHTML(w);
+  const w=fw[fi],em=emoji(w),sn=sentence(w),vis=visualHTML(w);
   markL(w.id);
   document.getElementById(target).innerHTML=`
     <div style="text-align:center;margin-bottom:12px;color:var(--td)">Card ${fi+1} of ${fw.length}</div>
@@ -800,7 +776,6 @@ function renderFC(target){
         <div style="margin-bottom:8px"><b style="color:var(--pl)">📖</b> ${w.engDef}</div>
         ${vis?`<div style="margin-bottom:8px">${vis}</div>`:''}
         <div class="w-sent" style="margin-bottom:8px">💬 ${sn}</div>
-        ${mus||''}
       </div>
     </div>
     <div class="fc-nav">
@@ -947,13 +922,12 @@ function clearFav(){if(!confirm('Clear all favorites?'))return;favs.clear();loca
 function renderWOD(){
   const d=new Date(),idx=(d.getFullYear()*366+d.getMonth()*31+d.getDate())%V.length,w=V[idx];
   if(!w)return;
-  const em=emoji(w),mus=getMusic(w);
+  const em=emoji(w);
   document.getElementById('wod').innerHTML=`
     <div class="w-head"><div><div class="w-title" style="font-size:1.4em">${w.word}</div><div class="w-pron">${w.pronunciation}</div></div>
     <div class="w-acts"><button class="w-btn ${favs.has(w.id)?'fav':''}" onclick="togFav(${w.id},event)">${favs.has(w.id)?'❤️':'🤍'}</button><button class="w-btn" onclick="speak('${w.word.replace(/'/g,"\\'")}',event)">🔊</button></div></div>
     <div class="w-emoji">${em}</div>
-    <div class="w-def">${w.engDef}</div>
-    ${mus?`<div class="w-music" style="margin-top:8px">🎵 "${mus.song}" — ${mus.artist}<div style="color:var(--td);font-size:.9em;margin-top:2px">${mus.connection}</div></div>`:''}`;
+    <div class="w-def">${w.engDef}</div>`;
   document.getElementById('wod').onclick=()=>showW(w.id);
 }
 
