@@ -410,19 +410,32 @@ input,select{font-family:inherit}
 </div>
 
 <!-- 腾讯云 CloudBase SDK -->
-<script src="https://web.sdk.qcloud.com/cloudbase/js-sdk/2.7.0/cloudbase.full.js"></script>
+<script src="https://static.cloudbase.net/cloudbase-js-sdk/latest/cloudbase.js"></script>
 
 <script>
 // ===== CLOUDBASE 初始化 + 匿名登录 =====
-const cbApp = cloudbase.init({
-  env: 'TODO_CLOUDBASE_ENV_ID'  // 在腾讯云 CloudBase 控制台新建环境后填入
-});
-const auth = cbApp.auth({ persistence: 'local' });
-const db = cbApp.database();
+const CLOUDBASE_ENV = 'TODO_CLOUDBASE_ENV_ID';  // 在腾讯云 CloudBase 控制台新建环境后填入
+let cbApp = null, auth = null, db = null;
+if(typeof cloudbase !== 'undefined' && CLOUDBASE_ENV && !CLOUDBASE_ENV.startsWith('TODO_')){
+  try{
+    cbApp = cloudbase.init({ env: CLOUDBASE_ENV });
+    auth = cbApp.auth({ persistence: 'local' });
+    db = cbApp.database();
+  }catch(e){ console.warn('CloudBase init failed:', e); }
+}else{
+  console.warn('CloudBase SDK 未加载或 env 未配置，走本地模式');
+}
 
 let currentUser = null;
 
+function fallbackToLocal(){
+  let anonId = localStorage.getItem('anon_id');
+  if(!anonId){ anonId = 'local_' + Math.random().toString(36).slice(2) + Date.now(); localStorage.setItem('anon_id', anonId); }
+  currentUser = { uid: anonId, isLocal: true };
+}
+
 async function initAnonymousUser(){
+  if(!auth){ fallbackToLocal(); return; }
   try{
     const loginState = await auth.getLoginState();
     if(loginState && loginState.user){
@@ -439,9 +452,7 @@ async function initAnonymousUser(){
     }
   }catch(e){
     console.warn('CloudBase 匿名登录失败，走本地模式:', e);
-    let anonId = localStorage.getItem('anon_id');
-    if(!anonId){ anonId = 'local_' + Math.random().toString(36).slice(2) + Date.now(); localStorage.setItem('anon_id', anonId); }
-    currentUser = { uid: anonId, isLocal: true };
+    fallbackToLocal();
   }
 }
 
