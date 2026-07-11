@@ -410,21 +410,29 @@ input,select{font-family:inherit}
   <button class="feedback-toggle" onclick="toggleFeedback()" title="发送反馈">💬</button>
 </div>
 
-<!-- 腾讯云 CloudBase SDK -->
-<script src="https://static.cloudbase.net/cloudbase-js-sdk/latest/cloudbase.js"></script>
+<!-- 腾讯云 CloudBase SDK (v3 latest full bundle — needs clientId in init) -->
+<script src="https://static.cloudbase.net/cloudbase-js-sdk/latest/cloudbase.full.js?v=1"></script>
 
 <script>
 // ===== CLOUDBASE 初始化 + 匿名登录 =====
-const CLOUDBASE_ENV = 'sat-vocab-cn-d1g7guj5gf996d8fa';  // 在腾讯云 CloudBase 控制台新建环境后填入
+const CLOUDBASE_ENV = 'sat-vocab-cn-d1g7guj5gf996d8fa';
+const CLOUDBASE_REGION = 'ap-shanghai';
+// Publishable Key: 客户端 key，仅能访问已授权的公开资源，安全可 commit
+const CLOUDBASE_ACCESS_KEY = 'eyJhbGciOiJSUzI1NiIsImtpZCI6IjlkMWRjMzFlLWI0ZDAtNDQ4Yi1hNzZmLWIwY2M2M2Q4MTQ5OCJ9.eyJpc3MiOiJodHRwczovL3NhdC12b2NhYi1jbi1kMWc3Z3VqNWdmOTk2ZDhmYS5hcC1zaGFuZ2hhaS50Y2ItYXBpLnRlbmNlbnRjbG91ZGFwaS5jb20iLCJzdWIiOiJhbm9uIiwiYXVkIjoic2F0LXZvY2FiLWNuLWQxZzdndWo1Z2Y5OTZkOGZhIiwiZXhwIjo0MDg3NDcyNzY0LCJpYXQiOjE3ODM3ODk1NjQsIm5vbmNlIjoiZDIxaTZlVURRcU9aemZNbGtpa1VRUSIsImF0X2hhc2giOiJkMjFpNmVVRFFxT1p6Zk1sa2lrVVFRIiwibmFtZSI6IkFub255bW91cyIsInNjb3BlIjoiYW5vbnltb3VzIiwicHJvamVjdF9pZCI6InNhdC12b2NhYi1jbi1kMWc3Z3VqNWdmOTk2ZDhmYSIsIm1ldGEiOnsicGxhdGZvcm0iOiJQdWJsaXNoYWJsZUtleSJ9LCJ1c2VyX3R5cGUiOiIiLCJjbGllbnRfdHlwZSI6ImNsaWVudF91c2VyIiwiaXNfc3lzdGVtX2FkbWluIjpmYWxzZX0.SJS277ScVBu1VZBqjlclAzYj0EA4BZchB_jv965C0Yzyn0Dd8Kop1uFgONRZd2NEtxGDuJu1AP3jFfqHRqtgQUcaqDF5kxZszO_VLbCH6OV1Ms6T3-3pSrn4jExK34hE8mphfA-iBh1dqQ0u5TPu_qpkgRrH9hMlghwVsnPSk4AWrgHfi0VjMSt9Z-2t8MDGD5fIwKtOeBc0YgEja-hi5bKUW1lbG56AUoRvZRJs0a-yvFJbVmy6heMUXHk9-69ABCgpgSskJh0tKUJ42ZcOLydoDsWgeqtDgFhhc_tPQtL-H33DC0QA_2oboFTNRFOGBBPlRxLMMRzzP03Dw2cDyw';
+
 let cbApp = null, auth = null, db = null;
-if(typeof cloudbase !== 'undefined' && CLOUDBASE_ENV && !CLOUDBASE_ENV.startsWith('TODO_')){
+if(typeof cloudbase !== 'undefined'){
   try{
-    cbApp = cloudbase.init({ env: CLOUDBASE_ENV });
+    cbApp = cloudbase.init({
+      env: CLOUDBASE_ENV,
+      region: CLOUDBASE_REGION,
+      accessKey: CLOUDBASE_ACCESS_KEY
+    });
     auth = cbApp.auth({ persistence: 'local' });
     db = cbApp.database();
   }catch(e){ console.warn('CloudBase init failed:', e); }
 }else{
-  console.warn('CloudBase SDK 未加载或 env 未配置，走本地模式');
+  console.warn('CloudBase SDK 未加载，走本地模式');
 }
 
 let currentUser = null;
@@ -436,15 +444,16 @@ function fallbackToLocal(){
 }
 
 async function initAnonymousUser(){
-  if(!auth){ fallbackToLocal(); return; }
+  if(!db){ fallbackToLocal(); return; }
   try{
-    const loginState = await auth.getLoginState();
-    if(loginState && loginState.user){
-      currentUser = { uid: loginState.user.uid, isAnonymous: true };
-    }else{
-      const res = await auth.anonymousAuthProvider().signIn();
-      currentUser = { uid: res.user.uid, isAnonymous: true };
+    // accessKey 模式下 CloudBase 不提供 user session（Publishable Key 是"公开访问"）
+    // 用客户端生成的稳定 UUID 作为每台设备的身份标识
+    let anonId = localStorage.getItem('anon_id');
+    if(!anonId){
+      anonId = 'anon_' + Math.random().toString(36).slice(2) + Date.now().toString(36);
+      localStorage.setItem('anon_id', anonId);
     }
+    currentUser = { uid: anonId, isAnonymous: true };
     await ensureUserRecord();
     if(V.length > 0){
       await syncFromCloud();
@@ -452,7 +461,7 @@ async function initAnonymousUser(){
       window._pendingSync = true;
     }
   }catch(e){
-    console.warn('CloudBase 匿名登录失败，走本地模式:', e);
+    console.warn('CloudBase 同步失败，走本地模式:', e);
     fallbackToLocal();
   }
 }
