@@ -23,7 +23,7 @@ VISUAL_FILE = os.path.join(BASE_DIR, "visual_data.json")
 WORD_DIR = os.path.join(BASE_DIR, "word")
 
 DOMAIN = os.environ.get("CHINA_DOMAIN", "TODO_CHINA_DOMAIN.com")
-BAIDU_SITE_ID = os.environ.get("BAIDU_SITE_ID", "TODO_BAIDU_SITE_ID")
+BAIDU_SITE_ID = os.environ.get("BAIDU_SITE_ID", "f791641966b50e0bfda57b90b7e896ad")
 
 with open(VOCAB_FILE, encoding="utf-8") as f:
     vocab = json.load(f)
