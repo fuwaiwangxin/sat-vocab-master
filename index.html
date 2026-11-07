@@ -73,6 +73,9 @@ input,select{font-family:inherit}
 .nav-tab.active{background:var(--p);color:#fff}
 .nav-st{display:flex;gap:12px;font-size:.82em;color:var(--td)}
 .nav-st strong{color:var(--a)}
+.lang-toggle{padding:7px 12px;border:1px solid var(--b);border-radius:20px;background:var(--c);color:var(--t);font-size:.85em;font-weight:600;white-space:nowrap}
+.lang-toggle:hover{background:var(--bg3);border-color:var(--pl)}
+#google_translate_element{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
 
 .mob-nav{display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(15,15,26,.98);backdrop-filter:blur(20px);border-top:1px solid var(--b);justify-content:space-around;padding:6px 0;z-index:100}
 .mob-btn{display:flex;flex-direction:column;align-items:center;gap:1px;color:var(--td);font-size:.65em;padding:4px 8px;background:0}
@@ -308,7 +311,9 @@ input,select{font-family:inherit}
   <div class="nav-st"><span>Learned: <strong id="nLearned">0</strong></span><span>Favs: <strong id="nFav">0</strong></span>
     <div class="auth-area" id="authArea"><button class="auth-btn" onclick="showAuth()">Sign In</button></div>
   </div>
+  <button class="lang-toggle" id="langToggle" type="button" onclick="togglePageLanguage()" aria-label="Translate page to Chinese" title="Translate page to Chinese">中文</button>
 </div></nav>
+<div id="google_translate_element" aria-hidden="true"></div>
 
 <div class="mob-nav">
   <button class="mob-btn active" data-s="home" onclick="go('home')"><span>🏠</span>Home</button>
@@ -838,6 +843,7 @@ function doSearch(q){
   if(!m.length){r.innerHTML='<div class="sr-item"><div class="sr-w">No results</div></div>'}
   else{r.innerHTML=m.map(w=>`<div class="sr-item" onclick="showW(${w.id})"><div class="sr-w">${emoji(w)} ${w.word} <span style="color:var(--td);font-weight:400;font-size:.82em">${w.pronunciation}</span></div><div class="sr-d">${w.engDef.substring(0,90)}${w.engDef.length>90?'...':''}</div></div>`).join('')}
   r.classList.add('show');
+  refreshDynamicPageTranslation();
 }
 document.addEventListener('click',e=>{if(!e.target.closest('.search-c'))document.getElementById('sResults').classList.remove('show')});
 
@@ -965,6 +971,7 @@ function showW(id){
     ${w.extra?`<div><div style="font-weight:600;color:var(--td);margin-bottom:5px">📝 Word Roots & Related</div><div class="w-extra" style="border:0;padding:0">${w.extra}</div></div>`:''}
   `;
   document.getElementById('modal').classList.add('show');
+  refreshDynamicPageTranslation();
 }
 function closeM(){document.getElementById('modal').classList.remove('show')}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeM()});
@@ -1011,6 +1018,7 @@ function renderLearn(){
       </tr>`).join('')}</tbody></table></div>`;
   }
   renderPag(tp,'lPag',p=>{lp=p;renderLearn()});
+  refreshDynamicPageTranslation();
 }
 
 function wCard(w){
@@ -1057,6 +1065,7 @@ function renderFC(target){
       <button class="w-btn" onclick="speak('${w.word.replace(/'/g,"\\'")}')">🔊</button>
       <button class="t-btn btn-p" onclick="fi++;renderFC('${target}')">Next →</button>
     </div>`;
+  refreshDynamicPageTranslation();
 }
 
 function startFlash(){go('learn');setLM('flash');fw=V;fi=Math.floor(Math.random()*V.length);renderFC('lFlash')}
@@ -1173,6 +1182,7 @@ function renderFav(){
   if(!ws.length){hide('fGrid');hide('fFlash');show('fEmpty');return}
   show('fGrid');hide('fFlash');hide('fEmpty');
   document.getElementById('fGrid').innerHTML=ws.map(w=>wCard(w)).join('');
+  refreshDynamicPageTranslation();
 }
 function setFM(m){
   const ws=V.filter(w=>favs.has(w.id));
@@ -1203,12 +1213,86 @@ function renderWOD(){
     <div class="w-def">${w.engDef}</div>
     ${mus?`<div class="w-music" style="margin-top:8px">🎵 "${mus.song}" — ${mus.artist}<div style="color:var(--td);font-size:.9em;margin-top:2px">${mus.connection}</div></div>`:''}`;
   document.getElementById('wod').onclick=()=>showW(w.id);
+  refreshDynamicPageTranslation();
 }
 
 // ===== UTIL =====
 function show(id){document.getElementById(id).style.display=''}
 function hide(id){document.getElementById(id).style.display='none'}
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2000)}
+
+// ===== PAGE TRANSLATION =====
+let translateReadyPromise=null;
+let pageTranslatedToChinese=false;
+let translationRefreshTimer=null;
+
+function refreshDynamicPageTranslation(){
+  if(!pageTranslatedToChinese)return;
+  clearTimeout(translationRefreshTimer);
+  translationRefreshTimer=setTimeout(()=>{
+    const languageSelect=document.querySelector('.goog-te-combo');
+    if(!languageSelect)return;
+    languageSelect.value='zh-CN';
+    languageSelect.dispatchEvent(new Event('change'));
+  },150);
+}
+
+function initializeGoogleTranslateWidget(){
+  new google.translate.TranslateElement({
+    pageLanguage:'en',
+    includedLanguages:'zh-CN',
+    autoDisplay:false
+  },'google_translate_element');
+}
+
+function loadGoogleTranslate(){
+  if(translateReadyPromise)return translateReadyPromise;
+  translateReadyPromise=new Promise((resolve,reject)=>{
+    window.googleTranslateElementInit=()=>{
+      try{
+        initializeGoogleTranslateWidget();
+        resolve();
+      }catch(error){
+        translateReadyPromise=null;
+        reject(error);
+      }
+    };
+    const script=document.createElement('script');
+    script.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.onerror=()=>{
+      translateReadyPromise=null;
+      reject(new Error('Google Translate could not be loaded'));
+    };
+    document.head.appendChild(script);
+  });
+  return translateReadyPromise;
+}
+
+async function togglePageLanguage(){
+  const button=document.getElementById('langToggle');
+  button.disabled=true;
+  try{
+    await loadGoogleTranslate();
+    let languageSelect=null;
+    for(let attempt=0;attempt<50&&!languageSelect;attempt++){
+      languageSelect=document.querySelector('.goog-te-combo');
+      if(!languageSelect)await new Promise(resolve=>setTimeout(resolve,100));
+    }
+    if(!languageSelect)throw new Error('Google Translate language control is unavailable');
+
+    pageTranslatedToChinese=!pageTranslatedToChinese;
+    languageSelect.value=pageTranslatedToChinese?'zh-CN':'';
+    languageSelect.dispatchEvent(new Event('change'));
+    button.textContent=pageTranslatedToChinese?'English':'中文';
+    button.setAttribute('aria-label',pageTranslatedToChinese?'Show page in English':'Translate page to Chinese');
+    button.title=pageTranslatedToChinese?'Show page in English':'Translate page to Chinese';
+  }catch(error){
+    console.error('Page translation failed:',error);
+    toast('Translation is unavailable. Please try again later.');
+  }finally{
+    button.disabled=false;
+  }
+}
 
 // ===== VISITOR COUNTER =====
 (function(){
